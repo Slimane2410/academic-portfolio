@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Slimane Aouanouk | Portfolio</title>
+  <script>
+    (function () {
+      var language = "en";
+      try {
+        language = sessionStorage.getItem("portfolio-language") === "fr" ? "fr" : "en";
+      } catch (_) {
+        // English remains the default when storage is unavailable.
+      }
+      window.location.replace(language + "/index.html");
+    }());
+  </script>
+  <noscript><meta http-equiv="refresh" content="0; url=en/index.html" /></noscript>
+</head>
+<body></body>
+</html>

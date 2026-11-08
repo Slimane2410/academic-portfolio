@@ -1,0 +1,4623 @@
+{
+  "title": "Binabik · Technical interview 2",
+  "author": "Slimane Aouanouk",
+  "version": "V1 · 2026-11-07",
+  "total_seconds": 1245,
+  "final_sentence": "Give me a challenging goal for these six months, and I'll do everything I can to achieve it — and hopefully exceed your expectations.",
+  "slides": [
+    {
+      "id": "s01",
+      "title": "From research to real robots",
+      "section": "Introduction",
+      "duration": 25,
+      "message": "I turn a robotics idea into a system I can measure and improve.",
+      "layout": "hero",
+      "visual": {
+        "type": "hero-pair"
+      },
+      "points": [
+        "**Understand** the task",
+        "**Build** the full chain",
+        "**Measure** what happens"
+      ],
+      "script": "Thank you for meeting with me again. I'd like to show how I approach a robotics problem: understand the task, make decisions, build the system, and measure its behavior. I'll focus on my completed work in Singapore.",
+      "transition": "Then I'll connect it to industrial automation and my current project.",
+      "details": [
+        {
+          "label": "My background",
+          "question": "What prepared you for this work?",
+          "answer": "My preparatory classes gave me a strong scientific foundation through intensive math, physics, and engineering science. At Arts et Métiers, I learned how industrial processes work and what constraints matter in practice. That helped me recognize opportunities for automation, like the pouring task in my FANUC project. I also built foundations in mechanics, modeling, and control. I then joined a research master's program at Sorbonne Université to strengthen the foundations of robotics.",
+          "reason": [
+            "Preparatory classes: a strong foundation in math, physics, and engineering science.",
+            "Arts et Métiers: industrial processes and constraints, automation opportunities, and foundations in mechanics, modeling, and control.",
+            "Sorbonne Université: a research master to strengthen the foundations of robotics."
+          ],
+          "visual": {
+            "type": "education-pillars",
+            "stages": [
+              {
+                "name": "Preparatory classes",
+                "headline": "Strong scientific foundation",
+                "details": [
+                  "Intensive math, physics & engineering science"
+                ]
+              },
+              {
+                "name": "Arts et Métiers",
+                "headline": "Industrial & mechanical engineering",
+                "details": [
+                  "Industrial processes & constraints",
+                  "Automation & control fundamentals"
+                ]
+              },
+              {
+                "name": "Sorbonne Université",
+                "headline": "Research master in robotics",
+                "details": [
+                  "Strengthening the foundations of robotics"
+                ]
+              }
+            ]
+          },
+          "sources": [
+            "USER",
+            "CTX"
+          ],
+          "locator": "User-approved education wording; portfolio context education sections",
+          "uncertainty": "",
+          "kind": "Personal background",
+          "return_line": "I'll focus on the completed experimental work now.",
+          "id": "d2"
+        }
+      ],
+      "hook": "",
+      "silence": 2,
+      "video": null,
+      "sources": [
+        "USER",
+        "CTX"
+      ]
+    },
+    {
+      "id": "s02",
+      "title": "What I'll show today",
+      "section": "Introduction",
+      "duration": 35,
+      "message": "Three projects show implementation, industrial thinking, and current learning.",
+      "layout": "projects",
+      "visual": {
+        "type": "projects"
+      },
+      "points": [
+        "**Singapore:** the technical core",
+        "**FANUC:** an industrial task",
+        "**G1:** ongoing manipulation work"
+      ],
+      "script": "I’ll focus mainly on my research project in Singapore, covering trajectory planning, online correction, and real-robot testing. I’ll explain the engineering decisions I made, the main challenges I faced, and how I overcame them.\nThen, I’ll present my industrial automation study with FANUC. Finally, I’ll briefly introduce my current Unitree G1 project.",
+      "transition": "I'll start with the research problem behind the Singapore testbed.",
+      "details": [
+        {
+          "label": "Why these projects?",
+          "question": "Why did you choose these examples?",
+          "answer": "They show three useful parts of my experience: physical integration, task feasibility, and learning a new robotics field.",
+          "reason": [
+            "Singapore provides the strongest measured evidence.",
+            "FANUC connects robot choices to a physical process."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Question",
+              "Example"
+            ],
+            "rows": [
+              [
+                "Can I integrate and diagnose?",
+                "Singapore"
+              ],
+              [
+                "Can I frame an industrial task?",
+                "FANUC"
+              ],
+              [
+                "What am I learning now?",
+                "G1"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "CTX",
+            "TRANS"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "Singapore is the main technical example, so I'll return to it.",
+          "id": "d1"
+        }
+      ],
+      "hook": "",
+      "silence": 0,
+      "video": null,
+      "sources": [
+        "CTX",
+        "TRANS"
+      ]
+    },
+    {
+      "id": "s03",
+      "title": "Singapore: the research context",
+      "section": "Singapore",
+      "duration": 30,
+      "message": "Digital twins for Singapore · drone trajectory planning",
+      "layout": "descartes-video",
+      "visual": {
+        "type": "descartes-video"
+      },
+      "points": [
+        "**DesCartes / CNRS@CREATE**",
+        "**Digital twins** for urban systems",
+        "**Drones** and trajectory planning"
+      ],
+      "script": "The DesCartes project in Singapore aims to build a digital twin of the city. One research area focuses on drones, as you can see in this fifteen-second excerpt.",
+      "transition": "My work focused on planning and ground-rover validation.",
+      "details": [
+        {
+          "label": "Research context",
+          "question": "How does this relate to drones?",
+          "answer": "The research motivation concerned drone trajectory planning, while the reported physical experiments use ground rovers.",
+          "reason": [
+            "The mathematical study is planar here.",
+            "I do not treat rover trials as flight validation."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Motivation",
+              "Physical evidence"
+            ],
+            "rows": [
+              [
+                "Drone collision avoidance",
+                "2D ground rover"
+              ],
+              [
+                "Planning research",
+                "External-camera testbed"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "CTX",
+            "P"
+          ],
+          "locator": "Draft §1–3.1",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The physical evidence here is the ground-rover testbed.",
+          "id": "d1"
+        },
+        {
+          "label": "Ground-robot scope",
+          "question": "What was physically validated?",
+          "answer": "One controlled rover moved among one or two independently driven physical agents in a bounded indoor arena.",
+          "reason": [
+            "The camera supplies external localization.",
+            "This is not onboard perception or SLAM."
+          ],
+          "visual": {
+            "type": "image",
+            "file": "assets/images/arena.jpg",
+            "caption": "Original test arena",
+            "crop": "contain"
+          },
+          "sources": [
+            "P",
+            "A",
+            "B"
+          ],
+          "locator": "Draft §3.1 and §4.3",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The physical evidence here is the ground-rover testbed.",
+          "id": "d2"
+        },
+        {
+          "label": "Initial knowledge",
+          "question": "What did you have to learn?",
+          "answer": "I learned the planning and local-correction methods from papers, then connected them to experiments.",
+          "reason": [
+            "My math and mechanics foundations helped.",
+            "I had to check implementation details rather than stop at equations."
+          ],
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              "Read the method",
+              "Implement it",
+              "Test behavior"
+            ],
+            "caption": "Explanatory diagram"
+          },
+          "sources": [
+            "IDEAS",
+            "CTX"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Personal experience",
+          "return_line": "The physical evidence here is the ground-rover testbed.",
+          "id": "d3"
+        },
+        {
+          "label": "Learning from papers",
+          "question": "How did you turn papers into code?",
+          "answer": "I separated the model, numerical choices, interfaces and measurable outcomes.",
+          "reason": [
+            "I checked variables, units and endpoint conditions.",
+            "I used small examples and gradient checks before interpreting full results."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Paper idea",
+              "Implementation check"
+            ],
+            "rows": [
+              [
+                "Action functional",
+                "Discrete cost"
+              ],
+              [
+                "Potential field",
+                "Force terms"
+              ],
+              [
+                "Numerical method",
+                "Gradient / step update"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "P",
+            "SOL",
+            "COST"
+          ],
+          "locator": "Draft §3.3–3.4; discretization.py",
+          "uncertainty": "",
+          "kind": "Implementation approach",
+          "return_line": "The physical evidence here is the ground-rover testbed.",
+          "id": "d4"
+        }
+      ],
+      "hook": "",
+      "silence": 18.428333,
+      "video": {
+        "file": "assets/videos/descartes-drones.mp4",
+        "poster": "assets/images/descartes-drones-poster.jpg",
+        "start": 0,
+        "end": 18.428333,
+        "label": "DesCartes program · 15 s · sound on",
+        "sound": true,
+        "source_url": "https://youtu.be/sFYLavyD_sc"
+      },
+      "sources": [
+        "DESCARTES",
+        "CTX",
+        "P",
+        "A",
+        "B",
+        "IDEAS",
+        "SOL",
+        "COST"
+      ]
+    },
+    {
+      "id": "s04",
+      "title": "One robot, independent moving agents",
+      "section": "Singapore",
+      "duration": 35,
+      "message": "The controlled robot must reach its goal without access to the true future of other agents.",
+      "layout": "simulation-video",
+      "visual": {
+        "type": "simulation-video"
+      },
+      "points": [
+        "**One** robot chooses the avoidance motion",
+        "**Independent** agents disturb the path",
+        "**Success = safe arrival**"
+      ],
+      "script": "This simulation illustrates the task: one controlled robot and independent moving agents. The agents did not coordinate their avoidance with my robot. My rover had to reach a goal while avoiding fixed obstacles, moving agents, and the arena boundary. It could use their current observed positions, but not their true future motion. I evaluated both arrival and clearance, because staying still can look safe while completely failing the task.",
+      "transition": "To evaluate that behavior, I first need to define success.",
+      "details": [],
+      "hook": "",
+      "silence": 0,
+      "video": {
+        "file": "assets/videos/simulation-lagrange-newton.mp4",
+        "poster": "assets/images/simulation-lagrange-newton-poster.jpg",
+        "start": 0,
+        "end": 19.233333,
+        "label": "Trajectory planning + online correction · simulation",
+        "narrated": true
+      },
+      "sources": [
+        "SIMVIDEO",
+        "P",
+        "A",
+        "B",
+        "COST"
+      ]
+    },
+    {
+      "id": "s05",
+      "title": "Defining success",
+      "section": "Singapore",
+      "duration": 45,
+      "message": "Success means reaching the goal safely.",
+      "layout": "success-definition",
+      "visual": {
+        "type": "success-definition"
+      },
+      "points": [
+        "**Clearance:** center distance minus both safety radii",
+        "**Safe:** no collision, no arena exit, no execution error",
+        "**Goal:** final position within the chosen tolerance",
+        "**Joint success:** safety and arrival together"
+      ],
+      "script": "To evaluate the robot, I first defined what success means. I model the robot and each obstacle or agent as circles. Clearance is the distance between their centers, minus both radii. Positive clearance means the circles are separated. Zero means they touch; negative clearance means the modeled envelopes overlap. Then I use three binary indicators. I safe is one when there is no collision, no arena exit, and no execution error. I goal is one when the robot finishes within the goal tolerance. I joint is their product. So a successful run must be safe and reach the goal.",
+      "transition": "With those criteria defined, I can explain the system's assumptions and limits.",
+      "details": [],
+      "hook": "Safety alone is not enough: a robot that never moves can still fail the task.",
+      "silence": 0,
+      "video": null,
+      "sources": [
+        "P",
+        "COST",
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "s06",
+      "title": "What the system had to handle",
+      "section": "Singapore",
+      "duration": 30,
+      "message": "The planner, online state and physical drivetrain have different kinds of limits.",
+      "layout": "limits",
+      "visual": {
+        "type": "limits"
+      },
+      "points": [
+        "**Local observation** of moving agents",
+        "**Soft penalties** in the nominal plan",
+        "**Online clipping** before wheel conversion"
+      ],
+      "script": "I had local agent observations, a bounded arena, and a robot that couldn't move sideways. The offline plan used soft speed and acceleration penalties. Online, I clipped internal acceleration and velocity. These mechanisms are different, and they don't prove universal bounds on physical motion.",
+      "transition": "I organized the system into an offline plan and an online correction.",
+      "details": [
+        {
+          "label": "Perception radius",
+          "question": "What does the 0.60 m radius mean?",
+          "answer": "In the physical adapter, moving-agent influence is limited using edge-to-edge clearance of 0.60 m.",
+          "reason": [
+            "The camera can see more than the corrector uses.",
+            "A global sensor does not make the decision rule nonlocal."
+          ],
+          "visual": {
+            "type": "equation",
+            "text": "d = ‖x − c‖ − r_agent − r_robot\nF_mobile = 0 when d ≥ 0.60 m",
+            "caption": "Physical adapter cutoff"
+          },
+          "sources": [
+            "ADAPT",
+            "P"
+          ],
+          "locator": "compute_phase5bis_realtime_command; draft Table 6",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "Those limits belong to different stages of the chain.",
+          "id": "d1"
+        },
+        {
+          "label": "Speed / acceleration",
+          "question": "Why are offline and online numbers different?",
+          "answer": "The draft uses 0.35 m/s and 0.8 m/s² as offline penalty thresholds, and 0.25 m/s and 1.0 m/s² for online clipping.",
+          "reason": [
+            "They belong to different stages.",
+            "A penalty threshold is not a hard bound."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Stage",
+              "Speed",
+              "Acceleration"
+            ],
+            "rows": [
+              [
+                "Offline penalties",
+                "0.35 m/s",
+                "0.8 m/s²"
+              ],
+              [
+                "Online state clipping",
+                "0.25 m/s",
+                "1.0 m/s²"
+              ]
+            ],
+            "caption": "Draft Tables 3 and 6"
+          },
+          "sources": [
+            "P",
+            "REAL"
+          ],
+          "locator": "Draft Tables 3/6; NewtonEulerRealConfig",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "Those limits belong to different stages of the chain.",
+          "id": "d2"
+        },
+        {
+          "label": "Hardware limits",
+          "question": "Were those physical bounds verified for all motion?",
+          "answer": "No. I verified the command logic and measured the drivetrain, but did not establish a universal physical envelope.",
+          "reason": [
+            "The command-to-motion response is imperfect.",
+            "Wheel commands, modeled velocity and observed velocity are distinct."
+          ],
+          "visual": {
+            "type": "image",
+            "file": "assets/images/motor-identification.png",
+            "caption": "Open-loop drivetrain measurements",
+            "crop": "contain"
+          },
+          "sources": [
+            "P",
+            "REAL"
+          ],
+          "locator": "Draft §3.5.3",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "Those limits belong to different stages of the chain.",
+          "id": "d3"
+        },
+        {
+          "label": "Assumptions",
+          "question": "What assumptions matter most?",
+          "answer": "The testbed is planar, externally localized, relatively slow, and uses marked obstacles and robots.",
+          "reason": [
+            "Marker visibility and calibrated geometry matter.",
+            "The campaign covers a small set of repeatable tasks."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Assumption",
+              "Consequence"
+            ],
+            "rows": [
+              [
+                "Overhead markers",
+                "Visibility required"
+              ],
+              [
+                "Planar arena",
+                "No 3D validation"
+              ],
+              [
+                "Low speed",
+                "Limited dynamic scope"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "P",
+            "A",
+            "B"
+          ],
+          "locator": "Draft §3.1, §5.5",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "Those limits belong to different stages of the chain.",
+          "id": "d4"
+        }
+      ],
+      "hook": "",
+      "silence": 0,
+      "video": null,
+      "sources": [
+        "ADAPT",
+        "P",
+        "REAL",
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "s07",
+      "title": "The two-layer architecture",
+      "section": "Singapore",
+      "duration": 45,
+      "message": "The nominal plan handles the known static scene; current observations drive the local correction.",
+      "layout": "diagram",
+      "visual": {
+        "type": "architecture"
+      },
+      "points": [
+        "**Offline:** build a nominal trajectory",
+        "**Online:** react to current observations",
+        "**Physical loop:** observe → command → measure"
+      ],
+      "script": "The first layer builds a nominal trajectory using the static scene: the start, goal, fixed obstacles, and arena. Moving agents are excluded. The second layer runs during execution. It combines attraction toward the nominal path with repulsion from current observations and damping. I then convert that planar request into wheel commands. The overhead camera closes the loop, and the logs let me inspect positions, forces, commands, and timing afterward. This separation kept the global path problem away from the real-time loop.",
+      "transition": "Before looking inside each layer, here is what I contributed.",
+      "details": [
+        {
+          "label": "Full data flow",
+          "question": "Where does information travel?",
+          "answer": "Basler frames reach the Raspberry Pi over the access point and Wi-Fi; Python computes poses and commands; onboard serial drives the motor board.",
+          "reason": [
+            "The camera is external; computation is carried on the controlled rover.",
+            "Agents use their own independent command link."
+          ],
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              "Basler → AP → Wi-Fi",
+              "Raspberry Pi: pose + control",
+              "USB serial → motor board"
+            ],
+            "caption": "Explanatory diagram"
+          },
+          "sources": [
+            "P",
+            "A",
+            "SER"
+          ],
+          "locator": "Draft §3.1.3; camera_transport in A summaries",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The key is how the offline and online layers work together.",
+          "id": "d1"
+        },
+        {
+          "label": "Why two layers?",
+          "question": "Why split planning and correction?",
+          "answer": "The static plan provides global direction; the local stage reacts to information that is only available during the run.",
+          "reason": [
+            "The offline solution cannot include unknown true future motion.",
+            "The local method is fast but can still stall."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Offline plan",
+              "Online correction"
+            ],
+            "rows": [
+              [
+                "Known static scene",
+                "Current observed scene"
+              ],
+              [
+                "Global direction",
+                "Immediate reaction"
+              ],
+              [
+                "Local optimum",
+                "No global safety guarantee"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "P",
+            "CTRL"
+          ],
+          "locator": "Draft §2.4, §3.3–3.4",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The key is how the offline and online layers work together.",
+          "id": "d2"
+        },
+        {
+          "label": "Nav2 analogy",
+          "question": "Is this a Nav2 implementation?",
+          "answer": "No. The useful analogy is a planner supplying a reference to a controller. PACO does not use the Nav2 stack.",
+          "reason": [
+            "Nav2 has planner/controller servers and broader navigation infrastructure.",
+            "The analogy explains responsibilities, not software equivalence."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Role",
+              "PACO",
+              "Nav2 analogy"
+            ],
+            "rows": [
+              [
+                "Plan",
+                "Offline nominal",
+                "Planner"
+              ],
+              [
+                "Follow / react",
+                "Local corrector",
+                "Controller"
+              ],
+              [
+                "Integration",
+                "Custom Python loop",
+                "ROS 2 servers"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "CTRL",
+            "NAV2"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Conceptual comparison",
+          "return_line": "The key is how the offline and online layers work together.",
+          "id": "d3"
+        },
+        {
+          "label": "Alternatives",
+          "question": "What would you compare against?",
+          "answer": "I would compare a reactive baseline, periodic replanning and a model-predictive controller under the same sensing and task protocol.",
+          "reason": [
+            "Use shared success and clearance definitions.",
+            "Measure computation and model mismatch too."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Option",
+              "Potential benefit",
+              "Cost / risk"
+            ],
+            "rows": [
+              [
+                "Reactive only",
+                "No offline solve",
+                "Local traps"
+              ],
+              [
+                "Replanning",
+                "Update route",
+                "Repeated solve"
+              ],
+              [
+                "MPC",
+                "Explicit prediction / limits",
+                "Model + solve budget"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "P",
+            "MPC"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Proposed comparison",
+          "return_line": "The key is how the offline and online layers work together.",
+          "id": "d4"
+        }
+      ],
+      "hook": "",
+      "silence": 0,
+      "video": null,
+      "sources": [
+        "P",
+        "A",
+        "SER",
+        "CTRL",
+        "NAV2",
+        "MPC"
+      ]
+    },
+    {
+      "id": "s08",
+      "title": "My contribution",
+      "section": "Singapore",
+      "duration": 30,
+      "message": "I connected methods, implementation and measured robot behavior.",
+      "layout": "ownership",
+      "visual": {
+        "type": "ownership"
+      },
+      "points": [
+        "**I implemented and integrated** the chain",
+        "**I measured and diagnosed** the testbed",
+        "**Mathis selected the coefficients**"
+      ],
+      "script": "I turned the methods into an experimental chain: implementation, camera localization, command conversion, physical tests and analysis. I used published ideas and existing libraries. Mathis selected the coefficients. My focus was checking how the full system behaved once those pieces were connected.",
+      "transition": "First, let me explain how I built the nominal path.",
+      "details": [
+        {
+          "label": "My implementation",
+          "question": "Which parts do you mean by implementation?",
+          "answer": "I worked across the nominal solver, local-correction integration, vision-to-metric chain, command conversion and experimental analysis.",
+          "reason": [
+            "I can trace each block from its inputs to the logged outputs.",
+            "I can explain the interfaces and verification for each block."
+          ],
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              "Planning code",
+              "Physical adapter",
+              "Experimental analysis"
+            ],
+            "caption": "Explanatory diagram"
+          },
+          "sources": [
+            "SOL",
+            "ADAPT",
+            "REAL",
+            "CAL"
+          ],
+          "locator": "",
+          "uncertainty": "Precise personal allocation within collaborative code needs Slimane review.",
+          "kind": "Project evidence",
+          "return_line": "My focus is the implementation and experimental chain.",
+          "id": "d1"
+        },
+        {
+          "label": "Mathis's role",
+          "question": "Who selected the coefficients?",
+          "answer": "Mathis selected the coefficients. I do not claim that contribution.",
+          "reason": [
+            "The simulation tuning profiles and physical override are distinct.",
+            "A run records its actual coefficient set."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Contribution",
+              "Attribution"
+            ],
+            "rows": [
+              [
+                "Coefficient selection",
+                "Mathis"
+              ],
+              [
+                "Theory / algorithms",
+                "Published methods"
+              ],
+              [
+                "Implementation / experiments",
+                "My implementation and experiments"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "A",
+            "USER"
+          ],
+          "locator": "",
+          "uncertainty": "Mathis attribution supplied explicitly in the current user request.",
+          "kind": "Project evidence",
+          "return_line": "My focus is the implementation and experimental chain.",
+          "id": "d2"
+        },
+        {
+          "label": "Libraries",
+          "question": "What did you reuse?",
+          "answer": "SciPy provides numerical optimization, NumPy supports numerical operations, and OpenCV supplies camera and ArUco tools.",
+          "reason": [
+            "I configured, connected and tested these components.",
+            "Using a solver is different from inventing its algorithm."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Component",
+              "Role"
+            ],
+            "rows": [
+              [
+                "SciPy",
+                "Local optimization"
+              ],
+              [
+                "NumPy",
+                "Numerical arrays"
+              ],
+              [
+                "OpenCV",
+                "Calibration / marker processing"
+              ],
+              [
+                "Supplier firmware",
+                "Motor-board execution"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "SOL",
+            "CAL",
+            "FW"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "My focus is the implementation and experimental chain.",
+          "id": "d3"
+        },
+        {
+          "label": "Research references",
+          "question": "Which ideas came from the literature?",
+          "answer": "Variational trajectory costs and artificial potential-field avoidance are established ideas. My evidence is in implementation and experimental validation.",
+          "reason": [
+            "The draft cites the underlying methods.",
+            "I do not claim sole invention of these theories."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Idea",
+              "Project use"
+            ],
+            "rows": [
+              [
+                "Variational cost",
+                "Nominal path"
+              ],
+              [
+                "Potential fields",
+                "Local correction"
+              ],
+              [
+                "Quasi-Newton optimization",
+                "Numerical solve"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "P"
+          ],
+          "locator": "Draft §1; §3.3–3.4; bibliography",
+          "uncertainty": "",
+          "kind": "Method attribution",
+          "return_line": "My focus is the implementation and experimental chain.",
+          "id": "d4"
+        }
+      ],
+      "hook": "",
+      "silence": 3,
+      "video": null,
+      "sources": [
+        "SOL",
+        "ADAPT",
+        "REAL",
+        "CAL",
+        "A",
+        "USER",
+        "FW",
+        "P"
+      ]
+    },
+    {
+      "id": "s09",
+      "title": "Why plan offline?",
+      "section": "Singapore",
+      "duration": 35,
+      "message": "A nominal route gives the local corrector a useful global reference.",
+      "layout": "split",
+      "visual": {
+        "type": "image",
+        "file": "assets/images/nominal-family.png",
+        "caption": "Original simulation example · not a physical trajectory",
+        "crop": "contain"
+      },
+      "points": [
+        "**Known geometry** before the run",
+        "**Global reference** around fixed obstacles",
+        "**Local correction** during execution"
+      ],
+      "script": "The offline route gives the robot global direction through the known scene. The online stage follows a path that already accounts for fixed obstacles, while remaining free to deviate. A moving agent can still cross that path. The plan is a useful reference, with local optimization limits, rather than a solution to every disturbance.",
+      "transition": "The next question is what the optimizer actually minimizes.",
+      "details": [
+        {
+          "label": "Static scene",
+          "question": "What is included in the nominal world?",
+          "answer": "Fixed obstacles, arena bounds and the start and goal are included; moving agents are excluded.",
+          "reason": [
+            "The dedicated builder returns an empty agents list.",
+            "This prevents future agent trajectories from entering the plan."
+          ],
+          "visual": {
+            "type": "code",
+            "text": "return World(\n    xlim=tuple(env.xlim),\n    ylim=tuple(env.ylim),\n    obstacles=list(static_obstacles),\n    agents=[],\n    ...\n)",
+            "caption": "Shortened excerpt · build_static_nominal_world"
+          },
+          "sources": [
+            "CTRL"
+          ],
+          "locator": "build_static_nominal_world lines 440–461",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The nominal gives the local controller a useful reference.",
+          "id": "d1"
+        },
+        {
+          "label": "Nominal reference",
+          "question": "Is the nominal trajectory a command?",
+          "answer": "It is a reference, not a direct wheel command. The online controller can deviate from it.",
+          "reason": [
+            "In simulation, time look-ahead evaluates the stored trajectory.",
+            "The physical runner synchronizes the reference to path progress."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Reference",
+              "Physical execution"
+            ],
+            "rows": [
+              [
+                "Stored nominal path",
+                "Measured robot pose"
+              ],
+              [
+                "Look-ahead point",
+                "Corrected velocity"
+              ],
+              [
+                "No wheel dynamics",
+                "Wheel conversion required"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "CTRL",
+            "REAL"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The nominal gives the local controller a useful reference.",
+          "id": "d2"
+        },
+        {
+          "label": "No-plan ablation",
+          "question": "What if you remove the nominal plan?",
+          "answer": "The no-plan comparison attracts directly toward the goal. It tests what the local corrector can do by itself.",
+          "reason": [
+            "It is a simulation ablation.",
+            "Safe stalling must be counted separately from success."
+          ],
+          "visual": {
+            "type": "equation",
+            "text": "With plan: F_att = k_a (x_ref − x)\nNo plan: F_att = k_a (x_goal − x)",
+            "caption": "Simulation comparison"
+          },
+          "sources": [
+            "P",
+            "CTRL"
+          ],
+          "locator": "Draft §3.3.4 and §4.1",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The nominal gives the local controller a useful reference.",
+          "id": "d3"
+        },
+        {
+          "label": "Replanning",
+          "question": "Why not continually recompute the route?",
+          "answer": "That is a possible architecture, but it adds repeated optimization and needs a clear model of new information.",
+          "reason": [
+            "It could help with persistent blockage.",
+            "I would compare it with the same sensing delay and goals."
+          ],
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              "Observe updated scene",
+              "Replan if needed",
+              "Execute and recheck"
+            ],
+            "caption": "Possible extension, not deployed"
+          },
+          "sources": [
+            "P",
+            "SOL"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Proposed extension",
+          "return_line": "The nominal gives the local controller a useful reference.",
+          "id": "d4"
+        }
+      ],
+      "hook": "",
+      "silence": 2,
+      "video": null,
+      "sources": [
+        "CTRL",
+        "REAL",
+        "P",
+        "SOL"
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "What I optimized",
+      "section": "Singapore",
+      "duration": 50,
+      "message": "I optimized interior trajectory points with a discrete cost and fixed endpoints.",
+      "layout": "math",
+      "visual": {
+        "type": "offline-cost"
+      },
+      "points": [
+        "**Variables:** 2(N − 1) interior coordinates",
+        "**Cost:** motion + potential + smoothing",
+        "**Speed / acceleration:** soft penalties"
+      ],
+      "script": "I discretized the path into points over a fixed horizon. The first and last points stayed fixed, so the optimizer changed only the interior coordinates. The cost combines a kinetic term, the static-scene potential, a smoothing term, and penalties for speed and acceleration violations. The potential attracts toward the goal and discourages obstacles and walls. One important detail is the difference between a penalty and a hard constraint. A high cost discourages a violation; it doesn't make that violation impossible. I supplied an analytical gradient to the local optimizer and checked it against finite differences.",
+      "transition": "The starting path also matters, because the optimization is local.",
+      "details": [
+        {
+          "label": "Variables",
+          "question": "What exactly is the decision vector?",
+          "answer": "It contains x and y for each interior point: 2(N−1) scalar coordinates, with the endpoints reconstructed unchanged.",
+          "reason": [
+            "N intervals create N+1 points.",
+            "For N=30, there are 58 decision variables."
+          ],
+          "visual": {
+            "type": "equation",
+            "text": "z = [x₁, y₁, …, xₙ₋₁, yₙ₋₁]\nx₀ = start, xₙ = goal\nN = 30 → dim(z) = 58",
+            "caption": "Decision vector / draft §3.3"
+          },
+          "sources": [
+            "SOL",
+            "P"
+          ],
+          "locator": "flatten_interior_points; unflatten_interior_points",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The cost discourages violations; it does not guarantee feasibility.",
+          "id": "d1"
+        },
+        {
+          "label": "Cost terms",
+          "question": "What is the discrete objective?",
+          "answer": "The midpoint action is combined with discrete smoothing and normalized violation penalties.",
+          "reason": [
+            "The kinetic weight is a numerical path weight, not robot mass.",
+            "The potential enters with a positive sign in this cost."
+          ],
+          "visual": {
+            "type": "equation",
+            "text": "J_h = Σ Δt [ α/2 ‖(xₖ₊₁−xₖ)/Δt‖²\n                  + V((xₖ₊₁+xₖ)/2) ]\n        + λ_s J_s + J_v + J_a",
+            "caption": "Draft Eq. (13); symbols retain their stage-specific meaning"
+          },
+          "sources": [
+            "P",
+            "SOL"
+          ],
+          "locator": "Draft Eq. (7), (13)–(15)",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The cost discourages violations; it does not guarantee feasibility.",
+          "id": "d2"
+        },
+        {
+          "label": "Soft vs hard",
+          "question": "Did L-BFGS-B impose the speed bounds?",
+          "answer": "No. Speed and acceleration enter as penalties; the inspected minimize call does not pass explicit coordinate bounds either.",
+          "reason": [
+            "The method can support bounds, but the method name does not prove they were used.",
+            "Online norm clipping belongs to another stage."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Mechanism",
+              "What is enforced?"
+            ],
+            "rows": [
+              [
+                "Fixed endpoints",
+                "By reconstruction"
+              ],
+              [
+                "Offline J_v / J_a",
+                "Penalized violations"
+              ],
+              [
+                "L-BFGS-B call",
+                "No explicit bounds passed"
+              ],
+              [
+                "Online clip",
+                "Internal vector norm limit"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "SOL",
+            "P",
+            "REAL"
+          ],
+          "locator": "solver.py minimize_kwargs lines 388–404",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The cost discourages violations; it does not guarantee feasibility.",
+          "id": "d3"
+        },
+        {
+          "label": "Analytical gradient",
+          "question": "How did you verify the gradient?",
+          "answer": "The implementation supplies the gradient of the same discrete objective; centered finite differences provide a numerical reference.",
+          "reason": [
+            "Check interior coordinates, including smoothing and penalties.",
+            "Agreement checks implementation, not global optimality."
+          ],
+          "visual": {
+            "type": "equation",
+            "text": "g_i,FD ≈ [J(z + εe_i) − J(z − εe_i)] / (2ε)\nCompare with ∂J/∂z_i",
+            "caption": "Gradient verification method"
+          },
+          "sources": [
+            "SOL",
+            "P"
+          ],
+          "locator": "discretization.py; trajopt/tests/test_analytic_gradient.py; draft p.10",
+          "uncertainty": "",
+          "kind": "Implementation verification",
+          "return_line": "The cost discourages violations; it does not guarantee feasibility.",
+          "id": "d4"
+        }
+      ],
+      "hook": "One important detail is the difference between a penalty and a hard constraint.",
+      "silence": 0,
+      "video": null,
+      "sources": [
+        "SOL",
+        "P",
+        "REAL"
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "From candidate paths to a nominal route",
+      "section": "Singapore",
+      "duration": 45,
+      "message": "I screen candidate shapes, then optimize the best retained warm start.",
+      "layout": "split",
+      "visual": {
+        "type": "image",
+        "file": "assets/images/nominal-family.png",
+        "caption": "Candidate family and retained nominal · simulation",
+        "crop": "contain"
+      },
+      "points": [
+        "**Generate:** straight and sinusoidal shapes",
+        "**Screen:** geometry and initial cost",
+        "**Optimize:** one selected warm start"
+      ],
+      "script": "I generated a straight path and sinusoidal deviations on either side. I checked the geometry and initial cost, then selected the best retained candidate as a warm start for L-BFGS-B. The inspected code runs one complete local optimization from that selected path. The starting shape matters because different sides of an obstacle can lead to different local solutions. I kept the selection diagnostics to understand the choice.",
+      "transition": "That led to a second numerical issue: the shape of the obstacle potential.",
+      "details": [
+        {
+          "label": "L-BFGS-B",
+          "question": "What does L-BFGS-B do here?",
+          "answer": "It uses local gradient information and a limited-memory approximation of curvature to reduce the discrete cost.",
+          "reason": [
+            "SciPy supplies the algorithm.",
+            "A successful termination does not certify the best route or collision-free feasibility."
+          ],
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              "Cost + gradient",
+              "Local quasi-Newton steps",
+              "Stopping diagnostics"
+            ],
+            "caption": "Explanatory diagram"
+          },
+          "sources": [
+            "SOL",
+            "P"
+          ],
+          "locator": "solve_trajectory; SolverOptions",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The selected initial shape feeds one local optimization.",
+          "id": "d1"
+        },
+        {
+          "label": "Warm-start selection",
+          "question": "Is this full multistart optimization?",
+          "answer": "The current code screens several initial candidates, picks the lowest-cost retained one, and optimizes that one.",
+          "reason": [
+            "This is cheaper than solving from every seed.",
+            "The draft’s multistart wording is broader than the exact code behavior."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Stage",
+              "Count"
+            ],
+            "rows": [
+              [
+                "Candidate generation",
+                "Several paths"
+              ],
+              [
+                "Initial cost scoring",
+                "Each retained candidate"
+              ],
+              [
+                "Full local solve",
+                "One selected warm start"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "INIT",
+            "SOL"
+          ],
+          "locator": "",
+          "uncertainty": "Presentation resolves the draft/code wording by describing the exact inspected implementation.",
+          "kind": "Project evidence",
+          "return_line": "The selected initial shape feeds one local optimization.",
+          "id": "d2"
+        },
+        {
+          "label": "Initial candidates",
+          "question": "Are candidates rejected for obstacle penetration?",
+          "answer": "The draft and implementation retain finite obstacle costs; arena validity and candidate integrity are checked separately.",
+          "reason": [
+            "Clearance is a diagnostic, not a blanket collision rejection rule.",
+            "The finite core cost helps retain a usable numerical objective."
+          ],
+          "visual": {
+            "type": "image",
+            "file": "assets/images/nominal-family.png",
+            "caption": "Actual candidate-generation figure / simulation",
+            "crop": "contain"
+          },
+          "sources": [
+            "INIT",
+            "COST",
+            "P"
+          ],
+          "locator": "select_best_parametric_initial_guess; draft §3.3.4",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The selected initial shape feeds one local optimization.",
+          "id": "d3"
+        },
+        {
+          "label": "Stopping",
+          "question": "What do you check after the solve?",
+          "answer": "I inspect the solver status, objective value, iteration counts, path geometry and constraint-related diagnostics.",
+          "reason": [
+            "Solver success means a numerical stopping condition was met.",
+            "It is separate from online arrival and physical clearance."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Numerical",
+              "Task / geometry"
+            ],
+            "rows": [
+              [
+                "success / message",
+                "Obstacle clearance"
+              ],
+              [
+                "nit / nfev / njev",
+                "Speed / acceleration violations"
+              ],
+              [
+                "Final objective",
+                "Usable route and endpoints"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "SOL"
+          ],
+          "locator": "solve_trajectory result fields",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The selected initial shape feeds one local optimization.",
+          "id": "d4"
+        }
+      ],
+      "hook": "The starting path mattered, because this optimizer finds a local solution.",
+      "silence": 3,
+      "video": null,
+      "sources": [
+        "SOL",
+        "P",
+        "INIT",
+        "COST"
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "Making the offline problem usable",
+      "section": "Singapore",
+      "duration": 45,
+      "message": "I replaced the earlier inverse-distance potential with a smooth compact potential.",
+      "layout": "potential",
+      "visual": {
+        "type": "potential"
+      },
+      "points": [
+        "**Issue:** singular / rough numerical behavior",
+        "**Change:** compact polynomial potential",
+        "**Check:** gradient continuity and route diagnostics"
+      ],
+      "script": "The earlier inverse-distance potential created difficult numerical behavior near obstacles. I moved to a compact polynomial potential. With exponent three, its value, slope and curvature go to zero at the cutoff, giving the optimizer a smoother objective. I kept a finite obstacle-core treatment and checked the gradient and route diagnostics. This formulation change is documented, but I don't have an isolated convergence benchmark. I explain the numerical reason without claiming a measured speedup.",
+      "transition": "Once the nominal route was available, I had to react during execution.",
+      "details": [
+        {
+          "label": "Earlier formulation",
+          "question": "What was wrong with inverse distance?",
+          "answer": "Near-zero distance can create extreme gradients; a cutoff can also create poor smoothness if handled badly.",
+          "reason": [
+            "The draft documents the replacement.",
+            "The exact quantitative effect was not isolated in a paired benchmark."
+          ],
+          "visual": {
+            "type": "equation",
+            "text": "Earlier family: V(d) ∝ 1/d²\nNear contact: rapidly increasing value and gradient",
+            "caption": "Conceptual earlier potential family"
+          },
+          "sources": [
+            "COST",
+            "P"
+          ],
+          "locator": "Draft §3.3.2; _inverse_distance_repulsion",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The formulation became smoother, with no isolated speedup claimed.",
+          "id": "d1"
+        },
+        {
+          "label": "Evidence",
+          "question": "What evidence supports the change?",
+          "answer": "The code retains both inverse-distance and compact-polynomial functions, and the draft explains why the smoother version was introduced.",
+          "reason": [
+            "This supports the implementation decision.",
+            "It does not supply a measured before/after runtime gain."
+          ],
+          "visual": {
+            "type": "code",
+            "text": "normalized_distance = distance / influence_radius\ncompact_base = max(0.0, 1.0 - normalized_distance**2)\nreturn compact_base**power",
+            "caption": "Exact compact-kernel excerpt · cost.py"
+          },
+          "sources": [
+            "COST",
+            "P"
+          ],
+          "locator": "_polynomial_compact_repulsion",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The formulation became smoother, with no isolated speedup claimed.",
+          "id": "d2"
+        },
+        {
+          "label": "Smooth cutoff",
+          "question": "Why exponent three?",
+          "answer": "At d=R, the compact cubic in 1−(d/R)² has zero value, first derivative and second derivative.",
+          "reason": [
+            "That gives C² continuity at the support boundary.",
+            "The core still needs its separate finite definition."
+          ],
+          "visual": {
+            "type": "equation",
+            "text": "V(d) = γ [1 − (d/R)²]³,  0 < d < R\nV(d) = 0,  d ≥ R\nV(R) = V′(R) = V″(R) = 0",
+            "caption": "Draft Eq. (11); exterior branch only"
+          },
+          "sources": [
+            "COST",
+            "P"
+          ],
+          "locator": "Draft Eq. (11) and Appendix A.2",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The formulation became smoother, with no isolated speedup claimed.",
+          "id": "d3"
+        },
+        {
+          "label": "Validation boundary",
+          "question": "How would you measure the improvement?",
+          "answer": "I would rerun the same initial paths, scenes and stopping tolerances with both potentials and compare convergence and feasible routes.",
+          "reason": [
+            "Keep weights and computation budget explicit.",
+            "Record failures as well as timing."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Hold fixed",
+              "Measure"
+            ],
+            "rows": [
+              [
+                "Scenes / seeds",
+                "Convergence failures"
+              ],
+              [
+                "Tolerance / budget",
+                "Cost evaluations / time"
+              ],
+              [
+                "Geometry protocol",
+                "Clearance / route quality"
+              ]
+            ],
+            "caption": "Proposed paired benchmark"
+          },
+          "sources": [
+            "COST",
+            "SOL"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Proposed test, not a completed result",
+          "return_line": "The formulation became smoother, with no isolated speedup claimed.",
+          "id": "d4"
+        }
+      ],
+      "hook": "",
+      "silence": 0,
+      "video": null,
+      "sources": [
+        "COST",
+        "P",
+        "SOL"
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "What the online corrector sees",
+      "section": "Singapore",
+      "duration": 40,
+      "message": "Each update starts from measured robot state and current obstacle snapshots.",
+      "layout": "observation",
+      "visual": {
+        "type": "observation"
+      },
+      "points": [
+        "**Robot:** position, heading, estimated velocity",
+        "**Reference:** a point ahead on the nominal",
+        "**Agents:** current observed positions"
+      ],
+      "script": "Each update starts from the robot position and heading measured by the camera. Velocity is estimated and filtered from observations. Moving obstacles arrive as current snapshots with freshness information. The corrector also gets a point ahead on the nominal. On hardware, this reference follows measured path progress, so it doesn't simply run away in time while the robot falls behind. No agent future is needed.",
+      "transition": "Here is how those inputs become the correction force.",
+      "details": [
+        {
+          "label": "State inputs",
+          "question": "Which inputs are actually measured?",
+          "answer": "Position and marker yaw come from ArUco; velocity is estimated from successive observations.",
+          "reason": [
+            "Robot-forward yaw includes the identified marker-axis offset.",
+            "Velocity is not wheel-encoder feedback."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Signal",
+              "Origin"
+            ],
+            "rows": [
+              [
+                "Position",
+                "Camera + calibration"
+              ],
+              [
+                "Heading",
+                "Marker yaw + offset"
+              ],
+              [
+                "Velocity",
+                "Filtered observation difference"
+              ],
+              [
+                "Agent positions",
+                "Current marker snapshots"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "ADAPT",
+            "REAL",
+            "P"
+          ],
+          "locator": "Draft §3.2; phase5bis_adapter.py",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The real update stays anchored to current measurements.",
+          "id": "d1"
+        },
+        {
+          "label": "Look-ahead",
+          "question": "Is the reference purely time-based?",
+          "answer": "The simulation helper queries current time plus look-ahead; the physical controller uses monotonic path progress with time/space look-ahead.",
+          "reason": [
+            "These implementations share the intent but not an identical reference rule.",
+            "The planned path is known offline."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Simulation",
+              "Physical runner"
+            ],
+            "rows": [
+              [
+                "t + lookahead_steps × Δt",
+                "Measured progress projection"
+              ],
+              [
+                "Interpolated stored path",
+                "Monotonic progress + look-ahead"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "CTRL",
+            "REAL"
+          ],
+          "locator": "_controller_reference; _monotonic_path_reference",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The real update stays anchored to current measurements.",
+          "id": "d2"
+        },
+        {
+          "label": "Observation timing",
+          "question": "Are observations instantaneous?",
+          "answer": "No. Frame reception, processing and command transmission introduce age and delay.",
+          "reason": [
+            "A near-20 Hz loop does not imply 50 ms sensor-to-action latency.",
+            "Freshness and timing must be logged separately."
+          ],
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              "Exposure / transport",
+              "Frame received + processing",
+              "Command sent"
+            ],
+            "caption": "Timing concept; not all stages instrumented"
+          },
+          "sources": [
+            "P",
+            "A"
+          ],
+          "locator": "Draft §4.2 and §5.3",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The real update stays anchored to current measurements.",
+          "id": "d3"
+        },
+        {
+          "label": "Filtering / memory",
+          "question": "What happens to noisy or briefly missing observations?",
+          "answer": "The adapter filters observed velocity and can retain mobile snapshots for a bounded interval, with freshness recorded.",
+          "reason": [
+            "Retention is not a true future trajectory prediction.",
+            "Stop behavior depends on the active run configuration."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Mechanism",
+              "Purpose"
+            ],
+            "rows": [
+              [
+                "Velocity filtering",
+                "Reduce noisy differences"
+              ],
+              [
+                "Snapshot age",
+                "Track freshness"
+              ],
+              [
+                "Bounded memory",
+                "Bridge short losses"
+              ],
+              [
+                "Stop flags",
+                "Configured response to loss"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "ADAPT"
+          ],
+          "locator": "Phase610ControlConfig; ObservedMobileObstacle",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The real update stays anchored to current measurements.",
+          "id": "d4"
+        }
+      ],
+      "hook": "",
+      "silence": 0,
+      "video": null,
+      "sources": [
+        "ADAPT",
+        "REAL",
+        "P",
+        "CTRL",
+        "A"
+      ]
+    },
+    {
+      "id": "s14",
+      "title": "How the correction is built",
+      "section": "Singapore",
+      "duration": 55,
+      "message": "Attraction, three repulsions and damping combine before acceleration clipping.",
+      "layout": "forces",
+      "visual": {
+        "type": "forces"
+      },
+      "points": [
+        "**Attract** toward the nominal reference",
+        "**Repel** agents, obstacles and walls",
+        "**Damp** motion, then clip acceleration"
+      ],
+      "script": "The correction has five contributions. Attraction pulls toward the look-ahead reference. Moving-agent repulsion reacts to the currently observed disturbance. Fixed-obstacle and boundary terms add local protection around the planned route. Damping opposes the estimated velocity. I sum these terms, divide by the model mass, and clip the acceleration. The repulsion uses edge-to-edge clearance, with a small numerical floor, and falls to zero at its influence limit. This is a soft force model. Strong repulsion can dominate attraction or keep the response saturated, so the force plot is useful for understanding poor progress. It is not a formal collision-avoidance proof.",
+      "transition": "I'll show the order of operations for one update.",
+      "details": [
+        {
+          "label": "Attraction",
+          "question": "What pulls the robot back toward the route?",
+          "answer": "A proportional force points from the measured position to the nominal look-ahead reference.",
+          "reason": [
+            "A larger gain increases the request, not necessarily physical speed.",
+            "Clipping and wheel conversion follow."
+          ],
+          "visual": {
+            "type": "equation",
+            "text": "F_att = k_a (x_ref − x)\nk_a = 5.0 in the reported physical profile",
+            "caption": "Draft Eq. (19); campaign profile"
+          },
+          "sources": [
+            "ADAPT",
+            "REAL",
+            "A",
+            "P"
+          ],
+          "locator": "Draft Table 6; A causal_solver_profile",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "I combine those forces before limiting the acceleration.",
+          "id": "d1"
+        },
+        {
+          "label": "Agent repulsion",
+          "question": "What is the mobile-repulsion law?",
+          "answer": "It points away from the agent and increases as the modeled clearance decreases.",
+          "reason": [
+            "The physical adapter applies the 0.60 m cutoff.",
+            "The epsilon floor avoids division by zero; it is not a safety margin."
+          ],
+          "visual": {
+            "type": "equation",
+            "text": "F_rep = g max(0, 1/d_ε² − 1/H²) n̂\nd_ε = max(d, ε),  H = 0.60 m\nF_rep = 0 for d ≥ H",
+            "caption": "Physical adapter kernel / draft Eq. (20)"
+          },
+          "sources": [
+            "ADAPT",
+            "P"
+          ],
+          "locator": "_repulsion_force; draft Table 6",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "I combine those forces before limiting the acceleration.",
+          "id": "d2"
+        },
+        {
+          "label": "Static / wall forces",
+          "question": "Why keep static repulsion after planning?",
+          "answer": "The real robot may depart from the nominal, so local static and wall terms remain active during execution.",
+          "reason": [
+            "Fixed obstacles use their own influence range.",
+            "The boundary term uses signed distance to an effective wall."
+          ],
+          "visual": {
+            "type": "equation",
+            "text": "F_total = F_att + F_mobile + F_static\n                + F_wall − c_d v\nH_static = 0.07 m; H_wall = 0.20 m",
+            "caption": "Reported campaign; edge-to-edge / effective-wall distances"
+          },
+          "sources": [
+            "ADAPT",
+            "P"
+          ],
+          "locator": "Draft §3.4.1, Tables 1/6",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "I combine those forces before limiting the acceleration.",
+          "id": "d3"
+        },
+        {
+          "label": "Damping",
+          "question": "What does damping do?",
+          "answer": "It adds −c_d v, opposing the estimated current velocity and moderating motion.",
+          "reason": [
+            "Too much damping can reduce progress.",
+            "It is distinct from wheel-command smoothing."
+          ],
+          "visual": {
+            "type": "image",
+            "file": "assets/images/forces.png",
+            "caption": "Measured force decomposition · original research figure",
+            "crop": "contain"
+          },
+          "sources": [
+            "ADAPT",
+            "REAL",
+            "FIG",
+            "P"
+          ],
+          "locator": "Draft Fig. 7; damping=1.4 in archived physical profile",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "I combine those forces before limiting the acceleration.",
+          "id": "d4"
+        }
+      ],
+      "hook": "",
+      "silence": 0,
+      "video": null,
+      "sources": [
+        "ADAPT",
+        "REAL",
+        "A",
+        "P",
+        "FIG"
+      ]
+    },
+    {
+      "id": "s15",
+      "title": "One control step",
+      "section": "Singapore",
+      "duration": 55,
+      "message": "The physical experiment uses semi-implicit Euler, followed by real wheel-command conversion.",
+      "layout": "algorithm",
+      "visual": {
+        "type": "integration"
+      },
+      "points": [
+        "**Observe → force → a = F/m**",
+        "**Clip acceleration, then velocity**",
+        "**Update with the new velocity**"
+      ],
+      "script": "The experimental corrector uses semi-implicit Euler. I compute the force from the current observation, divide by the model mass, and limit the acceleration norm. Then I update and limit the velocity. The position update uses that new velocity, which is the semi-implicit part. On hardware, that position is a one-step intention; I don't replace the next camera measurement with it. The physical controller reconciles its internal velocity with observed motion, then converts the request into heading and wheel commands. Velocity-Verlet and stiff repulsion are comparison variants in the study. I don't present them as three controllers deployed on the bench.",
+      "transition": "The next distinction is what information this update is allowed to use.",
+      "details": [
+        {
+          "label": "Step by step",
+          "question": "Can you walk through one update?",
+          "answer": "Yes: observe, choose the nominal reference, sum forces, divide by mass, clip, integrate, convert and transmit.",
+          "reason": [
+            "Measured state anchors every physical update.",
+            "Command saturation is another stage after state clipping."
+          ],
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              "Observed state + reference",
+              "Forces → a → v_next",
+              "Heading → wheels → serial"
+            ],
+            "caption": "Explanatory diagram"
+          },
+          "sources": [
+            "ADAPT",
+            "REAL",
+            "SER"
+          ],
+          "locator": "NewtonEulerRealController.update",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "That is one update; the next one returns to the camera.",
+          "id": "d1"
+        },
+        {
+          "label": "Integration scheme",
+          "question": "Why call it semi-implicit Euler?",
+          "answer": "The velocity is updated before the position, and the position uses the updated velocity.",
+          "reason": [
+            "One force evaluation is needed.",
+            "The physical runner uses measured position at each update."
+          ],
+          "visual": {
+            "type": "equation",
+            "text": "aₖ = clip_a(Fₖ / m)\nvₖ₊₁ = clip_v(vₖ + Δt aₖ)\nx_intention = x_measured + Δt vₖ₊₁",
+            "caption": "Experimental update / draft Eq. (21)–(22)"
+          },
+          "sources": [
+            "REAL",
+            "CTRL",
+            "P"
+          ],
+          "locator": "Draft §3.4.2; newton_euler_real.py lines 188–206",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "That is one update; the next one returns to the camera.",
+          "id": "d2"
+        },
+        {
+          "label": "Saturation",
+          "question": "Is each component independently clipped?",
+          "answer": "The state limiter clips vector norm; it preserves direction when reducing a vector to the maximum norm.",
+          "reason": [
+            "Wheel commands later use pair rescaling and effective floors.",
+            "Internal limits do not prove a global physical speed guarantee."
+          ],
+          "visual": {
+            "type": "equation",
+            "text": "clip_c(u) = u,                 ‖u‖ ≤ c\nclip_c(u) = c u/‖u‖,     ‖u‖ > c",
+            "caption": "Norm clipping, not per-axis clipping"
+          },
+          "sources": [
+            "REAL",
+            "CTRL"
+          ],
+          "locator": "_clip_norm; _scale_to_limit",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "That is one update; the next one returns to the camera.",
+          "id": "d3"
+        },
+        {
+          "label": "Code excerpt",
+          "question": "Which lines implement the numerical update?",
+          "answer": "These lines update velocity first, clip its norm, and form the one-step position from the measured position.",
+          "reason": [
+            "The acceleration was already norm-clipped.",
+            "The next iteration returns to the camera measurement."
+          ],
+          "visual": {
+            "type": "code",
+            "text": "next_velocity = _clip_norm(\n    self._newton_velocity_m_s + acceleration * dt,\n    self.config.max_speed_m_s,\n)\nself._newton_velocity_m_s = next_velocity.copy()\nnext_position = position + next_velocity * dt",
+            "caption": "Exact excerpt · newton_euler_real.py"
+          },
+          "sources": [
+            "REAL"
+          ],
+          "locator": "lines 202–207",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "That is one update; the next one returns to the camera.",
+          "id": "d4"
+        }
+      ],
+      "hook": "The order matters: acceleration is limited before the velocity update.",
+      "silence": 0,
+      "video": null,
+      "sources": [
+        "ADAPT",
+        "REAL",
+        "SER",
+        "CTRL",
+        "P"
+      ]
+    },
+    {
+      "id": "s16",
+      "title": "Causal does not mean blind",
+      "section": "Singapore",
+      "duration": 35,
+      "message": "Looking ahead on my stored plan is different from knowing an agent’s true future.",
+      "layout": "causality",
+      "visual": {
+        "type": "causality"
+      },
+      "points": [
+        "**Known:** my stored reference path",
+        "**Observed:** current agent positions",
+        "**Unavailable:** true future agent motion"
+      ],
+      "script": "Causal means the controller doesn't read an agent's true future position. Looking ahead on its own stored path is allowed: that plan is already known. The physical interface receives current obstacle snapshots. Prediction from past observations could also be causal, but it is different from reading a scenario's future. I keep that information boundary explicit.",
+      "transition": "Even with that information boundary, a local controller can still fail.",
+      "details": [
+        {
+          "label": "Interfaces",
+          "question": "How does the interface enforce the boundary?",
+          "answer": "The offline builder excludes agents, and the physical corrector accepts ObservedMobileObstacle snapshots.",
+          "reason": [
+            "The snapshot has center, radius, age and freshness.",
+            "It has no future-trajectory method."
+          ],
+          "visual": {
+            "type": "code",
+            "text": "class ObservedMobileObstacle:\n    marker_id: int | None\n    center_x_m: float\n    center_y_m: float\n    radius_m: float\n    age_s: float = 0.0\n    fresh: bool = True",
+            "caption": "Shortened field excerpt · physical snapshot API"
+          },
+          "sources": [
+            "ADAPT",
+            "CTRL"
+          ],
+          "locator": "ObservedMobileObstacle; build_static_nominal_world",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The reference is known, while an agent's true future is not.",
+          "id": "d1"
+        },
+        {
+          "label": "Reference look-ahead",
+          "question": "Why is reference look-ahead allowed?",
+          "answer": "The nominal is already known. Querying it at a later reference time does not reveal later world observations.",
+          "reason": [
+            "The physical path-progress rule is also based on current robot position.",
+            "Known reference and unknown disturbance are different signals."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Allowed",
+              "Unavailable"
+            ],
+            "rows": [
+              [
+                "Stored nominal point ahead",
+                "True agent position at t+Δt"
+              ],
+              [
+                "Current measured agent center",
+                "Pre-recorded future motion in control"
+              ],
+              [
+                "Past observations",
+                "Ground-truth future disturbance"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "CTRL",
+            "REAL",
+            "P"
+          ],
+          "locator": "Draft §3.4.3",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The reference is known, while an agent's true future is not.",
+          "id": "d2"
+        },
+        {
+          "label": "Future queries",
+          "question": "Do simulations store agent trajectories?",
+          "answer": "The scenario generator can know trajectories for simulation and evaluation, but the controller must consume only the current state.",
+          "reason": [
+            "Do not pass recorded future paths to the live corrector.",
+            "Replay data can be used after the run for analysis."
+          ],
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              "Scenario / replay truth",
+              "Current snapshot boundary",
+              "Controller sees present only"
+            ],
+            "caption": "Explanatory diagram"
+          },
+          "sources": [
+            "CTRL",
+            "ADAPT",
+            "P"
+          ],
+          "locator": "Draft §2.3 and §3.4.3",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The reference is known, while an agent's true future is not.",
+          "id": "d3"
+        },
+        {
+          "label": "Testing separation",
+          "question": "How would you test the information boundary?",
+          "answer": "Hold current observations fixed while changing the hidden future. The current command should remain unchanged.",
+          "reason": [
+            "Inspect the static-world builder separately.",
+            "Treat this as an interface test, not a safety proof."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Test input",
+              "Expected result"
+            ],
+            "rows": [
+              [
+                "Same present, different future",
+                "Same current command"
+              ],
+              [
+                "Agents in original scene",
+                "Absent from nominal world"
+              ],
+              [
+                "No snapshot future API",
+                "No future query possible"
+              ]
+            ],
+            "caption": "Conceptual verification test"
+          },
+          "sources": [
+            "CTRL",
+            "ADAPT"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Verification reasoning",
+          "return_line": "The reference is known, while an agent's true future is not.",
+          "id": "d4"
+        }
+      ],
+      "hook": "Looking ahead on my own path is different from knowing where another agent will go.",
+      "silence": 0,
+      "video": null,
+      "sources": [
+        "ADAPT",
+        "CTRL",
+        "REAL",
+        "P"
+      ]
+    },
+    {
+      "id": "s17",
+      "title": "A safe run could still stall",
+      "section": "Singapore",
+      "duration": 40,
+      "message": "An early physical adapter timed out with weak translation; later work addressed the force-to-motion chain.",
+      "layout": "incident",
+      "visual": {
+        "type": "incident"
+      },
+      "points": [
+        "**Observed:** correction active, little translation",
+        "**Diagnosed:** inspect force → motion conversion",
+        "**Improved:** explicit dynamics and wheel mapping"
+      ],
+      "script": "An early physical trial had active repulsion and no collision, but translation stayed weak and the run timed out. A nonzero force wasn't enough. I inspected how that force became motion and wheel commands. The later chain used force over mass, velocity integration, a progress-based reference and a characterized drivetrain. Several settings evolved, so I don't attribute later success to one isolated fix.",
+      "transition": "To explain that integration work, let me show the physical testbed.",
+      "details": [
+        {
+          "label": "Failure evidence",
+          "question": "Was stalling an observed problem?",
+          "answer": "Yes. The July 14 report records active correction with weak translation and a controlled timeout, without collision.",
+          "reason": [
+            "This was an early adapter stage.",
+            "It is separate from the later 40-run BIS campaign."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Early trial",
+              "Recorded outcome"
+            ],
+            "rows": [
+              [
+                "Correction",
+                "Active"
+              ],
+              [
+                "Translation",
+                "Weak"
+              ],
+              [
+                "Termination",
+                "Controlled timeout"
+              ],
+              [
+                "Contact",
+                "None reported"
+              ]
+            ],
+            "caption": "Historical trial evidence, July 14"
+          },
+          "sources": [
+            "EARLY"
+          ],
+          "locator": "Report active-correction trial, lines 456–488",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The observed problem was weak progress despite an active correction.",
+          "id": "d1"
+        },
+        {
+          "label": "Force vs motion",
+          "question": "Why can strong forces still give poor progress?",
+          "answer": "Forces can oppose each other, remain clipped, or map poorly through heading and drivetrain constraints.",
+          "reason": [
+            "Inspect attraction, repulsion, damping and saturation together.",
+            "Then inspect whether the wheel pair can realize the requested direction."
+          ],
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              "Force balance",
+              "State clipping",
+              "Heading / wheel limits"
+            ],
+            "caption": "Diagnostic explanation; not an isolated causal measurement"
+          },
+          "sources": [
+            "EARLY",
+            "REAL",
+            "ADAPT"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Diagnostic reasoning",
+          "return_line": "The observed problem was weak progress despite an active correction.",
+          "id": "d2"
+        },
+        {
+          "label": "Safety stop",
+          "question": "Did every safety option run during the final trials?",
+          "answer": "No. Stop options are configurable; a supported option must not be presented as always enabled.",
+          "reason": [
+            "The paper records a marker-loss safety stop in exploration.",
+            "The early proximity-stop test is not the final campaign protocol."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Evidence",
+              "Scope"
+            ],
+            "rows": [
+              [
+                "Early proximity stop",
+                "Dedicated early test"
+              ],
+              [
+                "Marker-loss stop",
+                "Exploratory event"
+              ],
+              [
+                "Campaign success",
+                "Separate frozen tasks"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "EARLY",
+            "ADAPT",
+            "P"
+          ],
+          "locator": "Draft §4.3.1; Phase610ControlConfig",
+          "uncertainty": "Audit active flags per exact run before attributing a particular stop mechanism.",
+          "kind": "Project evidence",
+          "return_line": "The observed problem was weak progress despite an active correction.",
+          "id": "d3"
+        },
+        {
+          "label": "MPC extension",
+          "question": "Could MPC help?",
+          "answer": "Possibly. It would optimize a sequence over a receding horizon using a robot model, then apply the first action and repeat.",
+          "reason": [
+            "It could express motion constraints explicitly.",
+            "Model error, obstacle prediction and runtime still need validation."
+          ],
+          "visual": {
+            "type": "equation",
+            "text": "min Σ ℓ(xₖ, uₖ) + ℓ_f(x_H)\nsubject to xₖ₊₁ = f(xₖ, uₖ), limits\nApply u₀ → observe again → solve again",
+            "caption": "Possible extension · not implemented in this project"
+          },
+          "sources": [
+            "MPC",
+            "P"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Conceptual extension",
+          "return_line": "The observed problem was weak progress despite an active correction.",
+          "id": "d4"
+        }
+      ],
+      "hook": "",
+      "silence": 0,
+      "video": null,
+      "sources": [
+        "EARLY",
+        "REAL",
+        "ADAPT",
+        "P",
+        "MPC"
+      ]
+    },
+    {
+      "id": "s18",
+      "title": "Building the physical testbed",
+      "section": "Singapore",
+      "duration": 30,
+      "message": "I integrated external vision, onboard computation and serial actuation into one measured loop.",
+      "layout": "hardware",
+      "visual": {
+        "type": "hardware"
+      },
+      "points": [
+        "**Basler** overhead camera",
+        "**Raspberry Pi 5** on the rover",
+        "**Serial** link to the motor board"
+      ],
+      "script": "The overhead Basler camera observes the marked arena. Its stream reaches the rover's Raspberry Pi through an access point and Wi-Fi. The Pi runs vision and control, then sends wheel commands over onboard serial. This made the full chain visible and measurable.",
+      "transition": "The next challenge was converting a planar request into real wheel motion.",
+      "details": [
+        {
+          "label": "Hardware choices",
+          "question": "Why this testbed?",
+          "answer": "It made repeated low-speed navigation experiments and external measurement possible with the available rover platforms.",
+          "reason": [
+            "Marked geometry gives an accessible reference.",
+            "The testbed trades deployment realism for observability."
+          ],
+          "visual": {
+            "type": "image",
+            "file": "assets/images/system.jpg",
+            "caption": "Original integrated system photograph",
+            "crop": "contain"
+          },
+          "sources": [
+            "P",
+            "CTX"
+          ],
+          "locator": "Draft §3.1",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The whole chain is sensing, onboard computation, and serial actuation.",
+          "id": "d1"
+        },
+        {
+          "label": "Overhead vision",
+          "question": "Why use an overhead camera?",
+          "answer": "It provided a common metric frame for the controlled robot, agents and obstacles in this indoor experiment.",
+          "reason": [
+            "It supports repeatable observation.",
+            "It requires visibility and calibration, and is not onboard perception."
+          ],
+          "visual": {
+            "type": "image",
+            "file": "assets/images/camera.jpg",
+            "caption": "Original overhead-camera setup",
+            "crop": "contain"
+          },
+          "sources": [
+            "P",
+            "CAL"
+          ],
+          "locator": "Draft §3.1.3 and §3.2",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The whole chain is sensing, onboard computation, and serial actuation.",
+          "id": "d2"
+        },
+        {
+          "label": "Why not LiDAR?",
+          "question": "Why did you not use LiDAR?",
+          "answer": "The chosen experiment needed shared external pose measurement. A LiDAR-based onboard system would be a different sensing and localization project.",
+          "reason": [
+            "I did not run a camera-versus-LiDAR benchmark.",
+            "I would choose sensors from the deployment task and observability needs."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "This bench",
+              "Possible onboard setup"
+            ],
+            "rows": [
+              [
+                "External metric frame",
+                "Robot-relative sensing"
+              ],
+              [
+                "Marked agents",
+                "Detection / tracking needed"
+              ],
+              [
+                "Controlled indoor tasks",
+                "Additional localization work"
+              ]
+            ],
+            "caption": "Engineering comparison, not a tested sensor ranking"
+          },
+          "sources": [
+            "P",
+            "CTX"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Design rationale",
+          "return_line": "The whole chain is sensing, onboard computation, and serial actuation.",
+          "id": "d3"
+        },
+        {
+          "label": "Communication",
+          "question": "What is the actual communication chain?",
+          "answer": "The run summaries record Basler GigE → access point → Wi-Fi → Raspberry Pi; wheel commands leave over onboard serial.",
+          "reason": [
+            "Image transport and agent command links are separate.",
+            "Communication delay belongs in the measured loop budget."
+          ],
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              "Camera → AP → Wi-Fi",
+              "Pi: OpenCV + controller",
+              "Serial → supplier board"
+            ],
+            "caption": "Recorded topology"
+          },
+          "sources": [
+            "A",
+            "SER",
+            "P"
+          ],
+          "locator": "A camera_transport.topology; draft §3.1.3",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The whole chain is sensing, onboard computation, and serial actuation.",
+          "id": "d4"
+        }
+      ],
+      "hook": "",
+      "silence": 2,
+      "video": null,
+      "sources": [
+        "P",
+        "CTX",
+        "CAL",
+        "A",
+        "SER"
+      ]
+    },
+    {
+      "id": "s19",
+      "title": "From a planar command to wheel motion",
+      "section": "Singapore",
+      "duration": 45,
+      "message": "I implemented heading and wheel conversion above the supplier’s motor execution.",
+      "layout": "wheel",
+      "visual": {
+        "type": "wheel"
+      },
+      "points": [
+        "**Desired velocity → heading error**",
+        "**Translation + rotation → left / right**",
+        "**Supplier firmware** executes motor inputs"
+      ],
+      "script": "A planar velocity isn't a wheel command. I turn its direction into a desired heading and compare it with the measured forward direction. The controller chooses driving or pivoting, then combines translation and rotation into left and right commands. It rescales, limits and smooths the pair. Reverse is available with switching thresholds. I implemented this high-level conversion; supplier firmware executes the motor inputs. With no wheel encoders, feedback came from the camera.",
+      "transition": "That made position accuracy a central part of the control problem.",
+      "details": [
+        {
+          "label": "Heading conversion",
+          "question": "How do you get heading from velocity?",
+          "answer": "The desired heading is atan2(v_y,v_x); the error is wrapped relative to measured robot-forward yaw.",
+          "reason": [
+            "The marker-to-forward axis offset is calibrated.",
+            "Yaw-rate feed-forward and heading feedback form the turn request."
+          ],
+          "visual": {
+            "type": "equation",
+            "text": "φ = atan2(v_y, v_x)\ne_ψ = wrap(φ − ψ_robot)\nω_req = sat(κ_ff φ̇; k_ω) + 2 k_θ k_ω e_ψ",
+            "caption": "Physical conversion / draft Eq. (25)–(26)"
+          },
+          "sources": [
+            "REAL",
+            "P"
+          ],
+          "locator": "newton_euler_real.py; draft §3.5",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "My high-level conversion sits above the supplier's motor execution.",
+          "id": "d1"
+        },
+        {
+          "label": "Wheel mapping",
+          "question": "How are wheel commands formed?",
+          "answer": "The nominal pair is linear minus angular on the left, and linear plus angular on the right, followed by joint rescaling, floors and smoothing.",
+          "reason": [
+            "Rescaling preserves the pair ratio before later floors.",
+            "Command units are normalized driver inputs, not measured wheel velocities."
+          ],
+          "visual": {
+            "type": "equation",
+            "text": "u_L = u_v − u_ω\nu_R = u_v + u_ω\nThen: joint limit → effective floor → smoothing",
+            "caption": "Draft Eq. (28), physical implementation"
+          },
+          "sources": [
+            "REAL",
+            "SER",
+            "P"
+          ],
+          "locator": "_wheel_command; _scale_to_limit; _smooth",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "My high-level conversion sits above the supplier's motor execution.",
+          "id": "d2"
+        },
+        {
+          "label": "Reverse motion",
+          "question": "What does reverse change?",
+          "answer": "When the heading error crosses an entry threshold, the controller reverses the drive sign and reflects the desired heading by π.",
+          "reason": [
+            "It exits at a separate threshold and clears smoothing history.",
+            "Both final blocks use about 92° thresholds; no disabled-reverse ablation isolates its benefit."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Physical profile",
+              "Value"
+            ],
+            "rows": [
+              [
+                "Reverse entry",
+                "1.6058 rad"
+              ],
+              [
+                "Reverse exit",
+                "1.6052 rad"
+              ],
+              [
+                "A/B BIS",
+                "Same thresholds"
+              ],
+              [
+                "Isolated benefit",
+                "Not measured"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "REAL",
+            "A",
+            "B",
+            "P"
+          ],
+          "locator": "Draft §3.5.2; run summaries",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "My high-level conversion sits above the supplier's motor execution.",
+          "id": "d3"
+        },
+        {
+          "label": "Provided firmware",
+          "question": "Was the low-level control a black box?",
+          "answer": "The supplier source is available. It contains multiple motor paths; the no-encoder rover uses external camera feedback rather than wheel-level feedback in this experiment.",
+          "reason": [
+            "setGoalSpeed has a PID branch for mainType==3 and an open-loop branch otherwise.",
+            "I did not write or retune that supplier firmware; the flashed build digest is missing."
+          ],
+          "visual": {
+            "type": "code",
+            "text": "if (mainType == 3) {\n  usePIDCompute = true;\n  ...\n} else {\n  usePIDCompute = false;\n  leftCtrl(inputLeft * 512 * spd_rate_A);\n  rightCtrl(inputRight * 512 * spd_rate_B);\n}",
+            "caption": "Shortened supplier excerpt · setGoalSpeed"
+          },
+          "sources": [
+            "FW",
+            "SER",
+            "P"
+          ],
+          "locator": "movtion_module.h lines 292–322",
+          "uncertainty": "Exact flashed firmware build/configuration not recovered; avoid claiming a fully audited deployed binary.",
+          "kind": "Project evidence",
+          "return_line": "My high-level conversion sits above the supplier's motor execution.",
+          "id": "d4"
+        }
+      ],
+      "hook": "",
+      "silence": 0,
+      "video": null,
+      "sources": [
+        "REAL",
+        "P",
+        "SER",
+        "A",
+        "B",
+        "FW"
+      ]
+    },
+    {
+      "id": "s20",
+      "title": "Diagnosing position error",
+      "section": "Singapore",
+      "duration": 50,
+      "message": "Lens distortion and raised-marker parallax produced two different measured errors.",
+      "layout": "calibration",
+      "visual": {
+        "type": "calibration"
+      },
+      "points": [
+        "**Ground:** 36.3 → 5.8 mm · ~84%",
+        "**Raised marker:** 60.8 → 11.6 mm · ~81%",
+        "**Different causes. Different protocols.**"
+      ],
+      "script": "I found two position-error problems. First, lens distortion remained after homography. I calibrated the intrinsics and recomputed the mapping. Across nine ground positions, mean error fell from 36.3 to 5.8 millimeters. Second, the raised rover marker caused parallax because it was above the ground plane. After height correction, mean error fell from 60.8 to 11.6 millimeters across five rover positions. These are separate measurements. The residual error still matters when interpreting small clearances.",
+      "transition": "Position accuracy was one part of the problem. I also had to keep the loop fast enough.",
+      "details": [
+        {
+          "label": "Intrinsics",
+          "question": "What did intrinsic calibration change?",
+          "answer": "It estimated camera parameters and lens distortion from twenty valid calibration-board views before metric mapping.",
+          "reason": [
+            "The reported reprojection RMS is 0.191 pixels.",
+            "That pixel residual is not the metric rover-position error."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Metric",
+              "Protocol"
+            ],
+            "rows": [
+              [
+                "0.191 px RMS",
+                "20 calibration views"
+              ],
+              [
+                "5.8 mm mean",
+                "9 ground positions"
+              ],
+              [
+                "11.6 mm mean",
+                "5 raised-marker positions"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "CAL",
+            "P"
+          ],
+          "locator": "Draft §3.2.2; Table 2",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The ground error and raised-marker error remain separate measurements.",
+          "id": "d1"
+        },
+        {
+          "label": "Homography",
+          "question": "Why recompute the homography?",
+          "answer": "The homography must map the distortion-corrected image coordinates to the ground plane.",
+          "reason": [
+            "Four ground markers establish the metric reference.",
+            "A plane mapping cannot by itself remove height parallax."
+          ],
+          "visual": {
+            "type": "equation",
+            "text": "x̃_metric = H x̃_undistorted\nx_metric = [x̃₁/x̃₃, x̃₂/x̃₃]ᵀ",
+            "caption": "Planar mapping / draft Eq. (5)"
+          },
+          "sources": [
+            "CAL",
+            "P"
+          ],
+          "locator": "Draft §3.2.3",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The ground error and raised-marker error remain separate measurements.",
+          "id": "d2"
+        },
+        {
+          "label": "Parallax geometry",
+          "question": "How did marker height cause error?",
+          "answer": "A raised marker projects along a camera ray to the wrong point on the ground mapping. I applied radial height correction about the principal point.",
+          "reason": [
+            "The draft assumes an approximately normal optical axis.",
+            "The controlled marker height is 0.1585 m; camera height is 2.07 m."
+          ],
+          "visual": {
+            "type": "parallax",
+            "text": "k_π = 1 − h_marker / h_camera\n= 1 − 0.1585/2.07 ≈ 0.9234",
+            "caption": "Pinhole geometry / draft Eq. (6)"
+          },
+          "sources": [
+            "CAL",
+            "P"
+          ],
+          "locator": "Draft §3.2.4",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The ground error and raised-marker error remain separate measurements.",
+          "id": "d3"
+        },
+        {
+          "label": "Measurement protocol",
+          "question": "Are the two percentage reductions comparable?",
+          "answer": "They are separate within-protocol improvements, not two estimates of the same final accuracy.",
+          "reason": [
+            "Ground: nine known positions, intrinsics plus recomputed homography.",
+            "Raised: five positions, before and after parallax correction."
+          ],
+          "visual": {
+            "type": "image",
+            "file": "assets/images/calibration-errors.png",
+            "caption": "Original ground / raised-marker error maps",
+            "crop": "contain"
+          },
+          "sources": [
+            "CAL",
+            "P",
+            "FIG"
+          ],
+          "locator": "Draft Table 2 and Fig. 4",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The ground error and raised-marker error remain separate measurements.",
+          "id": "d4"
+        }
+      ],
+      "hook": "Calibration and marker height caused two different errors.",
+      "silence": 3,
+      "video": null,
+      "sources": [
+        "CAL",
+        "P",
+        "FIG"
+      ]
+    },
+    {
+      "id": "s21",
+      "title": "Finding the real-time bottleneck",
+      "section": "Singapore",
+      "duration": 45,
+      "message": "Vision dominated the measured loop budget; the correction itself was small.",
+      "layout": "timing",
+      "visual": {
+        "type": "timing"
+      },
+      "points": [
+        "**Vision:** 32.94 ms · detection 29.07 ms",
+        "**Serial:** 8.43 ms",
+        "**Corrector:** 0.72 ms"
+      ],
+      "script": "I profiled the whole loop. In the single-agent block, vision averaged about 33 milliseconds, including 29 for detection. Serial took about 8.4 milliseconds; correction took 0.72. Perception was the bottleneck. I tried downscaling before detection. The sessions showed faster processing, but scenarios and agent behavior also differed, so this wasn't an isolated causal test. And a near-20 Hz rate does not establish 50-millisecond sensor-to-action latency.",
+      "transition": "Once the full chain was running, I tested how repeatable the behavior was.",
+      "details": [
+        {
+          "label": "Timing breakdown",
+          "question": "Can those numbers be added together?",
+          "answer": "Only the top-level categories should be added. Marker detection is already inside vision.",
+          "reason": [
+            "Table 10 reports means across the A block.",
+            "The plotted Figure 14 reports medians and interquartile dispersion."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Stage",
+              "Mean ms"
+            ],
+            "rows": [
+              [
+                "Vision total",
+                "32.94"
+              ],
+              [
+                "Serial",
+                "8.43"
+              ],
+              [
+                "Frame wait",
+                "0.83"
+              ],
+              [
+                "Corrector",
+                "0.72"
+              ],
+              [
+                "Logging",
+                "0.20"
+              ],
+              [
+                "Remaining target margin",
+                "6.88"
+              ]
+            ],
+            "caption": "Table 10 means, 50 ms target"
+          },
+          "sources": [
+            "A",
+            "P",
+            "FIG"
+          ],
+          "locator": "Draft Table 10; recomputed timing_ms means",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "Perception dominates this measured loop budget.",
+          "id": "d1"
+        },
+        {
+          "label": "Detection resolution",
+          "question": "What did the resolution comparison show?",
+          "answer": "Full-resolution and downscaled sessions had different detection times; the comparison is descriptive because scenes and sessions also differed.",
+          "reason": [
+            "Acquisition stayed 1500×1200.",
+            "Detection was downscaled to 1000×800 in the reported campaign."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Quantity",
+              "Earlier",
+              "BIS"
+            ],
+            "rows": [
+              [
+                "Runs",
+                "12",
+                "20"
+              ],
+              [
+                "Detection image",
+                "1500×1200",
+                "1000×800"
+              ],
+              [
+                "Detection ms",
+                "72.81",
+                "29.07"
+              ],
+              [
+                "Vision total ms",
+                "74.54",
+                "32.94"
+              ]
+            ],
+            "caption": "Draft Table 11 · not a paired causal test"
+          },
+          "sources": [
+            "P",
+            "A"
+          ],
+          "locator": "Draft §4.2.3 and Table 11",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "Perception dominates this measured loop budget.",
+          "id": "d2"
+        },
+        {
+          "label": "Serial cost",
+          "question": "Why does serial transmission matter?",
+          "answer": "It takes about 8.43 ms in the measured iteration, close to 17% of the 50 ms target period.",
+          "reason": [
+            "That cost is larger than the corrector computation.",
+            "The JSON path and transport are part of integration."
+          ],
+          "visual": {
+            "type": "code",
+            "text": "{\"T\":1,\"L\":0.12,\"R\":0.14}\n\n# Illustrative payload values only\n# One newline terminates each command",
+            "caption": "Protocol example, not a recorded trial command"
+          },
+          "sources": [
+            "SER",
+            "A"
+          ],
+          "locator": "_build_wheel_command_line; timing_ms.serial",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "Perception dominates this measured loop budget.",
+          "id": "d3"
+        },
+        {
+          "label": "Age / latency",
+          "question": "Does 20 Hz mean 50 ms latency?",
+          "answer": "No. Frame age, processing time, transport, and command emission are different quantities.",
+          "reason": [
+            "The draft’s latency discussion gives a lower-bound estimate, not a full timestamped exposure-to-action measurement.",
+            "Latest-frame overwrites also differ from network packet loss."
+          ],
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              "Image age at receive",
+              "Vision + control + serial",
+              "Command reaches hardware"
+            ],
+            "caption": "Latency components, not equal to loop period"
+          },
+          "sources": [
+            "P",
+            "A"
+          ],
+          "locator": "Draft §5.3; max_frame_age_s; camera_overwritten_frame_count",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "Perception dominates this measured loop budget.",
+          "id": "d4"
+        }
+      ],
+      "hook": "The bottleneck was perception, rather than the correction itself.",
+      "silence": 3,
+      "video": null,
+      "sources": [
+        "A",
+        "P",
+        "FIG",
+        "SER"
+      ]
+    },
+    {
+      "id": "s22",
+      "title": "Testing repeatability on real robots",
+      "section": "Singapore",
+      "duration": 55,
+      "message": "Forty successful physical outcomes cover two frozen tasks, not forty different environments.",
+      "layout": "repeatability",
+      "visual": {
+        "type": "repeatability"
+      },
+      "points": [
+        "**40/40** goal arrivals · no observed contact",
+        "**1–2** independent moving agents",
+        "**6.3 cm** minimum agent clearance"
+      ],
+      "script": "Here is a short physical example. One rover is controlled, and the other robots provide independent disturbances.",
+      "transition": "Those results also show where the validation stops.",
+      "details": [
+        {
+          "label": "Test protocol",
+          "question": "What exactly does 40/40 cover?",
+          "answer": "Twenty runs of one frozen task and twenty of another, using the same physical coefficient set on one day.",
+          "reason": [
+            "Start, goal and scene are held within each task block.",
+            "This is one controlled rover, not forty independent environments or coordinated robots."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Block",
+              "Outcomes",
+              "Comparable repeats"
+            ],
+            "rows": [
+              [
+                "A BIS",
+                "20 successful",
+                "20"
+              ],
+              [
+                "B BIS",
+                "20 successful",
+                "19"
+              ],
+              [
+                "Total",
+                "40 successful",
+                "39"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "A",
+            "B",
+            "P"
+          ],
+          "locator": "Draft §4.3.2",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The result is forty successful outcomes in two frozen tasks.",
+          "id": "d1"
+        },
+        {
+          "label": "All trajectories",
+          "question": "Can we see repeated trajectories?",
+          "answer": "Yes. These original figures show measured trajectories and clearance histories from the campaign.",
+          "reason": [
+            "Overlays expose dispersion that a single video cannot.",
+            "The two-agent figure excludes run 1 from layout-comparable aggregates."
+          ],
+          "visual": {
+            "type": "image",
+            "file": "assets/images/repeatability-dual.png",
+            "caption": "Original two-agent campaign figure · 19 comparable trials",
+            "crop": "contain"
+          },
+          "sources": [
+            "B",
+            "FIG"
+          ],
+          "locator": "generate_f16_dual_agent_avoidance.py; draft Fig. 16",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The result is forty successful outcomes in two frozen tasks.",
+          "id": "d2"
+        },
+        {
+          "label": "Clearances",
+          "question": "How was 6.3 cm computed?",
+          "answer": "It is the lowest logged moving-agent edge-to-edge clearance over the physical run summaries.",
+          "reason": [
+            "Recomputed minimum: 0.0630853 m in the B BIS block.",
+            "The circular envelope and localization uncertainty limit interpretation."
+          ],
+          "visual": {
+            "type": "equation",
+            "text": "min over 40 runs, all sampled instants:\nmin_mobile_clearance = 0.0630853 m\n≈ 6.3 cm",
+            "caption": "Recomputed from archived run summaries"
+          },
+          "sources": [
+            "A",
+            "B",
+            "P"
+          ],
+          "locator": "min_mobile_clearance_m in A/B summaries",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The result is forty successful outcomes in two frozen tasks.",
+          "id": "d3"
+        },
+        {
+          "label": "Repeatability statistics",
+          "question": "Why do some tables use 39 trials?",
+          "answer": "One B BIS run retained the preceding obstacle layout. It succeeded, but does not belong in the same-layout repeatability aggregate.",
+          "reason": [
+            "Keep outcome counting and repeated-scene analysis separate.",
+            "The original figure generator explicitly excludes B run 1."
+          ],
+          "visual": {
+            "type": "code",
+            "text": "EXCLUDED_RUNS = (1,)\nprefix = \"test_B_bis_\"\n... create_campaign_figure(\n    prefix, required_agents=2, excluded=EXCLUDED_RUNS\n)",
+            "caption": "Shortened figure-generator excerpt"
+          },
+          "sources": [
+            "B",
+            "FIG",
+            "P"
+          ],
+          "locator": "generate_f16_dual_agent_avoidance.py lines 16–24",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The result is forty successful outcomes in two frozen tasks.",
+          "id": "d4"
+        }
+      ],
+      "hook": "I also looked at how the behavior changed between repeated runs.",
+      "silence": 10,
+      "video": {
+        "file": "assets/videos/avoidance.mp4",
+        "poster": "assets/images/multi-agent-poster.jpg",
+        "start": 0,
+        "end": 10,
+        "label": "Physical avoidance · 10 s"
+      },
+      "after_video": "Across two frozen task blocks, all forty runs reached the goal, with no observed contact or negative modeled clearance. Minimum agent clearance was 6.3 centimeters; median loop rates were close to 20 Hz. One run used a different obstacle layout. It remains in the forty outcomes, but not in comparable-layout aggregates. These measurements cover a limited testbed.",
+      "sources": [
+        "A",
+        "B",
+        "P",
+        "FIG"
+      ]
+    },
+    {
+      "id": "s23",
+      "title": "Results, limits, and what I learned",
+      "section": "Singapore",
+      "duration": 45,
+      "message": "The strongest evidence is the complete measured chain; the tested domain remains narrow.",
+      "layout": "results",
+      "visual": {
+        "type": "results"
+      },
+      "points": [
+        "**Measured:** localization and repeated arrivals",
+        "**Diagnosed:** planning, sensing and command limits",
+        "**Remaining:** broader tasks and physical models"
+      ],
+      "script": "This work taught me to test the whole chain. I improved localization, profiled timing, and measured repeated physical behavior. Simulation didn't directly describe the robot: heading constraints, actuation and delay changed the motion. Forty successful outcomes don't erase earlier stalls or marker-loss stops; they describe the selected tasks and settings. The transferable process is to inspect a failure, change a specific part, and measure again with a clear protocol.",
+      "transition": "My FANUC project gave me another view of robotics: starting from an industrial task.",
+      "details": [
+        {
+          "label": "Simulation study",
+          "question": "Can we compare simulation success with 40/40?",
+          "answer": "No. The twelve architecture combinations use a separate simulated scenario bank and tuning protocol.",
+          "reason": [
+            "Quarantine can change which scenarios contribute to scores.",
+            "Safety, goal arrival and joint success must stay separate."
+          ],
+          "visual": {
+            "type": "image",
+            "file": "assets/images/sim-outcomes.png",
+            "caption": "Original simulation outcome decomposition · separate study",
+            "crop": "contain"
+          },
+          "sources": [
+            "P",
+            "FIG"
+          ],
+          "locator": "Draft §3.6 and §4.1; Fig. 11",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The measurements are useful within that limited test domain.",
+          "id": "d1"
+        },
+        {
+          "label": "Sim-to-real gap",
+          "question": "What explains the difference between simulated and real paths?",
+          "answer": "Nonholonomic motion, imperfect command response, asymmetry, sensing delay and possible planning differences all contribute.",
+          "reason": [
+            "A geometric comparison ignores timing shift.",
+            "The available data do not isolate each cause."
+          ],
+          "visual": {
+            "type": "image",
+            "file": "assets/images/sim-real.png",
+            "caption": "Original geometric simulation / real comparison",
+            "crop": "contain"
+          },
+          "sources": [
+            "P",
+            "FIG",
+            "REAL"
+          ],
+          "locator": "Draft §4.4 and §5.3",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The measurements are useful within that limited test domain.",
+          "id": "d2"
+        },
+        {
+          "label": "Failure taxonomy",
+          "question": "Which failures are worth separating?",
+          "answer": "I separate goal misses, unsafe modeled clearance, perception stops and execution errors.",
+          "reason": [
+            "A safe stall is a task failure.",
+            "An envelope overlap does not by itself prove physical contact."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Category",
+              "Why distinct"
+            ],
+            "rows": [
+              [
+                "Safe but goal missed",
+                "Progress failed"
+              ],
+              [
+                "Negative envelope clearance",
+                "Modeled margin lost"
+              ],
+              [
+                "Marker-loss stop",
+                "Perception unavailable"
+              ],
+              [
+                "Execution error",
+                "System did not complete"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "P",
+            "EARLY"
+          ],
+          "locator": "Draft §3.7 and §4.3.1",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The measurements are useful within that limited test domain.",
+          "id": "d3"
+        },
+        {
+          "label": "Remaining limits",
+          "question": "What would you validate next?",
+          "answer": "More layouts, more varied disturbances, a better drivetrain model, and a paired perception benchmark.",
+          "reason": [
+            "Use held-out tasks and a clear stop/failure definition.",
+            "Measure observed physical limits and sensor-to-action delay directly."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Next test",
+              "Question"
+            ],
+            "rows": [
+              [
+                "Held-out layouts",
+                "Does success generalize?"
+              ],
+              [
+                "Paired image benchmark",
+                "Resolution effect?"
+              ],
+              [
+                "Improved motion model",
+                "What explains path error?"
+              ],
+              [
+                "Timestamped chain",
+                "Actual action latency?"
+              ]
+            ],
+            "caption": "Proposed next validation"
+          },
+          "sources": [
+            "P",
+            "REAL"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Proposed work",
+          "return_line": "The measurements are useful within that limited test domain.",
+          "id": "d4"
+        }
+      ],
+      "hook": "",
+      "silence": 0,
+      "video": null,
+      "sources": [
+        "P",
+        "FIG",
+        "REAL",
+        "EARLY"
+      ]
+    },
+    {
+      "id": "s24",
+      "title": "FANUC: start from the industrial task",
+      "section": "FANUC",
+      "duration": 35,
+      "message": "I turned an observed manual pouring operation into an automation concept.",
+      "layout": "fanuc-task",
+      "visual": {
+        "type": "fanuc-task"
+      },
+      "points": [
+        "**Observed:** manual crucible handling",
+        "**Task:** transport, position, pour",
+        "**Deliverable:** cell concept and simulation"
+      ],
+      "script": "After a foundry lab, I wanted to explore automating manual crucible handling and pouring. I broke the task into transport, positioning, pouring and return. Then I considered the robot, gripper, layout and sequence together. The result was an academic design and ROBOGUIDE simulation. Physical and industrial validation were still ahead.",
+      "transition": "The task requirements drove the robot and gripper choices.",
+      "details": [
+        {
+          "label": "Actual operation",
+          "question": "What did the real task involve?",
+          "answer": "The observed lab operation involved manually moving and pouring molten alloy from a crucible into a mold.",
+          "reason": [
+            "The cell concept addresses the transport and pouring sequence.",
+            "It was not installed in that workshop."
+          ],
+          "visual": {
+            "type": "image",
+            "file": "assets/images/foundry-task.png",
+            "caption": "Original foundry photograph from the report",
+            "crop": "contain"
+          },
+          "sources": [
+            "FAN"
+          ],
+          "locator": "Contexte de l’avant-projet",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The industrial task drove the cell concept.",
+          "id": "d1"
+        },
+        {
+          "label": "Automation assumptions",
+          "question": "Which assumptions shaped the concept?",
+          "answer": "Handling, reach, wrist load, grip opening, heat exposure and synchronization drove the study.",
+          "reason": [
+            "Numerical mass assumptions conflict in the report.",
+            "I keep those unresolved values out of performance claims."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Requirement",
+              "Engineering question"
+            ],
+            "rows": [
+              [
+                "Load",
+                "Tool + crucible + alloy?"
+              ],
+              [
+                "Geometry",
+                "Reach and clearance?"
+              ],
+              [
+                "Heat",
+                "Tool protection and exposure?"
+              ],
+              [
+                "Timing",
+                "Robot / conveyor synchronization?"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "FAN"
+          ],
+          "locator": "",
+          "uncertainty": "3 kg part versus 5 kg alloy and total-load inconsistencies are recorded privately.",
+          "kind": "Project evidence",
+          "return_line": "The industrial task drove the cell concept.",
+          "id": "d2"
+        },
+        {
+          "label": "My role",
+          "question": "What did you personally do?",
+          "answer": "I worked on the task concept, robot/tool choices and simulation. The financial analysis was done by another student.",
+          "reason": [
+            "The original report lists four authors.",
+            "My notes recall adapting a teacher-provided template."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Work",
+              "Attribution"
+            ],
+            "rows": [
+              [
+                "Task / cell / simulation",
+                "My design and simulation work"
+              ],
+              [
+                "Program starting point",
+                "Teacher template, per notes"
+              ],
+              [
+                "Financial analysis",
+                "Another student"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "FAN",
+            "IDEAS"
+          ],
+          "locator": "",
+          "uncertainty": "Exact personal task split and template diff not available.",
+          "kind": "Project evidence",
+          "return_line": "The industrial task drove the cell concept.",
+          "id": "d3"
+        },
+        {
+          "label": "Feasibility",
+          "question": "What does feasibility mean at this stage?",
+          "answer": "It means checking whether the chosen robot, tool and layout can support the intended sequence in simulation.",
+          "reason": [
+            "It is an early engineering filter.",
+            "It does not establish process quality or production reliability."
+          ],
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              "Task requirements",
+              "Robot + tool + layout",
+              "Simulated sequence"
+            ],
+            "caption": "Explanatory diagram"
+          },
+          "sources": [
+            "FAN"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The industrial task drove the cell concept.",
+          "id": "d4"
+        }
+      ],
+      "hook": "",
+      "silence": 4,
+      "video": null,
+      "sources": [
+        "FAN",
+        "IDEAS"
+      ]
+    },
+    {
+      "id": "s25",
+      "title": "Choosing the robot and gripper",
+      "section": "FANUC",
+      "duration": 40,
+      "message": "The tool and robot must be selected around the complete handled load and geometry.",
+      "layout": "fanuc-choice",
+      "visual": {
+        "type": "fanuc-choice"
+      },
+      "points": [
+        "**Robot:** FANUC M-20iD/25 selected",
+        "**Gripper:** opening, force and heat exposure",
+        "**Layout:** reachable approach and pouring poses"
+      ],
+      "script": "I selected the FANUC M-20iD/25 in the study, considering work envelope and wrist load. The load includes the tool, crucible and alloy. For the gripper, I considered opening, contact geometry, force and heat exposure. Before a final selection, I'd check wrist moments, thermal exposure and the loaded grip physically. The useful work here was linking the robot, tool and task geometry in one modeled cell.",
+      "transition": "I then checked that integration through the simulated sequence.",
+      "details": [
+        {
+          "label": "Payload / reach",
+          "question": "How would you justify the robot choice?",
+          "answer": "Use the full wrist load, center of mass, inertia and reachable task poses, then check the manufacturer’s load diagram.",
+          "reason": [
+            "The study selected M-20iD/25.",
+            "The report’s 25 kg catalog rating alone is not a complete application validation."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Check",
+              "Why"
+            ],
+            "rows": [
+              [
+                "Tool + crucible + melt",
+                "Total wrist load"
+              ],
+              [
+                "Center of mass / inertia",
+                "Wrist moments"
+              ],
+              [
+                "Approach and pouring poses",
+                "Reach / orientation"
+              ],
+              [
+                "Thermal exposure",
+                "Protection needs"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "FAN"
+          ],
+          "locator": "Choix du robot; requirements; Annexes",
+          "uncertainty": "No fresh catalog recommendation is made; rating is a historical design input.",
+          "kind": "Project evidence",
+          "return_line": "Robot, tool and geometry have to be checked together.",
+          "id": "d1"
+        },
+        {
+          "label": "Gripper geometry",
+          "question": "How did you reason about the grip?",
+          "answer": "I considered opposed contacts around the crucible and a simplified static friction model to relate normal force to the load.",
+          "reason": [
+            "Contact force depends on actual mass, friction and dynamics.",
+            "Final sizing needs consistent mass, friction, dynamic load and thermal assumptions."
+          ],
+          "visual": {
+            "type": "equation",
+            "text": "Conceptual static model:\n2 μ N ≥ m g\nAdd dynamic, thermal and loss-of-pressure checks",
+            "caption": "Conceptual design model; no validated force value"
+          },
+          "sources": [
+            "FAN"
+          ],
+          "locator": "Choix de l’outillage",
+          "uncertainty": "Pneumatic prose conflicts with Robotiq drawing; final hardware model remains unconfirmed.",
+          "kind": "Project evidence",
+          "return_line": "Robot, tool and geometry have to be checked together.",
+          "id": "d2"
+        },
+        {
+          "label": "Cell layout",
+          "question": "What did the layout need to accommodate?",
+          "answer": "Two furnace stations, the robot, conveyor, crucible table and protective boundaries.",
+          "reason": [
+            "Reach matters at both pickup and pouring orientation.",
+            "Layout also needs access, clearance and synchronization."
+          ],
+          "visual": {
+            "type": "image",
+            "file": "assets/images/fanuc-cell.png",
+            "caption": "Original ROBOGUIDE cell layout",
+            "crop": "contain"
+          },
+          "sources": [
+            "FAN"
+          ],
+          "locator": "Implantation; original photo global.png",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "Robot, tool and geometry have to be checked together.",
+          "id": "d3"
+        },
+        {
+          "label": "Trade-offs",
+          "question": "Why not choose the largest robot or strongest gripper?",
+          "answer": "Capacity has to match geometry, wrist loading, thermal conditions and integration constraints.",
+          "reason": [
+            "A larger nominal rating does not solve access or gripping.",
+            "The concept needs physical checks before selection is final."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Choice",
+              "Must also check"
+            ],
+            "rows": [
+              [
+                "Payload",
+                "Moments / tool mass"
+              ],
+              [
+                "Reach",
+                "Orientation / clearance"
+              ],
+              [
+                "Gripping force",
+                "Crucible stress / slip"
+              ],
+              [
+                "Protection",
+                "Heat exposure / service access"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "FAN"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Engineering reasoning",
+          "return_line": "Robot, tool and geometry have to be checked together.",
+          "id": "d4"
+        }
+      ],
+      "hook": "",
+      "silence": 3,
+      "video": null,
+      "sources": [
+        "FAN"
+      ]
+    },
+    {
+      "id": "s26",
+      "title": "Simulating the cell in ROBOGUIDE",
+      "section": "FANUC",
+      "duration": 40,
+      "message": "The simulation made the sequence and geometric integration visible.",
+      "layout": "fanuc-video",
+      "visual": {
+        "type": "fanuc-video"
+      },
+      "points": [
+        "**Approach → grip → transport → pour**",
+        "**Check:** poses and cell clearance",
+        "**Programming:** adapted from a supplied template"
+      ],
+      "script": "I modeled approach, gripping, transport and pouring. I adapted a teacher-provided programming template to this task. This excerpt shows the modeled cell and sequence. It helped check geometry and motion order, while fluid behavior and production performance still needed validation.",
+      "transition": "That leaves a clear set of checks before any physical cell.",
+      "details": [
+        {
+          "label": "Cycle sequence",
+          "question": "What sequence did you model?",
+          "answer": "Approach, descend, grip, transport, position, pour, and return or set down.",
+          "reason": [
+            "The report differentiates loaded and empty travel.",
+            "Conveyor timing must be coordinated with the robot."
+          ],
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              "Approach + grip",
+              "Transport + pour",
+              "Set down + next mold"
+            ],
+            "caption": "Modeled sequence"
+          },
+          "sources": [
+            "FAN"
+          ],
+          "locator": "Séquence programmée",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The simulation made the sequence visible, with physical testing still ahead.",
+          "id": "d1"
+        },
+        {
+          "label": "Paths / reachability",
+          "question": "What could the simulation check?",
+          "answer": "It could show task poses, relative equipment placement, motion order and modeled geometric clearance.",
+          "reason": [
+            "TCP, tool geometry and setup assumptions affect the result.",
+            "Simulated clearance needs physical confirmation."
+          ],
+          "visual": {
+            "type": "image",
+            "file": "assets/images/fanuc-gripper.png",
+            "caption": "Original modeled robot / gripper view",
+            "crop": "contain"
+          },
+          "sources": [
+            "FAN"
+          ],
+          "locator": "Séquence programmée; original embedded image12.png",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The simulation made the sequence visible, with physical testing still ahead.",
+          "id": "d2"
+        },
+        {
+          "label": "Template adaptation",
+          "question": "How much programming was original?",
+          "answer": "My notes recall a teacher-provided template that I reused and adapted to make this task sequence work.",
+          "reason": [
+            "I can claim adaptation and integration.",
+            "The exact source template and program diff were not recovered."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Supported",
+              "Not established"
+            ],
+            "rows": [
+              [
+                "Template adaptation",
+                "Whole stack written from scratch"
+              ],
+              [
+                "Task sequence in simulation",
+                "Exact changed program lines"
+              ],
+              [
+                "Modeled cell",
+                "Physical commissioning"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "IDEAS",
+            "FAN"
+          ],
+          "locator": "",
+          "uncertainty": "Original ROBOGUIDE project/program source and template diff not located.",
+          "kind": "Project evidence",
+          "return_line": "The simulation made the sequence visible, with physical testing still ahead.",
+          "id": "d3"
+        },
+        {
+          "label": "Simulation evidence",
+          "question": "What artifacts remain?",
+          "answer": "The report, presentation, original images and videos document the modeled cell and sequence.",
+          "reason": [
+            "The excerpt is authentic project media.",
+            "A video alone does not provide a reproducible timing export."
+          ],
+          "visual": {
+            "type": "image",
+            "file": "assets/images/fanuc-mold.png",
+            "caption": "Original mold CAD illustration from the project report",
+            "crop": "contain"
+          },
+          "sources": [
+            "FAN"
+          ],
+          "locator": "Original DOCX; portfolio fanuc.pdf; project video",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "The simulation made the sequence visible, with physical testing still ahead.",
+          "id": "d4"
+        }
+      ],
+      "hook": "",
+      "silence": 13,
+      "video": {
+        "file": "assets/videos/fanuc.mp4",
+        "poster": "assets/images/fanuc-poster.jpg",
+        "start": 0,
+        "end": 10,
+        "label": "ROBOGUIDE simulation · 10 s"
+      },
+      "sources": [
+        "FAN",
+        "IDEAS"
+      ]
+    },
+    {
+      "id": "s27",
+      "title": "What the simulation could not prove",
+      "section": "FANUC",
+      "duration": 35,
+      "message": "Heat, gripping, fluid behavior and repeated physical execution remain to be validated.",
+      "layout": "fanuc-limits",
+      "visual": {
+        "type": "fanuc-limits"
+      },
+      "points": [
+        "**Grip:** slip and heat exposure",
+        "**Process:** pouring and synchronization",
+        "**Execution:** repeated cycles and recovery"
+      ],
+      "script": "Before a physical cell, I'd test the loaded grip, thermal protection, pouring and conveyor synchronization, then repeated cycles and recovery. The study's cycle time was estimated. I don't claim an installed cell or verified ROI; another student did the financial analysis. I learned to make the remaining validation explicit.",
+      "transition": "I'm now moving toward manipulation and robot learning through my G1 project.",
+      "details": [
+        {
+          "label": "Physical validation",
+          "question": "What would you test first?",
+          "answer": "Start with safe handling tests using a representative cold load, then validate process-specific conditions under appropriate supervision.",
+          "reason": [
+            "Check grip retention, pose accuracy and repeated execution.",
+            "Thermal and molten-material tests require a separately validated setup."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Stage",
+              "Evidence needed"
+            ],
+            "rows": [
+              [
+                "Cold load",
+                "Grip / slip / repeatability"
+              ],
+              [
+                "Integrated sequence",
+                "Clearance / synchronization"
+              ],
+              [
+                "Process conditions",
+                "Thermal / pouring behavior"
+              ]
+            ],
+            "caption": "Proposed engineering validation"
+          },
+          "sources": [
+            "FAN"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Proposed work",
+          "return_line": "Those checks are what separate this concept from a validated cell.",
+          "id": "d1"
+        },
+        {
+          "label": "Safety assumptions",
+          "question": "Do barriers in the model prove a safe cell?",
+          "answer": "No. They show a layout intention; the installed system would require its own risk assessment and validated protective functions.",
+          "reason": [
+            "I do not claim compliance or certification from the simulation.",
+            "Process hazards include heat, spill, collision and access."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Modeled element",
+              "Still required"
+            ],
+            "rows": [
+              [
+                "Barrier geometry",
+                "Validated protective function"
+              ],
+              [
+                "Emergency stop idea",
+                "Installed response testing"
+              ],
+              [
+                "Thermal screen",
+                "Actual exposure validation"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "FAN"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Simulation boundary",
+          "return_line": "Those checks are what separate this concept from a validated cell.",
+          "id": "d2"
+        },
+        {
+          "label": "Cycle-time limits",
+          "question": "Why not use the claimed productivity gain?",
+          "answer": "The report estimates a cycle but no timing export or comparable production trial was recovered.",
+          "reason": [
+            "Waits, resets, faults and process quality affect throughput.",
+            "I omit the dramatic calculated gain and ROI."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Available",
+              "Missing"
+            ],
+            "rows": [
+              [
+                "Simulation video",
+                "Timestamp export"
+              ],
+              [
+                "Cycle estimate",
+                "Equivalent operation boundary"
+              ],
+              [
+                "Concept sequence",
+                "Repeated production data"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "FAN",
+            "IDEAS"
+          ],
+          "locator": "",
+          "uncertainty": "No independent measured cycle-time or throughput verification.",
+          "kind": "Project evidence",
+          "return_line": "Those checks are what separate this concept from a validated cell.",
+          "id": "d3"
+        },
+        {
+          "label": "Economic study",
+          "question": "Did you do the financial analysis?",
+          "answer": "No, another student did that part. I can explain the robot and cell concept, but I don't have a verified ROI to claim.",
+          "reason": [
+            "Costs, availability, scrap and demand need a credible industrial model.",
+            "My contribution is the task and robotics study."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "My focus",
+              "Separate work"
+            ],
+            "rows": [
+              [
+                "Task + integration concept",
+                "Financial analysis"
+              ],
+              [
+                "Robot / tool reasoning",
+                "Verified ROI not established"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "IDEAS",
+            "FAN"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "Those checks are what separate this concept from a validated cell.",
+          "id": "d4"
+        }
+      ],
+      "hook": "The simulation helped me check the concept, but several points still needed physical testing.",
+      "silence": 3,
+      "video": null,
+      "sources": [
+        "FAN",
+        "IDEAS"
+      ]
+    },
+    {
+      "id": "s28",
+      "title": "Unitree G1: my current direction",
+      "section": "Unitree G1",
+      "duration": 45,
+      "message": "My current project is at the reading and preparation stage, with manipulation as the goal.",
+      "layout": "g1-status",
+      "visual": {
+        "type": "g1-status"
+      },
+      "points": [
+        "**Done:** literature and project framing",
+        "**In progress:** task and interface preparation",
+        "**Next:** demonstrations and evaluation"
+      ],
+      "script": "My current master's project targets assistive manipulation with the G1, supervised by Professor Olivier Bruneau. I'm reading papers, understanding policies, and preparing the work. The proposal covers demonstrations, data, adaptation and robot evaluation. I don't yet have a trained policy or measured result. My priority is choosing a manageable task, confirming the interfaces and access, and defining the test. I want to make the experiment concrete before interpreting results.",
+      "transition": "The intended pipeline is simple to draw, but each interface needs work.",
+      "details": [
+        {
+          "label": "Actual status",
+          "question": "What have you done on the G1?",
+          "answer": "I'm reading papers, framing the task, and preparing the pipeline. I don't yet have a trained policy or a measured G1 result to show.",
+          "reason": [
+            "At the first interview, I hadn't started working hands-on with the G1.",
+            "My next step is to make the task, interfaces and evaluation setup concrete."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Status",
+              "Supported scope"
+            ],
+            "rows": [
+              [
+                "Done",
+                "Reading / framing"
+              ],
+              [
+                "In progress",
+                "Task and pipeline preparation"
+              ],
+              [
+                "Next",
+                "Robot setup / demonstrations"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "G1",
+            "TRANS",
+            "IDEAS"
+          ],
+          "locator": "",
+          "uncertainty": "Latest hands-on progress after the supplied notes must be confirmed by Slimane.",
+          "kind": "Project evidence",
+          "return_line": "My G1 project is still at the preparation stage.",
+          "id": "d1"
+        },
+        {
+          "label": "Hardware setup",
+          "question": "Is the G1 setup ready?",
+          "answer": "I'm targeting the G1. I still need to establish the practical teleoperation route and robot-control interface.",
+          "reason": [
+            "The proposal allowed a fallback platform.",
+            "The supervisor email discusses possible motion capture and access planning."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Target",
+              "To confirm"
+            ],
+            "rows": [
+              [
+                "Unitree G1",
+                "Exact configuration / interfaces"
+              ],
+              [
+                "Teleoperation or motion capture",
+                "Available route"
+              ],
+              [
+                "Lab access",
+                "Dates / sessions"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "G1",
+            "CTX"
+          ],
+          "locator": "",
+          "uncertainty": "Existing oral notes say user-confirmed G1 availability; proposal/email are older. Do not assert completed installation.",
+          "kind": "Project evidence",
+          "return_line": "My G1 project is still at the preparation stage.",
+          "id": "d2"
+        },
+        {
+          "label": "Before the internship",
+          "question": "How could this prepare you for Binabik?",
+          "answer": "I want to gain practical experience in demonstration data, robot interfaces and evaluation before the internship.",
+          "reason": [
+            "Any project alignment would need the supervisor’s agreement.",
+            "It is preparation, not a promise of a completed capability."
+          ],
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              "Focused academic task",
+              "Document interfaces / failures",
+              "Bring practical learning"
+            ],
+            "caption": "Explanatory diagram"
+          },
+          "sources": [
+            "G1",
+            "TRANS"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Intended preparation",
+          "return_line": "My G1 project is still at the preparation stage.",
+          "id": "d3"
+        },
+        {
+          "label": "Academic scope",
+          "question": "What is the project organization?",
+          "answer": "The proposal plans a team of four to five students with overlapping setup, learning and evaluation phases.",
+          "reason": [
+            "My exact phase ownership is not established in the proposal.",
+            "I do not claim to be the named project leader."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Phase",
+              "Planned work"
+            ],
+            "rows": [
+              [
+                "Setup",
+                "Interfaces + demonstrations"
+              ],
+              [
+                "Learning",
+                "Dataset + adaptation"
+              ],
+              [
+                "Evaluation",
+                "Robot tests + failures"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "G1"
+          ],
+          "locator": "ODT work plan",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "My G1 project is still at the preparation stage.",
+          "id": "d4"
+        }
+      ],
+      "hook": "",
+      "silence": 2,
+      "video": null,
+      "sources": [
+        "G1",
+        "TRANS",
+        "IDEAS",
+        "CTX"
+      ]
+    },
+    {
+      "id": "s29",
+      "title": "Learning manipulation from demonstrations",
+      "section": "Unitree G1",
+      "duration": 45,
+      "message": "I want to connect demonstration quality, policy adaptation and measured robot behavior.",
+      "layout": "g1-pipeline",
+      "visual": {
+        "type": "g1-pipeline"
+      },
+      "points": [
+        "**Demonstrations → dataset → adaptation → evaluation**",
+        "**Candidate model:** OpenPI / π₀ family",
+        "**Transfer:** methods and skills, with robot-specific work"
+      ],
+      "script": "I plan to collect demonstrations, prepare a dataset, adapt a policy and evaluate it. OpenPI and the pi-zero family are candidate foundations. A towel-folding task has been discussed; the final choice must fit the robot and evaluation setup. I'd record success, failures, interventions and timing. Those skills can transfer to industry. A policy doesn't automatically transfer between robots: observations, actions, geometry and low-level control still have to match.",
+      "transition": "These are the engineering habits I would bring to Binabik.",
+      "details": [
+        {
+          "label": "Demonstration pipeline",
+          "question": "What must a demonstration contain?",
+          "answer": "Synchronized observations, robot state, actions, task instruction and clear episode boundaries.",
+          "reason": [
+            "Data quality and coordinate conventions matter before training.",
+            "Motion capture alone is not a ready-to-train VLA dataset."
+          ],
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              "Observation + state + instruction",
+              "Actions + timestamps + episodes",
+              "Quality checks + dataset"
+            ],
+            "caption": "Planned pipeline"
+          },
+          "sources": [
+            "G1",
+            "PI"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Planned method",
+          "return_line": "The pipeline is planned, and each robot interface needs validation.",
+          "id": "d1"
+        },
+        {
+          "label": "Policy adaptation",
+          "question": "Have you fine-tuned OpenPI?",
+          "answer": "No. It is the candidate adaptation route, with robot-specific data and interfaces still to establish.",
+          "reason": [
+            "The primary repository documents adaptation to own datasets.",
+            "Compatibility, compute and the exact checkpoint remain open."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Candidate step",
+              "Needed input"
+            ],
+            "rows": [
+              [
+                "Data conversion",
+                "Observation/action schema"
+              ],
+              [
+                "Fine-tuning",
+                "Selected checkpoint + config"
+              ],
+              [
+                "Robot inference",
+                "Action adapter + timing"
+              ],
+              [
+                "Evaluation",
+                "Held-out tasks / scenes"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "G1",
+            "PI"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Planned method",
+          "return_line": "The pipeline is planned, and each robot interface needs validation.",
+          "id": "d2"
+        },
+        {
+          "label": "Evaluation protocol",
+          "question": "How would you avoid judging one good demo?",
+          "answer": "Use a fixed task definition, repeated trials, held-out object configurations, and explicit failure and intervention logging.",
+          "reason": [
+            "Define success before testing.",
+            "Separate a policy failure from interface or execution failures."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Measure",
+              "Question"
+            ],
+            "rows": [
+              [
+                "Task success",
+                "Did the full task finish?"
+              ],
+              [
+                "Interventions",
+                "Was help required?"
+              ],
+              [
+                "Failure categories",
+                "What failed?"
+              ],
+              [
+                "Timing / reset",
+                "Can it run repeatedly?"
+              ]
+            ],
+            "caption": "Planned protocol, no achieved metrics"
+          },
+          "sources": [
+            "G1"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Proposed evaluation",
+          "return_line": "The pipeline is planned, and each robot interface needs validation.",
+          "id": "d3"
+        },
+        {
+          "label": "Transfer between robots",
+          "question": "What transfers to another robot?",
+          "answer": "Data discipline, integration methods and evaluation habits transfer. A policy needs compatibility work and fresh validation on the new platform.",
+          "reason": [
+            "Morphology, action space and controller behavior differ.",
+            "Industrial compliance and reliability remain learning areas for me."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Transferable",
+              "Robot-specific"
+            ],
+            "rows": [
+              [
+                "Dataset checks",
+                "Sensor / observation schema"
+              ],
+              [
+                "Failure analysis",
+                "Action space / kinematics"
+              ],
+              [
+                "Evaluation protocol",
+                "Controller / contact behavior"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "G1",
+            "PI",
+            "TRANS"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Conceptual transfer boundary",
+          "return_line": "The pipeline is planned, and each robot interface needs validation.",
+          "id": "d4"
+        }
+      ],
+      "hook": "",
+      "silence": 4,
+      "video": null,
+      "sources": [
+        "G1",
+        "PI",
+        "TRANS"
+      ]
+    },
+    {
+      "id": "s30",
+      "title": "How I could contribute at Binabik",
+      "section": "Closing",
+      "duration": 35,
+      "message": "I can bring integration and experimental diagnosis while building manipulation expertise.",
+      "layout": "fit",
+      "visual": {
+        "type": "fit"
+      },
+      "points": [
+        "**Integration:** connect sensors, software and hardware",
+        "**Experiments:** measure and diagnose failures",
+        "**Task evaluation:** test repeatability and limits"
+      ],
+      "script": "I'd bring practical integration and experimental diagnosis. Singapore shows sensing, decisions and commands connected through measurements. FANUC shows task-based robot and tool reasoning. I heard your concerns about compliant manipulation and consistent success in factories. I still need hands-on depth there, and I'd like to build it while contributing to integration, testing and task evaluation.",
+      "transition": "That's the kind of challenge I'd like to take on with your team.",
+      "details": [
+        {
+          "label": "First weeks",
+          "question": "What could you do in your first weeks?",
+          "answer": "Understand one task, reproduce the current setup, agree on success criteria, and help instrument repeatable tests.",
+          "reason": [
+            "Start from the team’s actual priority.",
+            "Use a small concrete experiment to learn the interfaces."
+          ],
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              "Understand workflow",
+              "Reproduce + instrument",
+              "Measure one failure mode"
+            ],
+            "caption": "Explanatory diagram"
+          },
+          "sources": [
+            "TRANS",
+            "A",
+            "FAN"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Possible contribution",
+          "return_line": "That is the integration and testing approach I'd bring to the team.",
+          "id": "d1"
+        },
+        {
+          "label": "Integration / testing",
+          "question": "What is your strongest evidence for that?",
+          "answer": "The rover chain combines external vision, command conversion, timing instrumentation and repeated physical trials.",
+          "reason": [
+            "It is a small research testbed.",
+            "The engineering process is transferable, while the industrial stack will be new."
+          ],
+          "visual": {
+            "type": "image",
+            "file": "assets/images/system.jpg",
+            "caption": "Evidence already shown: integrated physical testbed",
+            "crop": "contain"
+          },
+          "sources": [
+            "A",
+            "B",
+            "REAL",
+            "CAL"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Project evidence",
+          "return_line": "That is the integration and testing approach I'd bring to the team.",
+          "id": "d2"
+        },
+        {
+          "label": "Learning needs",
+          "question": "What do you still need to learn?",
+          "answer": "I need hands-on experience in compliant manipulation, task-specific grasping and reliable execution on the team’s platforms.",
+          "reason": [
+            "I have control foundations and experimental habits.",
+            "I do not claim a deployed impedance controller."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Current evidence",
+              "Next learning"
+            ],
+            "rows": [
+              [
+                "Navigation integration",
+                "Manipulation interfaces"
+              ],
+              [
+                "Calibration / measurement",
+                "Contact / force behavior"
+              ],
+              [
+                "Repeatability analysis",
+                "Industrial failure recovery"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "TRANS",
+            "CTX"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Personal learning boundary",
+          "return_line": "That is the integration and testing approach I'd bring to the team.",
+          "id": "d3"
+        },
+        {
+          "label": "Project alignment",
+          "question": "Could you align the G1 project with our priorities?",
+          "answer": "I could discuss a focused, useful direction with my supervisor, subject to the academic scope and available equipment.",
+          "reason": [
+            "I would first understand your actual needs.",
+            "I would not promise that a policy transfers directly."
+          ],
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              "Discuss team priority",
+              "Agree academic feasibility",
+              "Define a focused experiment"
+            ],
+            "caption": "Explanatory diagram"
+          },
+          "sources": [
+            "G1",
+            "TRANS"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Conditional preparation",
+          "return_line": "That is the integration and testing approach I'd bring to the team.",
+          "id": "d4"
+        }
+      ],
+      "hook": "",
+      "silence": 0,
+      "video": null,
+      "sources": [
+        "TRANS",
+        "A",
+        "FAN",
+        "B",
+        "REAL",
+        "CAL",
+        "CTX",
+        "G1"
+      ]
+    },
+    {
+      "id": "s31",
+      "title": "Ready for the challenge",
+      "section": "Closing",
+      "duration": 25,
+      "message": "I want to bring this energy and engineering approach to a six-month internship.",
+      "layout": "closing",
+      "visual": {
+        "type": "closing",
+        "text": "Give me a challenging goal for these six months, and I'll do everything I can to achieve it — and hopefully exceed your expectations."
+      },
+      "points": [
+        "**Build** something useful",
+        "**Learn** from difficult problems",
+        "**Measure** the result"
+      ],
+      "script": "I'd really like to bring that energy to your team: take responsibility for a concrete problem, learn the missing pieces, and keep testing until I understand what works. Give me a challenging goal for these six months, and I'll do everything I can to achieve it — and hopefully exceed your expectations.",
+      "transition": "",
+      "details": [
+        {
+          "label": "Six months",
+          "question": "What availability are you proposing?",
+          "answer": "I am proposing a six-month internship starting in February 2027, as discussed in the first interview.",
+          "reason": [
+            "Confirm the exact dates with the team and school.",
+            "The engineering goal should fit the agreed internship duration."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Proposed duration",
+              "Start discussed"
+            ],
+            "rows": [
+              [
+                "Six months",
+                "February 2027"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "TRANS"
+          ],
+          "locator": "First interview 9:03",
+          "uncertainty": "",
+          "kind": "Availability",
+          "return_line": "I'd like to hear more about the challenge you have in mind.",
+          "id": "d1"
+        },
+        {
+          "label": "Questions for the team",
+          "question": "What would you like to understand next?",
+          "answer": "I would like to understand the concrete task, the main current failure mode, and how the team measures progress.",
+          "reason": [
+            "That helps connect my contribution to a useful experiment.",
+            "These questions open discussion after the closing statement."
+          ],
+          "visual": {
+            "type": "table",
+            "headers": [
+              "Question",
+              "Purpose"
+            ],
+            "rows": [
+              [
+                "What task matters first?",
+                "Choose useful scope"
+              ],
+              [
+                "Where does execution fail?",
+                "Focus diagnosis"
+              ],
+              [
+                "What defines progress?",
+                "Agree measurable goals"
+              ]
+            ],
+            "caption": "Explanatory comparison"
+          },
+          "sources": [
+            "TRANS"
+          ],
+          "locator": "",
+          "uncertainty": "",
+          "kind": "Discussion questions",
+          "return_line": "I'd like to hear more about the challenge you have in mind.",
+          "id": "d2"
+        }
+      ],
+      "hook": "",
+      "silence": 0,
+      "video": null,
+      "sources": [
+        "TRANS"
+      ]
+    }
+  ],
+  "sources": {
+    "USER": {
+      "file": "Current user request · 2026-11-07",
+      "locator": "§4: coefficient selection by Mathis; I/my instruction; FANUC financial work excluded",
+      "protocol": "Explicit current user attribution and editorial instruction",
+      "attribution": "Mathis: coefficient selection; another student: FANUC finance; I/my elsewhere pending private review",
+      "uncertainty": "First person is authorized wording, not independent proof of each individual line ownership."
+    },
+    "DESCARTES": {
+      "file": "https://descartes.cnrsatcreate.cnrs.fr/ ; https://descartes.cnrsatcreate.cnrs.fr/demos/ ; https://youtu.be/sFYLavyD_sc",
+      "locator": "Official program and drone / Marina Bay twin demo pages; user-provided local excerpt",
+      "protocol": "Official pages checked 2026-11-07; local MOV probed with ffprobe: H.264 video, AAC audio, 18.428333 s; browser version preserves the entire clip; displayed 15 s label retained at user request",
+      "attribution": "DesCartes program communication; contextual media, not my experiment or my footage",
+      "uncertainty": "Digital twins concern urban systems and districts; this is not a claim that I built a complete city twin."
+    },
+    "SIMVIDEO": {
+      "file": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/paco-showcase/assets/video/simulation_lagrange_newton_v01.mp4",
+      "locator": "Entire simulation video, 19.233333 s, 1920x1080, no audio stream",
+      "protocol": "Local source inspected with ffprobe; unchanged copy used in slide 04, narrated during playback",
+      "attribution": "Project simulation media; distinct from physical rover experiments",
+      "uncertainty": "Illustrates the task; not evidence of physical-trial success or timing."
+    },
+    "P": {
+      "file": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/Presentations/data_presentation_interview_2_Binabik/paco-preprint-draft-v1-compact.pdf",
+      "locator": "31-page draft; page and equation locators are specified per view",
+      "protocol": "Historical expanded draft, not the submitted manuscript; distinguish simulation and physical campaigns",
+      "attribution": "Multi-author research; I/my requested for implementation; coefficient selection belongs to Mathis",
+      "uncertainty": "Draft wording does not prove that every current code path was active in a historical run."
+    },
+    "COST": {
+      "file": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/trajopt/core/cost.py",
+      "locator": "_polynomial_compact_repulsion, obstacle_repulsion_value, surface_clearance",
+      "protocol": "Inspected clean checkout 55cb676e0d44aaea2464326c7dead9b830451a0b; conceptual behavior, no fresh benchmark",
+      "attribution": "I implemented/adapted the project code; exact personal line ownership to confirm",
+      "uncertainty": "No isolated measured before/after convergence gain recovered."
+    },
+    "SOL": {
+      "file": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/trajopt/core/solver.py",
+      "locator": "solve_trajectory, lines 270–413; trajopt/core/discretization.py: discrete_action and analytic gradient",
+      "protocol": "One selected warm start is optimized. minimize_kwargs passes jac when enabled; no bounds argument in inspected call",
+      "attribution": "I implemented/integrated; SciPy implements the optimizer",
+      "uncertainty": "L-BFGS-B is bound-capable, but explicit coordinate bounds are absent from this call."
+    },
+    "INIT": {
+      "file": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/trajopt/core/initial_guess.py",
+      "locator": "generate_parametric_initial_guess_candidates, select_best_parametric_initial_guess",
+      "protocol": "Candidate filtering and minimum-cost warm-start selection; not one full optimization per candidate",
+      "attribution": "I implemented/adapted; personal allocation to confirm",
+      "uncertainty": "The draft uses multistart loosely; precise behavior is candidate screening followed by one local solve."
+    },
+    "CTRL": {
+      "file": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/trajopt/core/causal_local_controller.py",
+      "locator": "build_static_nominal_world; _controller_reference; _controller_force_log; _controller_step_initial; _repulsion_force",
+      "protocol": "Simulation method implementation; do not label this module as the physical motor driver",
+      "attribution": "I implemented/adapted the architecture; published potential-field ideas are not my invention",
+      "uncertainty": "Physical reference synchronization is implemented separately in newton_euler_real.py."
+    },
+    "ADAPT": {
+      "file": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/trajopt/experimental/control/phase5bis_adapter.py",
+      "locator": "ObservedMobileObstacle; compute_phase5bis_realtime_command; _repulsion_force; Phase5BisRealtimeRunner",
+      "protocol": "Current snapshots from measured ArUco poses; memory/freshness and stop flags are configurable",
+      "attribution": "I integrated the physical perception-to-command chain; personal allocation to confirm",
+      "uncertainty": "Do not inherit provisional default radius 0.05 m into the campaign: archived settings use 0.130 m."
+    },
+    "REAL": {
+      "file": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/trajopt/experimental/control/newton_euler_real.py",
+      "locator": "NewtonEulerRealController.update; _monotonic_path_reference; _wheel_command; _smooth",
+      "protocol": "Physical force/mass acceleration, velocity reconciliation, progress-synchronized reference, norm clipping and wheel conversion",
+      "attribution": "I developed/integrated the high-level conversion; exact allocation to confirm",
+      "uncertainty": "Current implementation corroborates the mechanism; run summaries establish the selected historical profile, not a source-code hash of the flashed firmware."
+    },
+    "SER": {
+      "file": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/trajopt/experimental/robot/rover_client.py",
+      "locator": "RoverClient._build_wheel_command_line; send_wheel_command; stop",
+      "protocol": "Newline-delimited JSON; T=1 wheel-command path, optional T=13 path distinct",
+      "attribution": "My Python interface; supplier board firmware is not my work",
+      "uncertainty": "Exact flashed firmware build digest was not recovered."
+    },
+    "FW": {
+      "file": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/resources/ugv_base_general/General_Driver/movtion_module.h",
+      "locator": "setGoalSpeed lines 292–322; json_cmd.h: CMD_SPEED_CTRL=1",
+      "protocol": "Supplier source contains PID path when mainType==3 and open-loop leftCtrl/rightCtrl otherwise; paper identifies no encoders on the testbed",
+      "attribution": "Waveshare supplier firmware, unchanged per draft",
+      "uncertainty": "Repository source is inspectable, but the exact flashed binary/configuration is not archived with each run."
+    },
+    "A": {
+      "file": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/Paper/logs répétabilités/test_A_bis_{1..20}/test_A_bis_{1..20}_resume.json",
+      "locator": "stop_reason; control_actual_hz; timing_ms; min_mobile_clearance_m; causal_solver_profile; dynamics",
+      "protocol": "20 frozen-task physical trials; values independently recomputed from all 20 summaries",
+      "attribution": "I ran/analyzed physical experiments; individual team split to confirm; coefficients selected by Mathis",
+      "uncertainty": "Median across per-run rates differs from inverse of a pooled period. No guarantee beyond these tasks."
+    },
+    "B": {
+      "file": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/Paper/logs répétabilités/test_B_bis_{1..20}/test_B_bis_{1..20}_resume.json",
+      "locator": "stop_reason; min_mobile_clearance_m; control_actual_hz; layout exclusion in generate_f16_dual_agent_avoidance.py",
+      "protocol": "20 successful run outcomes; run 1 excluded from repeated-layout aggregates, leaving 19 comparable trials",
+      "attribution": "I ran/analyzed experiments; personal team split to confirm; coefficients selected by Mathis",
+      "uncertainty": "Do not confuse all 40 outcomes with 39 layout-comparable repetitions."
+    },
+    "FIG": {
+      "file": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/Paper/figures/code",
+      "locator": "generate_f5_calibration_error_maps.py; generate_f6_nominal_correction.py; generate_f7_bis_force_decomposition.py; generate_f14_realtime_budget.py; generate_f15_single_agent_avoidance.py; generate_f16_dual_agent_avoidance.py",
+      "protocol": "Original project figures copied/rasterized; figure 6 is a simulation example, not a recorded physical trajectory",
+      "attribution": "Project research figures; I/my presentation convention; coefficient selection Mathis",
+      "uncertainty": "Figure 14 uses medians, Table 10 uses means. They are not identical aggregates."
+    },
+    "CAL": {
+      "file": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/experiments/phase6_ter/RAPPORT_COMPLET_CALIBRATION_HOMOGRAPHIE_PHASE6_TER.md",
+      "locator": "§7.2, §12.1, §14.1, §16.1; calibration/homography_20260722_125542/REPORT.md; homography_20260722_182723/REPORT.md; intrinsics_20260722_163009",
+      "protocol": "Ground-grid and raised-marker measurements in draft §3.2/Table 2; preserve 9 ground and 5 raised positions",
+      "attribution": "I calibrated/measured; exact personal team allocation to confirm",
+      "uncertainty": "Reprojection RMS in pixels differs from metric position error; ground and raised-marker datasets differ."
+    },
+    "EARLY": {
+      "file": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/context/Phase6/Rp_P6_10_adaptation_phase5bis_temps_reel_reel.md",
+      "locator": "§1 and physical active-correction trial, lines 456–488; inspected relevant technical sections only",
+      "protocol": "2026-07-14 early adapter: timeout with weak translation, no collision; distinct from later BIS campaign",
+      "attribution": "I diagnosed/integrated; precise allocation to confirm",
+      "uncertainty": "Do not claim one isolated fix caused later success; several stages/settings evolved."
+    },
+    "FAN": {
+      "file": "/Users/slimaneaouanouk/Desktop/Portfolio/Data/Projects:internship/1A_Projet Fanuc/PROJET FANUC.docx",
+      "locator": "Contexte; Cahier des charges; Choix du robot; Choix de l’outillage; Implantation; Séquence programmée; Autres possibilités",
+      "protocol": "Academic concept and ROBOGUIDE simulation. Original report, media and explanatory TXT inspected",
+      "attribution": "I/my requested for design/simulation; four report authors; financial analysis by another student",
+      "uncertainty": "3 kg part vs 5 kg melt, 17.14 vs 17.4 kg total and pneumatic text vs Robotiq reference drawing conflict; exact template edits not recovered."
+    },
+    "IDEAS": {
+      "file": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/Presentations/data_presentation_interview_2_Binabik/Presentation Ideas.rtf",
+      "locator": "FANUC template/financial-role recollection; G1 task candidates; preparation notes",
+      "protocol": "User dictation, later decisions supersede discarded ideas",
+      "attribution": "Slimane self-report",
+      "uncertainty": "Team recollection says two friends while original report has four authors; tasks are candidates, not results."
+    },
+    "G1": {
+      "file": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/Presentations/presentation_interview_Binabik/projet_VLA_infos/Project_PING_Ahmidach_Chemsdine_.odt",
+      "locator": "Objective; work plan; equipment and platform availability",
+      "protocol": "Project proposal, not experiment record; read alongside mail_olivier_bruneau.rtf",
+      "attribution": "Slimane participant per context; proposal names Chemsdine; phase ownership open",
+      "uncertainty": "No newer implementation log, dataset, checkpoint or measured result located in authorized project sources."
+    },
+    "TRANS": {
+      "file": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/Presentations/data_presentation_interview_2_Binabik/transcript_binabik_entretien1_V2_format_otter.txt",
+      "locator": "13:45 starting G1; 26:50–27:34 past problems; 28:22–28:59 compliance/reliability; 30:40 full stack/custom grippers; 33:10 FANUC",
+      "protocol": "Supplied transcript, historical interview context, not a claim about the current company stack",
+      "attribution": "Giovanni statements distinguished from my own experience",
+      "uncertainty": "No explicit preference between calibration and corrector found. Transcript may contain transcription errors."
+    },
+    "CTX": {
+      "file": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/V1.9_PORTFOLIO_CONTEXT.md",
+      "locator": "§4 research; §7.7 FANUC; §7.17 current G1 proposal; source register",
+      "protocol": "Local portfolio context; cross-checked with primary files, not treated as a fresh project progress log",
+      "attribution": "Explicit known attribution overrides generic I/my",
+      "uncertainty": "V1.10 in Resume checkout supersedes FAB context but FAB is outside this deck. G1 status anchored to available sources."
+    },
+    "NAV2": {
+      "file": "https://docs.nav2.org/jazzy/getting_started/navigation_concepts/navigation_servers/",
+      "locator": "Planner and controller servers",
+      "protocol": "Official documentation checked 2026-11-07; conceptual comparison only",
+      "attribution": "External architecture; not used in PACO",
+      "uncertainty": "No PACO ROS/Nav2 deployment is claimed."
+    },
+    "MPC": {
+      "file": "https://www.mathworks.com/help/mpc/gs/what-is-mpc.html",
+      "locator": "Finite receding horizon; apply first action; repeat",
+      "protocol": "Official technical explanation checked 2026-11-07; possible extension only",
+      "attribution": "Established control method; not implemented here",
+      "uncertainty": "No tested MPC feasibility, runtime or safety gain claimed."
+    },
+    "PI": {
+      "file": "https://github.com/Physical-Intelligence/openpi",
+      "locator": "README: models, own-data fine-tuning, own-robot adaptation caveat",
+      "protocol": "Primary repository checked 2026-11-07; candidate model route only",
+      "attribution": "Physical Intelligence models; my planned integration/evaluation",
+      "uncertainty": "No selected compatible G1 checkpoint, completed training or deployment."
+    }
+  }
+}

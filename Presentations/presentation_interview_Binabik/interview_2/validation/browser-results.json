@@ -1,0 +1,977 @@
+{
+  "info": {
+    "slides": 31,
+    "total": 1245,
+    "details": 109
+  },
+  "records": [
+    {
+      "id": "s01",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": [
+        {
+          "overflow": "hero-g1",
+          "text": "Unitree G1Ongoing VLA project",
+          "w": [
+            220,
+            500
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s03",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s04",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s05",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s06",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s07",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s08",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s09",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s10",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s11",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s12",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s13",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s14",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s15",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s16",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s17",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s18",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s19",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s20",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s21",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s22",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s23",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s24",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s25",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s26",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s27",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s28",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s29",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s30",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s31",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bad": []
+    },
+    {
+      "id": "s01",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": [
+        {
+          "overflow": "hero-g1",
+          "text": "Unitree G1Ongoing VLA project",
+          "w": [
+            220,
+            500
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s03",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s04",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s05",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s06",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s07",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s08",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s09",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s10",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s11",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s12",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s13",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s14",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s15",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s16",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s17",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s18",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s19",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s20",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s21",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s22",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s23",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s24",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s25",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s26",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s27",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s28",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s29",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s30",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    },
+    {
+      "id": "s31",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bad": []
+    }
+  ],
+  "detailRecords": [
+    {
+      "id": "s01/d2",
+      "bad": []
+    },
+    {
+      "id": "s02/d1",
+      "bad": []
+    },
+    {
+      "id": "s03/d1",
+      "bad": []
+    },
+    {
+      "id": "s03/d2",
+      "bad": []
+    },
+    {
+      "id": "s03/d3",
+      "bad": []
+    },
+    {
+      "id": "s03/d4",
+      "bad": []
+    },
+    {
+      "id": "s04/d1",
+      "bad": []
+    },
+    {
+      "id": "s06/d1",
+      "bad": []
+    },
+    {
+      "id": "s06/d2",
+      "bad": []
+    },
+    {
+      "id": "s06/d3",
+      "bad": []
+    },
+    {
+      "id": "s06/d4",
+      "bad": []
+    },
+    {
+      "id": "s07/d1",
+      "bad": []
+    },
+    {
+      "id": "s07/d2",
+      "bad": []
+    },
+    {
+      "id": "s07/d3",
+      "bad": []
+    },
+    {
+      "id": "s07/d4",
+      "bad": []
+    },
+    {
+      "id": "s08/d1",
+      "bad": []
+    },
+    {
+      "id": "s08/d2",
+      "bad": []
+    },
+    {
+      "id": "s08/d3",
+      "bad": []
+    },
+    {
+      "id": "s08/d4",
+      "bad": []
+    },
+    {
+      "id": "s09/d1",
+      "bad": []
+    },
+    {
+      "id": "s09/d2",
+      "bad": []
+    },
+    {
+      "id": "s09/d3",
+      "bad": []
+    },
+    {
+      "id": "s09/d4",
+      "bad": []
+    },
+    {
+      "id": "s10/d1",
+      "bad": []
+    },
+    {
+      "id": "s10/d2",
+      "bad": []
+    },
+    {
+      "id": "s10/d3",
+      "bad": []
+    },
+    {
+      "id": "s10/d4",
+      "bad": []
+    },
+    {
+      "id": "s11/d1",
+      "bad": []
+    },
+    {
+      "id": "s11/d2",
+      "bad": []
+    },
+    {
+      "id": "s11/d3",
+      "bad": []
+    },
+    {
+      "id": "s11/d4",
+      "bad": []
+    },
+    {
+      "id": "s12/d1",
+      "bad": []
+    },
+    {
+      "id": "s12/d2",
+      "bad": []
+    },
+    {
+      "id": "s12/d3",
+      "bad": []
+    },
+    {
+      "id": "s12/d4",
+      "bad": []
+    },
+    {
+      "id": "s13/d1",
+      "bad": []
+    },
+    {
+      "id": "s13/d2",
+      "bad": []
+    },
+    {
+      "id": "s13/d3",
+      "bad": []
+    },
+    {
+      "id": "s13/d4",
+      "bad": []
+    },
+    {
+      "id": "s14/d1",
+      "bad": []
+    },
+    {
+      "id": "s14/d2",
+      "bad": []
+    },
+    {
+      "id": "s14/d3",
+      "bad": []
+    },
+    {
+      "id": "s14/d4",
+      "bad": []
+    },
+    {
+      "id": "s15/d1",
+      "bad": []
+    },
+    {
+      "id": "s15/d2",
+      "bad": []
+    },
+    {
+      "id": "s15/d3",
+      "bad": []
+    },
+    {
+      "id": "s15/d4",
+      "bad": []
+    },
+    {
+      "id": "s16/d1",
+      "bad": []
+    },
+    {
+      "id": "s16/d2",
+      "bad": []
+    },
+    {
+      "id": "s16/d3",
+      "bad": []
+    },
+    {
+      "id": "s16/d4",
+      "bad": []
+    },
+    {
+      "id": "s17/d1",
+      "bad": []
+    },
+    {
+      "id": "s17/d2",
+      "bad": []
+    },
+    {
+      "id": "s17/d3",
+      "bad": []
+    },
+    {
+      "id": "s17/d4",
+      "bad": []
+    },
+    {
+      "id": "s18/d1",
+      "bad": []
+    },
+    {
+      "id": "s18/d2",
+      "bad": []
+    },
+    {
+      "id": "s18/d3",
+      "bad": []
+    },
+    {
+      "id": "s18/d4",
+      "bad": []
+    },
+    {
+      "id": "s19/d1",
+      "bad": []
+    },
+    {
+      "id": "s19/d2",
+      "bad": []
+    },
+    {
+      "id": "s19/d3",
+      "bad": []
+    },
+    {
+      "id": "s19/d4",
+      "bad": []
+    },
+    {
+      "id": "s20/d1",
+      "bad": []
+    },
+    {
+      "id": "s20/d2",
+      "bad": []
+    },
+    {
+      "id": "s20/d3",
+      "bad": []
+    },
+    {
+      "id": "s20/d4",
+      "bad": []
+    },
+    {
+      "id": "s21/d1",
+      "bad": []
+    },
+    {
+      "id": "s21/d2",
+      "bad": []
+    },
+    {
+      "id": "s21/d3",
+      "bad": []
+    },
+    {
+      "id": "s21/d4",
+      "bad": []
+    },
+    {
+      "id": "s22/d1",
+      "bad": []
+    },
+    {
+      "id": "s22/d2",
+      "bad": []
+    },
+    {
+      "id": "s22/d3",
+      "bad": []
+    },
+    {
+      "id": "s22/d4",
+      "bad": []
+    },
+    {
+      "id": "s23/d1",
+      "bad": []
+    },
+    {
+      "id": "s23/d2",
+      "bad": []
+    },
+    {
+      "id": "s23/d3",
+      "bad": []
+    },
+    {
+      "id": "s23/d4",
+      "bad": []
+    },
+    {
+      "id": "s24/d1",
+      "bad": []
+    },
+    {
+      "id": "s24/d2",
+      "bad": []
+    },
+    {
+      "id": "s24/d3",
+      "bad": []
+    },
+    {
+      "id": "s24/d4",
+      "bad": []
+    },
+    {
+      "id": "s25/d1",
+      "bad": []
+    },
+    {
+      "id": "s25/d2",
+      "bad": []
+    },
+    {
+      "id": "s25/d3",
+      "bad": []
+    },
+    {
+      "id": "s25/d4",
+      "bad": []
+    },
+    {
+      "id": "s26/d1",
+      "bad": []
+    },
+    {
+      "id": "s26/d2",
+      "bad": []
+    },
+    {
+      "id": "s26/d3",
+      "bad": []
+    },
+    {
+      "id": "s26/d4",
+      "bad": []
+    },
+    {
+      "id": "s27/d1",
+      "bad": []
+    },
+    {
+      "id": "s27/d2",
+      "bad": []
+    },
+    {
+      "id": "s27/d3",
+      "bad": []
+    },
+    {
+      "id": "s27/d4",
+      "bad": []
+    },
+    {
+      "id": "s28/d1",
+      "bad": []
+    },
+    {
+      "id": "s28/d2",
+      "bad": []
+    },
+    {
+      "id": "s28/d3",
+      "bad": []
+    },
+    {
+      "id": "s28/d4",
+      "bad": []
+    },
+    {
+      "id": "s29/d1",
+      "bad": []
+    },
+    {
+      "id": "s29/d2",
+      "bad": []
+    },
+    {
+      "id": "s29/d3",
+      "bad": []
+    },
+    {
+      "id": "s29/d4",
+      "bad": []
+    },
+    {
+      "id": "s30/d1",
+      "bad": []
+    },
+    {
+      "id": "s30/d2",
+      "bad": []
+    },
+    {
+      "id": "s30/d3",
+      "bad": []
+    },
+    {
+      "id": "s30/d4",
+      "bad": []
+    },
+    {
+      "id": "s31/d1",
+      "bad": []
+    },
+    {
+      "id": "s31/d2",
+      "bad": []
+    }
+  ],
+  "errors": [],
+  "missing": [],
+  "videos": [
+    {
+      "id": "s22",
+      "duration": 11.266016,
+      "ready": 4,
+      "playing": true
+    },
+    {
+      "id": "s26",
+      "duration": 10,
+      "ready": 4,
+      "playing": true
+    }
+  ]
+}

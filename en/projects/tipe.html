@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Shared analytics: automatic asynchronous loading. -->
+  <!-- Consent interface temporarily disabled: <link rel="stylesheet" href="../../assets/css/analytics-consent.css" /> -->
+  <script defer src="../../assets/js/analytics-consent.js?v=2"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Ball Impact Dynamics: a test bench I designed and built, experimental impact measurements, Python regressions, uncertainty analysis and comparison with a collision model." name="description"/>
+<title>Ball Impact Dynamics · Experimental Testing | Slimane Aouanouk</title><link href="tipe.html" hreflang="en" rel="alternate"/><link href="../../fr/projects/tipe.html" hreflang="fr" rel="alternate"/><link href="tipe.html" hreflang="x-default" rel="alternate"/>
+<link href="../../assets/css/style.css?v=12" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<link href="../../assets/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="../../assets/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="../../assets/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="../../assets/icons/favicon.ico" rel="icon"/>
+<link href="../../assets/icons/site.webmanifest" rel="manifest"/>
+<meta content="#0f1115" name="theme-color"/>
+</head>
+<body class="homepage turbine-page tipe-page">
+<div class="app-layout">
+<aside class="sidebar slide-up">
+<div class="profile-section">
+<a href="../index.html" style="text-decoration: none; color: inherit;">
+<span class="logo-text">SA.</span>
+</a>
+<span class="role-text">Graduate Engineering Student<br/>Arts et Métiers</span>
+</div>
+<nav class="nav-links">
+<a class="nav-item" href="../index.html"><i class="fas fa-home"></i> Dashboard</a>
+<a class="nav-item active" href="../projects.html"><i class="fas fa-code-branch"></i> Projects</a>
+<a class="nav-item" href="../resume.html"><i class="fas fa-file-alt"></i> Resume</a>
+<a class="nav-item" href="../academics.html"><i class="fas fa-graduation-cap"></i> Academics</a>
+<a class="nav-item" href="../experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+<a class="nav-item" href="../beyond.html"><i class="fas fa-compass"></i> Beyond Engineering</a>
+</nav>
+<div class="sidebar-footer">
+<div style="display: flex; gap: 20px; align-items: center; margin-bottom: 10px;">
+<a aria-label="Visit my LinkedIn profile" href="https://www.linkedin.com/in/slimane-aouanouk-b69b58320/" rel="noopener noreferrer" style="color: #7a8595; font-size: 1.3rem; transition: color 0.3s;" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+<a aria-label="Send an email to Slimane Aouanouk" href="mailto:aouanoukslim@gmail.com" style="color: #7a8595; font-size: 1.3rem; transition: color 0.3s;">
+<i class="fas fa-envelope"></i>
+</a>
+</div>
+<p style="opacity: 0.5; font-size: 0.75rem; margin: 0;">© 2025 Slimane AOUANOUK</p>
+</div>
+</aside>
+<main class="main-content turbine-main">
+<div class="slide-up delay-1 turbine-back-link">
+<a href="../projects.html"><i class="fas fa-arrow-left"></i> RETURN TO MATRIX</a>
+</div>
+<header class="tipe-hero slide-up delay-1">
+<div class="tipe-hero-copy">
+<span class="turbine-eyebrow">// TIPE · EXPERIMENTAL TESTING</span>
+<h1>Ball Impact Dynamics</h1>
+<div class="tipe-hero-tagline">A custom test bench. Experimental data. Python analysis.</div>
+<p>Does striker geometry change ball launch speed? I designed and built the rig independently, ran the experiments, and used Python to extract velocities and plot the results.</p>
+<div class="turbine-hero-actions">
+<a class="turbine-button turbine-button-primary" download="PRESENTATION_TIPE_55556_AOUANOUK.pdf" href="../../assets/documents/projects/tipe/presentation-tipe-55556.pdf">Presentation · FR PDF</a>
+<a class="turbine-button turbine-button-secondary" href="#experimental-bench">Explore the tests <span aria-hidden="true">↓</span></a>
+</div>
+</div>
+<button aria-label="My experimental setup · Enlarge" class="tipe-hero-visual" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Ball and interchangeable orange striker on the pendulum impact rig" fetchpriority="high" src="../../assets/images/projects/tipe/cover.png"/>
+<span class="tipe-hero-badge">My experimental setup · Enlarge <span aria-hidden="true">↗</span></span>
+</button>
+</header>
+<section aria-label="Project at a glance" class="turbine-metrics tipe-metrics slide-up delay-2"><article><strong>1</strong><span>rig designed &amp; built independently</span></article><article><strong>4</strong><span>striker geometries tested</span></article><article><strong>0.27</strong><span>mm/px · spatial calibration</span></article><article><strong>4.0</strong><span>m/s · 12 mm cylinder &amp; plate case</span></article></section>
+
+<section class="turbine-section tipe-section slide-up" id="experimental-bench" aria-labelledby="bench-title">
+<div class="turbine-section-heading"><span class="turbine-section-index">01 · DESIGN &amp; TEST</span><h2 id="bench-title">From a question to a physical test bench</h2></div>
+<div class="tipe-contributions"><article><span class="tipe-step-number">01</span><h3>Design</h3><p>I isolated contact geometry with a guided pendulum.</p></article><article><span class="tipe-step-number">02</span><h3>Build</h3><p>I assembled the frame and made interchangeable PLA heads.</p></article><article><span class="tipe-step-number">03</span><h3>Test</h3><p>I recorded impacts and compared ball and striker motion.</p></article></div>
+<div class="tipe-bench-grid">
+<figure class="tipe-rig-diagram">
+<svg viewBox="0 0 560 330" role="img" aria-labelledby="rig-title rig-description" xmlns="http://www.w3.org/2000/svg">
+<title id="rig-title">Test bench, simplified side view</title><desc id="rig-description">A pendulum rotates about a pivot between vertical guides. Its interchangeable head strikes a stationary ball. A side-view camera records the collision. Schematic, not to scale.</desc>
+<path d="M70 291H422M180 291V65H270V291" fill="none" stroke="#cbd5e1" stroke-width="10" stroke-linejoin="round"/>
+<path d="M218 80L116 222" fill="none" stroke="#cbd5e1" stroke-width="14" stroke-linecap="round" stroke-dasharray="5 13"/>
+<path d="M218 80V242" fill="none" stroke="#334155" stroke-width="18" stroke-linecap="round"/>
+<circle cx="218" cy="80" r="10" fill="#fff" stroke="#334155" stroke-width="4"/>
+<rect x="204" y="228" width="28" height="35" rx="4" fill="#ea580c"/><path d="M230 246H281" stroke="#ea580c" stroke-width="12" stroke-linecap="round"/>
+<circle cx="322" cy="246" r="40" fill="#e0f2fe" stroke="#0284c7" stroke-width="3"/>
+<path d="M292 219Q328 235 348 274M286 258Q319 240 354 231" fill="none" stroke="#7dd3fc" stroke-width="2"/>
+<path d="M172 82V239M166 82H178M166 239H178" fill="none" stroke="#64748b" stroke-width="2"/>
+<g transform="translate(428 132)" fill="none" stroke="#0284c7" stroke-width="3"><rect width="54" height="38" rx="7"/><circle cx="27" cy="19" r="10"/><path d="M54 12L70 5V33L54 26M27 38V69M12 69L27 51L42 69"/></g>
+<path d="M429 172L365 207" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 6"/>
+<g class="tipe-svg-marker" transform="translate(218 57)"><circle r="16"/><text y="5">1</text></g><g class="tipe-svg-marker" transform="translate(162 173)"><circle r="16"/><text y="5">2</text></g><g class="tipe-svg-marker" transform="translate(241 281)"><circle r="16"/><text y="5">3</text></g><g class="tipe-svg-marker" transform="translate(378 274)"><circle r="16"/><text y="5">4</text></g><g class="tipe-svg-marker" transform="translate(463 101)"><circle r="16"/><text y="5">5</text></g>
+</svg>
+<figcaption><strong>A controlled impact setup</strong><span>Side view · schematic, not to scale</span></figcaption>
+<ol class="tipe-rig-legend"><li><span>1</span>Pivot &amp; guide frame</li><li><span>2</span>Pendulum · L = 46 cm</li><li><span>3</span>Interchangeable striker</li><li><span>4</span>Stationary ball</li><li><span>5</span>Side-view video</li></ol>
+</figure>
+<figure class="turbine-figure tipe-evidence tipe-bench-photo">
+<button aria-label="Enlarge: Built and tested by me" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Two views of the test bench I built, showing the wooden frame, pendulum and orange striker heads" loading="lazy" src="../../assets/images/projects/tipe/test-bench-rig.webp"/>
+</button>
+<figcaption><strong>Built and tested by me</strong><span>Guided arm, weighted pendulum and interchangeable orange impactors.</span></figcaption>
+</figure>
+</div>
+<div class="tipe-protocol-grid">
+<figure class="turbine-figure tipe-evidence tipe-heads">
+<button aria-label="Enlarge: One rig, four contact geometries" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Three cylindrical PLA striker heads and a flat plate, shown from the side and front" loading="lazy" src="../../assets/images/projects/tipe/impactor-geometries.webp"/>
+</button>
+<figcaption><strong>One rig, four contact geometries</strong><span>3D-printed PLA heads: Ø 6, 12, 24 mm and flat plate.</span></figcaption>
+</figure>
+<div class="tipe-table-wrap"><table class="tipe-table"><caption>Test protocol</caption><thead><tr><th scope="col">Role</th><th scope="col">Parameter</th><th scope="col">Purpose</th></tr></thead><tbody><tr><th scope="row">Varied</th><td>Striker: Ø 6 / 12 / 24 mm or plate</td><td>Compare contact geometry</td></tr><tr><th scope="row">Controlled</th><td>Same pendulum; ball pressure 0.2 bar</td><td>Limit changes between configurations</td></tr><tr><th scope="row">Measured</th><td>x₁(t), x₂(t), velocities &amp; contact interval</td><td>Compare impact kinematics</td></tr></tbody></table></div>
+</div>
+</section>
+
+<section class="turbine-section tipe-section slide-up" id="measurement-pipeline" aria-labelledby="method-title">
+<div class="turbine-section-heading"><span class="turbine-section-index">02 · MEASURE &amp; ANALYZE</span><h2 id="method-title">From video frames to measured dynamics</h2></div>
+<ol class="tipe-pipeline"><li><span class="tipe-step-number">01</span><svg viewBox="0 0 64 52" aria-hidden="true" focusable="false"><rect x="6" y="13" width="40" height="29" rx="5"/><circle cx="26" cy="27" r="8"/><path d="M17 13L20 7H33L36 13M46 20L58 14V40L46 34"/></svg><h3>Record</h3><p>Side-view video captures approach, contact and ball departure.</p></li><li><span class="tipe-step-number">02</span><svg viewBox="0 0 64 52" aria-hidden="true" focusable="false"><path d="M9 6V47H59M16 14H27M16 25H22M16 36H27"/><circle cx="39" cy="21" r="5"/><circle cx="49" cy="34" r="5"/><path d="M39 10V13M39 29V32M28 21H31M47 21H50"/></svg><h3>Track &amp; calibrate</h3><p>Frame-by-frame coordinates; 1 px = 0.27 mm.</p></li><li><span class="tipe-step-number">03</span><svg viewBox="0 0 64 52" aria-hidden="true" focusable="false"><rect x="6" y="7" width="53" height="39" rx="5"/><path d="M6 17H59M23 26L16 31L23 36M42 26L49 31L42 36M36 24L30 39"/></svg><h3>Process in Python</h3><p>Convert coordinates, evaluate uncertainty, fit trajectories.</p></li><li><span class="tipe-step-number">04</span><svg viewBox="0 0 64 52" aria-hidden="true" focusable="false"><path d="M9 5V46H59M16 36L26 29L38 24L52 11"/><circle cx="19" cy="34" r="2"/><circle cx="31" cy="29" r="2"/><circle cx="43" cy="16" r="2"/><path d="M31 23V35M27 23H35M27 35H35"/></svg><h3>Plot &amp; compare</h3><p>Positions, error bars and fitted velocities for each case.</p></li></ol>
+<figure class="turbine-figure tipe-evidence tipe-chronophoto">
+<button aria-label="Enlarge: The physical event behind the data" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Four frames of an impact showing the striker approaching, deforming and releasing the ball" loading="lazy" src="../../assets/images/projects/tipe/impact-chronophotography.webp"/>
+</button>
+<figcaption><strong>The physical event behind the data</strong><span>Approach, deformation and departure captured in successive video frames.</span></figcaption>
+</figure>
+<figure class="turbine-figure tipe-evidence tipe-main-chart">
+<button aria-label="Enlarge: Ball trajectories &amp; fitted launch velocities" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Ball position versus time for the 12 mm cylinder and plate, with uncertainty bars, linear fits and contact zones" loading="lazy" src="../../assets/images/projects/tipe/ball-regression-contact.webp"/>
+</button>
+<figcaption><strong>Ball trajectories &amp; fitted launch velocities</strong><span>12 mm cylinder and plate: both fitted launch speeds are 4.0 m/s in this comparison. Error bars retain measurement uncertainty.</span></figcaption>
+</figure>
+<div class="tipe-analysis-grid">
+<figure class="turbine-figure tipe-evidence ">
+<button aria-label="Enlarge: Striker motion before and after impact" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Measured striker position versus time with linear fits before and after collision" loading="lazy" src="../../assets/images/projects/tipe/striker-kinematics.webp"/>
+</button>
+<figcaption><strong>Striker motion before and after impact</strong><span>Example fits: 2.2 m/s before impact; 2.0 m/s after.</span></figcaption>
+</figure>
+<div class="tipe-analysis-notes">
+<article class="tipe-equation-card">
+<span class="tipe-card-label">EXTRACTING VELOCITY</span><h3>A slope becomes a speed</h3>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="x of t equals a times t plus b"><mrow><mi>x</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><mi>a</mi><mi>t</mi><mo>+</mo><mi>b</mi></mrow></math>
+<p>Fit each trajectory outside the contact interval: slope a gives the pre- or post-impact velocity.</p>
+</article>
+<div class="tipe-python-summary"><h3>What I processed in Python</h3><ul><li>Pixel-to-metre conversion</li><li>Type B measurement uncertainty</li><li>Linear regressions with SciPy</li></ul></div>
+</div>
+</div>
+<details class="tipe-details"><summary>See the Python analysis</summary><div class="tipe-details-content"><figure class="turbine-figure tipe-evidence tipe-code">
+<button aria-label="Enlarge: Data reduction and regression script" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Python code for spatial calibration, Type B uncertainty and linear regressions of measured coordinates" loading="lazy" src="../../assets/images/projects/tipe/python-analysis-code.webp"/>
+</button>
+<figcaption><strong>Data reduction and regression script</strong><span>Source excerpt: spatial scale, uncertainty calculation and scipy.stats.linregress. Video point tracking is a separate step.</span></figcaption>
+</figure></div></details>
+</section>
+
+<section class="turbine-section tipe-section slide-up" id="results" aria-labelledby="results-title">
+<div class="turbine-section-heading"><span class="turbine-section-index">03 · COMPARE &amp; INTERPRET</span><h2 id="results-title">What the measurements support</h2></div>
+<div class="tipe-results-grid">
+<figure class="turbine-figure tipe-evidence ">
+<button aria-label="Enlarge: Geometry comparison across impact regimes" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Ball launch speed versus striker speed for toe and flat impacts, separating elastic and real-football cases" loading="lazy" src="../../assets/images/projects/tipe/speed-ratio-comparison.webp"/>
+</button>
+<figcaption><strong>Geometry comparison across impact regimes</strong><span>Elastic and real-football cases are shown separately. Toe and flat strikes follow comparable trends within each regime.</span></figcaption>
+</figure>
+<figure class="turbine-figure tipe-evidence ">
+<button aria-label="Enlarge: Different contact, different deformation" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Comparison of local ball deformation during cylindrical and flat plate impacts" loading="lazy" src="../../assets/images/projects/tipe/ball-deformation-contact.webp"/>
+</button>
+<figcaption><strong>Different contact, different deformation</strong><span>The cylinder concentrates deformation; the plate distributes it over a wider area.</span></figcaption>
+</figure>
+</div>
+<div class="tipe-table-wrap"><table class="tipe-table"><caption>Experimental findings and their interpretation</caption><thead><tr><th scope="col">Observation</th><th scope="col">Evidence</th><th scope="col">Interpretation</th></tr></thead><tbody><tr><th scope="row">4.0 m/s in both cases</th><td>12 mm / plate trajectory fits</td><td>Comparable launch speed in this example</td></tr><tr><th scope="row">Shorter contact for wider heads</th><td>Contact zones and impact images</td><td>Geometry affects contact duration</td></tr><tr><th scope="row">Elastic points approach v′₂ ≈ 2v₁</th><td>Speed comparison graph</td><td>Consistent with a heavy, nearly elastic striker</td></tr></tbody></table></div>
+<div class="tipe-model-grid">
+<article class="tipe-equation-card tipe-collision-card"><span class="tipe-card-label">MODEL CHECK</span><h3>A reference for the experiments</h3>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="Ball launch speed divided by striker approach speed equals one plus restitution coefficient divided by one plus ball mass divided by striker mass"><mrow><mfrac><msubsup><mi>v</mi><mn>2</mn><mo>′</mo></msubsup><msub><mi>v</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mi>e</mi></mrow><mrow><mn>1</mn><mo>+</mo><mfrac><msub><mi>m</mi><mn>2</mn></msub><msub><mi>m</mi><mn>1</mn></msub></mfrac></mrow></mfrac></mrow></math>
+<p>Ball initially at rest; external impulse neglected during contact. m₁: striker, m₂: ball, e: restitution coefficient. For m₁ ≫ m₂ and e ≈ 1, the ideal ratio approaches 2.</p></article>
+<aside class="tipe-result-note"><span class="tipe-card-label">ENGINEERING TAKEAWAY</span><h3>Comparable speed, different contact</h3><p>Changing the head separated two effects: comparable launch speeds in the illustrated 12 mm / plate case, but different deformation and contact duration.</p></aside>
+</div>
+<details class="tipe-details"><summary>Beyond the rig: the football context</summary><div class="tipe-details-content"><p>Human kicks add joint motion, timing and aiming. This biomechanical discussion, informed by LadHyX / École Polytechnique research, is separate from the pendulum measurements.</p><figure class="turbine-figure tipe-evidence ">
+<button aria-label="Enlarge: From controlled impact to a human kick" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Chronophotographic comparison of toe-kick and inside-foot execution" loading="lazy" src="../../assets/images/projects/tipe/human-kick-kinematics.webp"/>
+</button>
+<figcaption><strong>From controlled impact to a human kick</strong><span>Toe and inside-foot motion sequences provide context for the sports question.</span></figcaption>
+</figure></div></details>
+</section>
+
+<section class="turbine-section tipe-section slide-up" id="documentation" aria-labelledby="docs-title">
+<div class="turbine-section-heading"><span class="turbine-section-index">04 · DOCUMENTATION</span><h2 id="docs-title">Explore the technical work</h2></div>
+<div class="tipe-docs-grid">
+<article class="tipe-doc-card"><div><span class="tipe-card-label">DEFENSE SLIDES · FR</span><h3>Full presentation</h3><p>31 slides: bench, measurements, Python, model and discussion.</p></div><a class="turbine-button turbine-button-primary" download="PRESENTATION_TIPE_55556_AOUANOUK.pdf" href="../../assets/documents/projects/tipe/presentation-tipe-55556.pdf">Download slides <span aria-hidden="true">↓</span></a></article>
+<article class="tipe-doc-card"><div><span class="tipe-card-label">TECHNICAL POSTER · EN</span><h3>One-page overview</h3><p>Experimental setup, trajectory plots and main conclusions.</p></div><a class="turbine-button turbine-button-outline" download="TIPE_BALL_IMPACT_DYNAMICS_AOUANOUK.pdf" href="../../assets/documents/projects/tipe/tipe.pdf">Download poster <span aria-hidden="true">↓</span></a></article>
+</div>
+</section>
+</main>
+</div>
+<script src="../../assets/js/script.js?v=10"></script>
+</body>
+</html>

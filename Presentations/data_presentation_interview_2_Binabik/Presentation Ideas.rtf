@@ -1,0 +1,397 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2908
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\fswiss\fcharset0 Helvetica-Bold;
+\f3\froman\fcharset0 TimesNewRomanPSMT;\f4\froman\fcharset0 Times-Bold;\f5\froman\fcharset0 TimesNewRomanPS-BoldMT;
+\f6\froman\fcharset0 Times-BoldItalic;\f7\fnil\fcharset0 .TimesFB-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww22500\viewh15780\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 Dans ce fichier, je vais noter toutes les id\'e9es que j'ai en t\'eate au fur et \'e0 mesure que je lis l'analyse du rapport. Ce sont les id\'e9es pour la deuxi\'e8me pr\'e9sentation technique que je vais faire. \
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs24 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Giovanni propose une r\'e9union plus technique avec une pr\'e9sentation d'environ 20 minutes.\
+Il souhaite comprendre :\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 \strokec2 "What was hard, what were the problems, and how you solved them."\strokec2 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b\fs40 \cf0 \kerning1\expnd0\expndtw0 \ul \ulc0 \outl0\strokewidth0 Intro :\
+
+\f0\b0 \ulnone \
+Peut-\'eatre que ce serait pas mal de faire une introduction et de dire\uc0\u8239 : \'ab\u8239 Comme je l'ai dit la derni\'e8re fois, je suis actuellement en train de travailler sur le robot Unitree G1. M\'eame si ce n'est pas exactement celui que vous utilisez dans les industries, \'e7a me donnera finalement les bases pour avoir un impact l\'e0-bas, \'e0 Binabik.\u8239 \'bb Cependant, dans cette pr\'e9sentation, je vais surtout parler des projets que j'ai faits avant, et pas de mon projet actuel, parce que je ne l'ai pas encore bien avanc\'e9. Comme \'e7a, je vais vous montrer que j'ai r\'e9ussi \'e0 faire des raisonnements, \'e0 montrer tout le pipeline et toute la technique que j'ai utilis\'e9e. Je vais donc vous faire comprendre qu'en fin de compte, je suis capable de m'adapter, je suis capable d'apprendre vite et je vais \'eatre capable de faire \'e7a durant ce stage de 6 mois \'e0 Binabik.\
+\
+\'c9videmment, je ne vais pas te dire comme \'e7a, parce qu'il faut bien aussi modifier comment le dire, mais dans l'id\'e9e, c'est \'e7a que j'ai envie de convey durant cette introduction. J'aimerais qu'ils se disent\uc0\u8239 : \'ab\u8239 OK, c'est vrai que, dans le pass\'e9, il n'a pas travaill\'e9 exactement sur des trucs qui sont nos probl\'e9matiques actuelles, mais il a fait des choses. Il a \'e9t\'e9 capable de raisonner, il a rencontr\'e9 des probl\'e8mes et trouv\'e9 des solutions, et c'est \'e7a qu'on veut. On veut quelqu'un qui peut s'adapter vite, trouver des solutions \'e0 des probl\'e8mes, et ainsi de suite.\u8239 \'bb \
+\
+
+\f2\b \ul Global sur les differentes \'e9tapes du projet :\
+
+\f0\b0 \ulnone \
+\pard\pardeftab720\partightenfactor0
+\cf0 Il faut qu'\'e0 chaque fois que je parle d'un aspect du projet \'e0 Singapour ou de n'importe quel projet, j'adapte ce fil rouge dans la slide : les probl\'e8mes rencontr\'e9s et les solutions apport\'e9es. Pour montrer qu'il y a eu des soucis et que j'ai r\'e9ussi \'e0 les surmonter .\
+Ce qui serait bien \'e9galement, ce serait de r\'e9utiliser des choses dites dans le transcript pour montrer que j'ai compris ce qu'ils ont dit et que j'ai compris les besoins de Binabik. Et que, m\'eame si j'ai compris tout \'e7a, je sais que je peux avoir un impact. C'est l\'e0 que, vraiment, je pense qu'il y a chez eux quelque chose qui peut changer.\
+\
+Ils vont potentiellement se dire, je pense (\'e9videmment, corrige-moi si tu crois autre chose)\uc0\u8239 : \'ab\u8239 Oui, il a compris c'\'e9tait quoi notre probl\'e9matique, il conna\'eet son parcours, il sait qu'il peut avoir un impact comme \'e7a.\u8239 \'bb\
+\
+L'objectif, je pense (\'e9videmment, on peut en rediscuter), c'est qu'\'e0 la fin de cette interview, ils veulent me donner ma chance pour ce stage de 6 mois. D'ailleurs, un truc que j'ai appris r\'e9cemment, c'est que mon stage n'est pas oblig\'e9 de durer 6 mois. Je peux m\'eame leur dire\uc0\u8239 : avec l'\'e9cole, j'ai appris r\'e9cemment que le stage peut durer 5 mois \'e0 la place de 6. Donc, si \'e7a vous arrange et que vous ne voulez pas forc\'e9ment prendre un risque long, on peut faire 5 mois. \
+\
+\'97\
+\
+\'c9galement, je r\'e9fl\'e9chis actuellement \'e0 la forme du diaporama qui va \'eatre l\'e0. L'objectif, ce serait de reprendre ce qu'on a fait dans la premi\'e8re pr\'e9sentation, mais cette fois en la centrant en plus sur le c\'f4t\'e9 technique et typiquement en ajoutant, dans chaque slide, des boutons. Quand on appuie dessus, ce sont, on va dire, des sous-slides\uc0\u8239 : des trucs qui ne seraient pas pr\'e9vus dans la pr\'e9sentation initiale. Typiquement, quand je ferai l'interview, je ferai des perches. J'attendrais qu'il me questionne l\'e0-dessus, et je pourrais d\'e9velopper avec ces autres slides que j'ai pr\'e9par\'e9s pour \'e7a. \
+[Il faudra faire attention quand je le mettrai en PDF, parce qu'au cas o\'f9 il y a un probl\'e8me avec le site, il faudrait que je mette toutes les annexes \'e0 la fin.]\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b \cf0 \ul \ulc0 Concernant le projet VLA :\
+
+\f0\b0 \ulnone \
+Je vais en reparler \'e0 la fin, en mettant des informations sur notamment l'avancement qui a \'e9t\'e9 fait depuis le premier rendez-vous avec Olivier Bruneau. 
+\f1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Et notamment, rajouter le fait que, pour l'instant, on a pens\'e9 \'e0 deux \'e9tapes
+\f3 \uc0\u8239 
+\f1 :\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Plier un habit.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'c9plucher une pomme de terre, ce qui \'e9tait donc un peu plus ambitieux.\
+\pard\pardeftab720\partightenfactor0
+\cf0 A priori, \'e7a demandait une agilit\'e9 qui n'avait pas encore \'e9t\'e9 faite, et c'\'e9tait quelque chose de tr\'e8s ambitieux, vu que, pour l'instant, \'e7a n'a jamais \'e9t\'e9 fait et \'e7a n'a jamais \'e9t\'e9 fluide.\
+L'objectif, en fait, de parler encore de mon projet VLA \'e0 la fin, c'est de dire que, m\'eame si, avec tout ce que je vous ai dit, vous n'avez pas forc\'e9ment \'e9t\'e9 convaincus, sachez que, quand m\'eame, j'ai r\'e9ussi \'e0 le faire. Donc, m\'eame si ce ne sont pas des comp\'e9tences qui directement pourraient servir \'e0 Binabik, j'ai r\'e9ussi \'e0 faire tout \'e7a et \'e0 apprendre tout \'e7a. Maintenant, je suis en train d'apprendre avec un robot Unitree G1, et c'est \'e7a que je suis en train de faire pour mon projet de master. \'c7a veut dire que quand j'arriverai \'e0 Binabik, j'aurai d\'e9j\'e0 tout \'e7a en t\'eate. Je pourrais donc aussi renforcer l'id\'e9e de \'ab
+\f3 \uc0\u8239 
+\f1 voil\'e0, si vous voulez que je fasse un truc en plus, je peux en parler au professeur encadrant et modifier un peu le projet pour que ce soit plus compliant avec les objectifs de Binabik
+\f3 \uc0\u8239 
+\f1 \'bb. Apr\'e8s, c'est transposable typiquement
+\f3 \uc0\u8239 
+\f1 : si j'arrive \'e0 le faire \'e9pucer une pomme de terre et que c'est quelque chose qui est tr\'e8s dur actuellement, je pense que je pourrais, par analogie, faire pareil avec d'autres t\'e2ches. \
+\'c9videmment, recontextualiser avec le fait que, oui, j'ai compris que vous ne travaillez pas forc\'e9ment avec le Unitree G1 dans les entreprises (car les jambes, ce n'est pas top dans les usines), mais que vous travaillez avec la Agibot G2. Cependant, je pense que les skills que j'apprendrai l\'e0-bas, ou m\'eame si je travaille au niveau de la manipulation avec les mains, \'e7a pourrait \'eatre quelque chose de r\'e9utilisable pour ce stage. \
+\
+\
+
+\f4\b Concernant mes points forts :\
+\
+
+\f1\b0 L'objectif serait de pouvoir utiliser les points forts que Giovanni m'a dits la derni\'e8re fois, de les r\'e9affirmer et encore l'influencer pour lui dire
+\f3 \uc0\u8239 
+\f1 : \'ab
+\f3 \uc0\u8239 
+\f1 OK, c'est vrai, j'ai ces points-l\'e0.
+\f3 \uc0\u8239 
+\f1 \'bb Comme il les a d\'e9j\'e0 reconnus, \'e9videmment, si j'arrive \'e0 en trouver d'autres \'e0 pr\'e9senter, c'est bien. Mais s'il a d\'e9j\'e0 reconnu certains points forts, \'e7a veut dire qu'il les croit, et donc c'est l\'e0-dessus que je vais jouer en insistant un peu plus et en donnant plus de d\'e9tails .\
+\
+
+\f4\b \ul Projet fanuc : \
+\ulnone \
+
+\f1\b0 Pour ce projet-l\'e0, malheureusement, comme le c\'9cur technique n'est pas si \'e9lev\'e9 que \'e7a, le vrai avantage et la vraie plus-value de ce projet-l\'e0, c'est d'expliquer que j'ai \'e9t\'e9 capable d'identifier une t\'e2che r\'e9p\'e9titive et de moi-m\'eame me dire
+\f3 \uc0\u8239 
+\f1 : \'ab
+\f3 \uc0\u8239 
+\f1 D'accord, \'e7a, on peut l'automatiser.
+\f3 \uc0\u8239 
+\f1 \'bb Et faire donc ce projet en totale autonomie, en essayant de m'amuser l\'e0-dessus et en essayant d'optimiser \'e7a. Mais apr\'e8s, malheureusement, le c\'9cur technique n'est pas si bon que \'e7a, parce qu'en fait, c'\'e9tait avec RoboGuide. C'\'e9tait juste copier-coller du code. J'ai fait \'e7a il y a 3 ans, et je me souviens qu'\'e0 un moment, c'\'e9tait un template qu'un prof avait donn\'e9. Juste en r\'e9utilisant \'e7a pour essayer de le faire marcher, on avait r\'e9ussi \'e0 le faire, mais honn\'eatement, au niveau du technique, l\'e0-dedans, je pense qu'il n'y a rien de d\'e9montrable.\
+\
+Donc l\'e0, je pense que la vraie plus-value de ce projet-l\'e0, c'\'e9tait vraiment le fait de se dire que j'ai \'e9t\'e9 capable de r\'e9fl\'e9chir \'e0 un probl\'e8me et \'e0 cette solution de l'automatisation (\'e0 partir d'une exp\'e9rience que moi-m\'eame j'ai faite dans le monde industriel et que j'ai \'e9t\'e9, \'e0 la fin, capable de produire, donc cette simulation avec RoboGuide). Et aller jusqu'\'e0 choisir le bon robot Fanuc, choisir le moule qu'on a fait en CAO. L\'e0, voil\'e0, c'est un petit projet que j'ai fait avec deux amis. Car on voulait donc se renseigner l\'e0-dedans. Dans le projet, il y a une personne dans le groupe qui a voulu faire une analyse financi\'e8re l\'e0-dessus, donc faire des calculs de rendement, tout \'e7a.\
+\
+L\'e0, je ne l'ai pas mise parce que moi, je n'ai pas particip\'e9 \'e0 cette analyse financi\'e8re et, en plus, \'e0 la fin, ce n'\'e9tait pas quelque chose de tr\'e8s relevant. C'\'e9tait surtout, on va dire, une simulation pas tr\'e8s proche de la r\'e9alit\'e9, parce qu'\'e0 la fin, je me souviens qu'on avait trouv\'e9 un profit qui \'e9tait \'e9norme en euros. En fin de compte, apr\'e8s r\'e9flexion, on s'est rendu compte qu'il n'y avait pas un besoin aussi grand d'automatiser ces t\'e2ches. ( Ou sinon, je ne me souviens plus tr\'e8s bien de la conclusion. ) \
+
+\f4\b [il faut que je regarde quel est l'angle le plus avantageux pour moi pour pr\'e9senter ce projet, sachant tout \'e7a
+\f5 \uc0\u8239 
+\f4 : est-ce que \'e7a vaut le coup de \'ab
+\f5 \uc0\u8239 
+\f4 rabaisser un peu mon projet
+\f5 \uc0\u8239 
+\f4 \'bb (en expliquant qu'il n'y a pas beaucoup de choses \'e0 en tirer sur le c\'f4t\'e9 technique)
+\f5 \uc0\u8239 
+\f4 ? Ou est-ce que \'e7a vaut le coup de parler avec confiance et dire
+\f5 \uc0\u8239 
+\f4 : \'ab
+\f5 \uc0\u8239 
+\f4 OK
+\f5 \uc0\u8239 
+\f4 \'bb, en mettant \'e7a sous le tapis, sans expliciter qu'il n'y a pas trop grand-chose \'e0 gratter du c\'f4t\'e9 technique
+\f5 \uc0\u8239 
+\f4 ? ]\
+\
+
+\f1\b0  apr\'e8s avoir relu finalement la pipeline industrielle d\'e9crite par Giovanni, je pense que ce projet pourrait avoir de l'impact en expliquant que, finalement, cette pipeline qu'il m'a pr\'e9sent\'e9e, je l'ai faite dans ce projet-l\'e0.\
+\
+J'ai identifi\'e9 l'industrial use case, j'ai \'e9tudi\'e9 la feasibility. Apr\'e8s, j'ai fait la simulation, en faisant aussi des benchmarks au niveau du gain
+\f3 \uc0\u8239 
+\f1 : qu'est-ce que \'e7a va produire comme gain
+\f3 \uc0\u8239 
+\f1 ? L'op\'e9ration, actuellement, elle prend tant de temps. Gr\'e2ce \'e0 ce robot, elle va prendre beaucoup moins, et ainsi de suite.\
+\
+Vraiment, c'\'e9tait \'e7a aussi, l'appr\'e9ci\'e9, mais pour le coup, c'est pas technique. C'est plut\'f4t un point de vue global l\'e0-dessus. C'est malheureusement quelque chose que je pourrais vraiment recycler au niveau de la technique selon moi.\
+\
+\pard\pardeftab720\sa240\qc\partightenfactor0
+
+\f6\i\b\fs24 \cf0 \strokec2 Pipeline industriel d\'e9crit par Giovanni\
+
+\f4\i0 1. Industrial use case\
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1\b0 \cf0 \strokec2 Un client souhaite automatiser une t\'e2che r\'e9elle\
+\
+\pard\pardeftab720\sa240\qc\partightenfactor0
+
+\f4\b \cf0 \strokec2 2. Feasibility study\
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1\b0 \cf0 \strokec2 Robot, force, payload, gripper, contraintes physiques\
+\
+\pard\pardeftab720\sa240\qc\partightenfactor0
+
+\f4\b \cf0 \strokec2 3. Robot integration\
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1\b0 \cf0 \strokec2 Perception, localisation des objets, manipulation, ex\'e9cution du workflow\
+\
+\pard\pardeftab720\sa240\qc\partightenfactor0
+
+\f4\b \cf0 \strokec2 4. Transition toward markerless perception\
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1\b0 \cf0 \strokec2 AprilTags comme r\'e9f\'e9rences pour \'e9valuer les solutions de pose estimation et de grasp generation\
+\
+\pard\pardeftab720\sa240\qc\partightenfactor0
+
+\f4\b \cf0 \strokec2 5. Reliable industrial execution\
+\pard\pardeftab720\qc\partightenfactor0
+
+\f1\b0 \cf0 \strokec2 Objectif : fonctionnement autonome et r\'e9p\'e9table dans les conditions du client\
+\
+
+\f6\i\b Reconstruction simplifi\'e9e de son explication. La derni\'e8re \'e9tape est l'objectif recherch\'e9, pas la preuve d'un d\'e9ploiement d\'e9j\'e0 valid\'e9.
+\fs40 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\i0 \cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \ul \ulc0 \outl0\strokewidth0 Belek presentation des slides : \
+\ulnone \
+
+\f1\b0 Peut-\'eatre que ce qui peut \'eatre pas mal pour la pr\'e9sentation des slides, c'est d'essayer de mettre quelque part, comme une sorte de titre ou sous-titre, la comp\'e9tence que je montre. Par exemple, lorsque je parle de mon projet Singapour, une comp\'e9tence pourrait \'eatre \'ab
+\f3 \uc0\u8239 
+\f1 faire une exp\'e9rimentation
+\f3 \uc0\u8239 
+\f1 \'bb, ou en anglais, ce serait \'ab
+\f3 \uc0\u8239 
+\f1 make an experimentation end to end
+\f3 \uc0\u8239 
+\f1 \'bb. Une autre comp\'e9tence, \'e7a pourrait \'eatre \'ab
+\f3 \uc0\u8239 
+\f1 extract ideas from papers and implement them
+\f3 \uc0\u8239 
+\f1 \'bb, c'est-\'e0-dire la capacit\'e9 \'e0 vraiment pouvoir prendre diff\'e9rents papiers, diff\'e9rentes id\'e9es, et \'eatre capable finalement d'exporter tout \'e7a. \
+\
+Et l'id\'e9e de vraiment faire quelque chose qui marche, \'e7a veut dire faire marcher un robot. \'c7a pourrait \'eatre aussi une id\'e9e. Par exemple, une capacit\'e9
+\f3 \uc0\u8239 
+\f1 : faire marcher un robot inconnu. Le fait que le rover, c'\'e9tait inconnu pour moi, j'ai r\'e9ussi \'e0 le faire marcher. \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f4\b \cf0 \ul Singap : \
+\ulnone \
+
+\f1\b0 Je pense que ce serait bien d'expliquer que, pour ce projet-l\'e0, je suis arriv\'e9 en stage et j'ai d\'fb apprendre \'e0 partir des papiers. Je n'ai pas eu de cours auparavant l\'e0-dessus, et donc je devais lire des articles scientifiques et me former tout seul en autonomie. Et actuellement, justement, quand je fais des cours l\'e0-dessus, sur le motion planning, la navigation et autres, c'est marrant parce que je me revois cet \'e9t\'e9. Finalement, en ayant appris sur le tas, j'ai beaucoup aim\'e9 \'e7a, et je trouvais que c'\'e9tait une approche diff\'e9rente de ce qu'on peut avoir en cours. Mais j'ai beaucoup aim\'e9 et, en fait, \'e0 la fin, j'ai pu comprendre que j'\'e9tais capable d'apprendre quelque chose de z\'e9ro. Car, en effet, auparavant, j'avais eu des cours de m\'e9canique, d'industrial engineering et, \'e9videmment, tous les fondamentaux en maths, physique et tous les outils de base. J'ai eu cette base th\'e9orique et, gr\'e2ce \'e0 \'e7a, j'\'e9tais capable de comprendre le reste. \'c7a veut dire que, quand on me parlait de gradient, de champ de potentiel ou autre, honn\'eatement, avoir fait tout ce theoretical background m'a \'e9t\'e9 super utile. 
+\f4\b [ Je pense que, d'ailleurs, \'e7a vaut le coup de parler de la pr\'e9pa dans l'entretien
+\f5 \uc0\u8239 
+\f4 : dire que j'ai fait 2 ans de classe pr\'e9paratoire, puis j'ai fait Arts et M\'e9tiers, et maintenant je fais le master \'e0 la Sorbonne. Comme \'e7a, \'e7a va bien montrer que j'ai une formation vraiment longue et th\'e9orique ]\
+\
+
+\f1\b0 "Once you go to a factory floor, conditions are changing and it's hard to have repeatability." =>  reprendre cette id\'e9e-l\'e0  lorsque je parle de mon projet \'e0 Singapour . [  ce qui serait peut-\'eatre pas mal, c'est tout simplement, \'e0 partir du transcript, rep\'e9rer des id\'e9es qu'il a dites qui font partie de Binabik et les r\'e9utiliser pour montrer que j'ai tout \'e7a. Tout ce qu'il a cit\'e9, finalement, je l'ai, moi, et j'ai bien compris ce que Binabik attend. Tout ce qu'il dit, je l'ai, et du coup je peux travailler l\'e0-bas ]\
+\
+C'est peut-\'eatre pas mal aussi de rajouter des screens du code \'e0 des moments. Analyser avec ChatGPT pour voir si c'est une bonne id\'e9e. \
+
+\f4\b \
+Intro de Singapour:\
+
+\f1\b0 Je pense qu'ici, \'e7a peut \'eatre pas mal de rappeler que le projet reposait sur des drones et sur l'anticollision des drones. En expliquant rapidement, en 15 secondes, un truc comme \'e7a
+\f3 \uc0\u8239 
+\f1 : le projet DesCartes , et le role des drones l\'e0-bas. \
+
+\f4\b \
+Orga global :\
+
+\f1\b0 Je pense que, pour ce projet-l\'e0, \'e7a peut \'eatre pas mal de commencer par une partie g\'e9n\'e9rale o\'f9 je pr\'e9sente les deux phases et, en gros, parle du projet de mani\'e8re globale. Puis apr\'e8s, je rentre dans le d\'e9tail. Par exemple, une slide au d\'e9but ou deux o\'f9 j'explique bri\'e8vement l'architecture du project ( en rappelant donc la phase offline et la phase online et que j\'92ai fait une experimentation ) , et apr\'e8s, dans les slides suivantes, je rentre deeper into it. Je commencerai donc par la phase offline : comment j\'92ai fait. Puis apr\'e8s, pour la phase online, donc la logique derri\'e8re, et enfin par l'exp\'e9rimentation : comment faire marcher le robot.  
+\f4\b \
+\
+
+\f6\i Pour la CCL
+\f1\i0\b0  \
+Peut-\'eatre qu'il serait pas mal, lorsque j'en parle \'e0 la fin, de dire que, oui, je sais que ce n'est pas votre c\'9cur d'activit\'e9 pour le moment. Mais pourquoi pas envisager de la navigation pour que le robot puisse se rep\'e9rer dans l'usine et arriver \'e0 l'endroit d\'e9sir\'e9 sans collision et autres
+\f3 \uc0\u8239 
+\f1 ? \'c7a pourrait \'eatre une optique que, dans le futur, vous serez pr\'eat \'e0 d\'e9velopper.\
+\
+M\'eame \'e0 part \'e7a, sans cette vision de la startup, comme vous avez pu le voir, j'ai \'e9t\'e9 capable d'apprendre tout \'e7a. J'\'e9tais capable de lire des papiers, de comprendre des papiers et d'impl\'e9menter tout \'e7a from scratch and make it work. Dans tous les cas, ces skills que j'ai appris, en \'e9tant capable d'apprendre, je peux les r\'e9utiliser chez Binabik \'e9galement
+\f3 \uc0\u8239 
+\f1 : le fait de finalement apprendre continuellement.\
+\
+Comme vous avez pu le voir, \'e0 la base, je suis dans l'Industrial and Mechanical Engineering, et c'est ce besoin d'optimiser les process qui a fait en sorte que je me tourne vers la robotique aujourd'hui. Comme en ce moment, il y a l'IA qui explose, il n'y a pas meilleure optimisation qu'un robot qui est capable de prendre une d\'e9cision, m\'eame quand on n'a pas forc\'e9ment donn\'e9 l'algorithme exact et que c'est une situation qui sort de l'ordinaire.\
+\
+Tout cela pour dire que, certes, le projet que j'ai fait n'est pas directement li\'e9 aux probl\'e9matiques actuelles de Binabik. Cependant, je pense que tout ce que j'ai appris jusqu'\'e0 l\'e0 a pu montrer ma capacit\'e9 d'adaptation et le fait que je puisse forc\'e9ment contribuer durant ce stage de 6 mois. Je pense vraiment pouvoir avoir un impact en 6 mois et vous montrer ce que je suis capable de faire, surtout apr\'e8s ce projet de master avec le robot Unitree G1.\
+\
+Dans la conclusion, je pense que peut-\'eatre \'e7a peut \'eatre pas mal de faire un truc du genre
+\f3 \uc0\u8239 
+\f1 : \'ab
+\f3 \uc0\u8239 
+\f1 Voil\'e0, j'esp\'e8re que, dans ma pr\'e9sentation, j'ai r\'e9ussi \'e0 \'eatre assez \'e9loquent, \'e0 r\'e9ussir \'e0 bien convey my ideas, et etre assez claire l\'e0 dessus.\'a0\'bb Pour r\'e9it\'e9rer encore une fois sur le but de cette pr\'e9sentation de technique, pour qu'ils gardent bien en t\'eate et, en fait, leur rappeler que, oui, je sais qu'actuellement, \'e0 Binabik, vous ne travaillez pas exactement sur cette vision. En fait, vous n'avez pas, pour l'instant, \'e7a en t\'eate. Cependant, j'esp\'e8re qu'avec cette pr\'e9sentation, j'ai r\'e9ussi \'e0 vous montrer que j'\'e9tais capable de raisonner, de surmonter des probl\'e8mes et d'apprendre from scratch et de make a robot work from papers. Et donc, pour vous montrer qu'avec Binabik, je serai capable d'avoir encore un meilleur impact, de faire encore plus, de vraiment. et, en gros, leur faire comprendre que je suis vraiment motiv\'e9, que je sais raisonner, que j'ai, dans le pass\'e9, r\'e9ussi \'e0 raisonner. En plus, actuellement, m\'eame si ce ne sont pas les probl\'e9matiques que vous avez faites, je suis en train d'apprendre les skills qui me seront utiles pour ce stage \'e0 travers mon projet de master. Et en fait, l'objectif, c'est de les convaincre qu'ils peuvent parier sur moi durant ces 6 mois. Et, par exemple, finir avec une phrase du genre
+\f3 \uc0\u8239 
+\f1 : 
+\f4\b \'ab
+\f7 \uc0\u8239 
+\f4 Pour ces 6 mois, donnez-moi un objectif et je l'atteindrai. Et non seulement je l\'92atteindrai, mais je d\'e9passerai vos attentes
+\f7 \uc0\u8239 
+\f4 \'bb \
+
+\f1\b0 \
+Je pense que m\'eame dans la conclusion, \'e7a vaut le coup aussi de parler des probl\'e9matiques qu'il a cit\'e9es la derni\'e8re fois pour redire que je me suis renseign\'e9 l\'e0-dessus. Mais surtout, c'est pour lui faire comprendre que je sais de quoi il parle, que je sais quels sont ces trucs actuels, et pour vraiment le convaincre.\
+\
+Par exemple, j'aimerais lui dire
+\f3 \uc0\u8239 
+\f1 : \'ab
+\f3 \uc0\u8239 
+\f1 I'm definitely able to learn about impedance control, \'85 , et ainsi de suite.
+\f3 \uc0\u8239 
+\f1 \'bb Donc, en gros, je vais essayer de rep\'e9rer d\'e9j\'e0 dans le transcript ce qu'il a cit\'e9 comme probl\'e9matique actuelle et lui faire comprendre que, m\'eame si je n'ai pour l'instant que les bases en robotique, je suis totalement capable d'apprendre tout \'e7a. \
+\
+
+\f6\i\b Questions \
+
+\f1\i0\b0 Essayer de r\'e9fl\'e9chir pourquoi on n'a pas pris de lidar, parce que \'e7a, c'est une question qu'il peut poser. \
+Essayez de r\'e9fl\'e9chir au MPC
+\f3 \uc0\u8239 
+\f1 : comment, en fait, d\'e9j\'e0 comprendre c'est quoi et comment on voulait l'int\'e9grer l\'e0-dedans, et peut-\'eatre faire une petite perche l\'e0-dessus, puis une slide explicative. \
+Nav2\
+\'ab\'a0
+\fs24 \outl0\strokewidth0 \strokec2 Tu devrais donc \'eatre capable de r\'e9pondre pr\'e9cis\'e9ment aux questions suivantes : pourquoi cette architecture ? Pourquoi ce type de correcteur ? Que se passe-t-il lorsqu'un obstacle appara\'eet ? Quelles sont les contraintes sur la trajectoire ? Qu'est-ce qui a r\'e9ellement pos\'e9 probl\'e8me pendant les essais ? Comment as-tu d\'e9termin\'e9 la cause et v\'e9rifi\'e9 la correction ?"
+\fs40 \outl0\strokewidth0 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f4\b \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f6\i \cf0 \ul \ulc0 Control : \
+
+\f4\i0 \ulnone \
+
+\f1\b0 Ce qui peut \'eatre pas mal, c'est, par exemple, \'e0 partir du moment o\'f9 je finis la pr\'e9sentation sur Singapour, en faisant le r\'e9sum\'e9 total, etc.
+\f3 \uc0\u8239 
+\f1 : je donne une petite phrase du genre
+\f3 \uc0\u8239 
+\f1 : \'ab
+\f3 \uc0\u8239 
+\f1 Concernant le contr\'f4le du robot, malheureusement, c'\'e9tait une bo\'eete noire, car on a utilis\'e9 la library disponible directement sur le GitHub, et donc on n'a pas touch\'e9 finalement \'e0 tout \'e7a pour \'e9tudier le contr\'f4leur \'e0 la main.
+\f3 \uc0\u8239 
+\f1 \'bb
+\f4\b [ A verifier sur le repo GitHub !!! ]\
+\
+
+\f1\b0 Puis, directement apr\'e8s \'e7a, passer \'e0 l'id\'e9e de \'ab
+\f3 \uc0\u8239 
+\f1 oui, mais j'ai d\'e9j\'e0 fait aussi d'autres projets
+\f3 \uc0\u8239 
+\f1 \'bb, notamment il y a un an ou deux ans, sur le projet bicopter, o\'f9 l\'e0, il y avait l'identification et du contr\'f4le classique qu'on peut retrouver un peu partout. 
+\f4\b [ se renseigner sur le projet bicopter pour pouvoir en parler]
+\f1\b0 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f4\b \cf0 \ul Contribution : \
+\ulnone \
+
+\f1\b0 Je pense que, peut-\'eatre, ce qui peut \'eatre pas mal, c'est de lister les contributions que je consid\'e8re les plus cr\'e9dibles \'e0 Binabik.   dans une slide \'e0 la fin, par exemple. Voici, par exemple, un tableau issu d'une conversation avec ChatGPT l\'e0-dessus, sur lequel peut-\'eatre on pourrait travailler. \
+\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f4\b\fs28 \cf0 \outl0\strokewidth0 \strokec2 Les contributions que je consid\'e8re les plus cr\'e9dibles\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth4239\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth2359\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth8753\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sa240\qc\partightenfactor0
+
+\fs24 \cf0 Domaine\cell 
+\pard\intbl\itap1\pardeftab720\sa240\qc\partightenfactor0
+\cf0 Ton potentiel d'impact\cell 
+\pard\intbl\itap1\pardeftab720\sa240\qc\partightenfactor0
+\cf0 Raisonnement\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth4239\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth2359\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth8753\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f1\b0 \cf0 Robot integration & experimental reliability\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Tr\'e8s fort\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Exp\'e9rience physique \'e0 Singapour, instrumentation, mesures, debugging et essais\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth4239\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth2359\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth8753\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Industrial task feasibility & prototyping\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Fort\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Arts et M\'e9tiers, FANUC, m\'e9trologie, CAO et exp\'e9rimentation\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth4239\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth2359\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth8753\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Manipulation perception & evaluation\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Bon\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Comp\'e9tences de calibration et d'\'e9valuation transf\'e9rables, mais nouveaux outils \'e0 apprendre\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth4239\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth2359\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth8753\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Robot learning / VLA evaluation\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Prometteur\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Projet G1 pertinent, mais exp\'e9rience pratique encore \'e0 construire\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth4239\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth2359\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth8753\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Advanced compliant manipulation\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 \'c0 d\'e9velopper\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Bon socle th\'e9orique, mais pas encore de preuve en impedance control\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth4239\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth2359\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth8753\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 SLAM / mobile navigation algorithms\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Faible alignement actuel\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Giovanni indique que ce n'est pas une priorit\'e9 de Binabik\cell \lastrow\row
+\pard\pardeftab720\partightenfactor0
+
+\fs40 \cf0 \outl0\strokewidth0 \
+}

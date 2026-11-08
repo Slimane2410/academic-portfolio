@@ -1,0 +1,9 @@
+Remarques consommation de tokens pour pres2 : 
+
+Avant de lancer le prompt : 96%.
+Après la première réponse : 55 % 
+
+
+L'objectif de ce document est de me permettre de savoir, la prochaine fois que je fais une présentation, combien de % de ma fenêtre de 5h ça va me prendre pour générer ça.  
+
+Donc là, rapidement, je donne un peu plus de contexte. J'ai demandé de générer la deuxième présentation en se basant sur beaucoup de sujets, notamment sur plusieurs dossiers également. C'est vraiment une tâche qui est lourde et qui demande de regarder beaucoup de choses. 

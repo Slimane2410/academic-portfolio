@@ -1,0 +1,224 @@
+[
+  {
+    "file": "assets/images/system.jpg",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/paco-showcase/assets/images/system_chain_v01.jpg",
+    "sha256": "5ee890a098cf04671c3e3012ebcc7f84dce6c189d0b60751dbede6ac9c2bee2a",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/rover.jpg",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/paco-showcase/assets/images/rover_aruco_v01.jpg",
+    "sha256": "676c7a8590b9d1837be1555d9740d8648efd0e1b80f03df25a26e0f64131cfad",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/arena.jpg",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/paco-showcase/assets/images/arena_overview_v01.jpg",
+    "sha256": "243eabe910d381fb5778af8563d87655d3d10c534c788a275a6fc6af990e1a08",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/camera.jpg",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/paco-showcase/assets/images/camera_arena_setup_v01.jpg",
+    "sha256": "6bc1e126f0c220f1a33894f43702b64999153cb071408496b128208c8c67c984",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/raw-tracking.jpg",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/paco-showcase/assets/images/Brut_tracking_aruco_metric_v01.jpg",
+    "sha256": "7c24f662e25a5a0c898ceae4a8fd6d76dc8c79d7aec03ffc0762aa719ca99be6",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/metric-tracking.jpg",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/paco-showcase/assets/images/tracking_aruco_metric_v01.jpg",
+    "sha256": "4cd55e43537515fcc847e4c730e3f3700675fe05f201ebff0ad7d900ed38a14d",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/nominal.jpg",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/paco-showcase/assets/images/phase5_bis_v1_01_fixed.jpg",
+    "sha256": "8fec34496e46fc7c2c729be627c3bdd4c10735068b61eca07432311d6beb806a",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/corrected.jpg",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/paco-showcase/assets/images/phase5_bis_v1_01_bis_mobile.jpg",
+    "sha256": "a32d43f3a2127434323defc3f2591f6ff2dc910a84188cedb8e6ecc7f7754ac1",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/repeatability-single.png",
+    "source": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/Paper/figures/images/f15.png",
+    "sha256": "33071d9d4e6425d223c551b1bfabd179a87ff684ee5c7640df92b5d403b4f915",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/repeatability-dual.png",
+    "source": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/Paper/figures/images/f16.png",
+    "sha256": "ed47a0fe0294536194efdcea14986902b5120c4efc745c9fe5f26f352a4b4ea9",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/forces.png",
+    "source": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/Paper/figures/images/f7_bis.png",
+    "sha256": "fed3e7320ae3358bd747f5e1feec4309d16c07dadf35fe98ce5c752ffffda0a5",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/motor-identification.png",
+    "source": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/Paper/figures/images/f8.png",
+    "sha256": "c15582b95adf833cb690a473be7c320af631157decd28a1d148077163ff55cfe",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/timing.png",
+    "source": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/Paper/figures/images/f14.png",
+    "sha256": "b4693e72e6ab57d029e4fc4923a36315efae173bc0cb3f0c82119159f3e3732d",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/sim-outcomes.png",
+    "source": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/Paper/figures/images/f11.png",
+    "sha256": "5b2d782cba678d203835a6c9ed11d765f99231ef5327a0effe08566775a4c586",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/sim-generalization.png",
+    "source": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/Paper/figures/images/f12.png",
+    "sha256": "5d4a2435656e940096c979a91133c411512f3640776d113deeb2c41d4b7e0e9c",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/sim-real.png",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/paco-showcase/assets/figures/anticollision_twin_vs_real.png",
+    "sha256": "f4f134683dc9ca258e2d9baf0a4c6e6e5927b22615a11387b93e3cbff33e535c",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/fanuc-cell.png",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Data/Projects:internship/1A_Projet Fanuc/FANUC/photo global.png",
+    "sha256": "0d2b8e6ab00fb09e51a456ecb6bb73c2a35a469534237e67029e7bd3689a57f7",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/fanuc-gripper.png",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Data/Projects:internship/1A_Projet Fanuc/PROJET FANUC.docx :: word/media/image12.png",
+    "sha256": "e262187183c8eb8cff07f5a0a60b88a12a5c03f0f97a6e418fbb292365ecd2c8",
+    "transform": "Unchanged source bytes / extracted DOCX image"
+  },
+  {
+    "file": "assets/images/fanuc-mold.png",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Data/Projects:internship/1A_Projet Fanuc/PROJET FANUC.docx :: word/media/image14.png",
+    "sha256": "c293d0ff8cf17c4143537604a20191313b6a248cc6b5e120089073c4c3041ff9",
+    "transform": "Unchanged source bytes / extracted DOCX image"
+  },
+  {
+    "file": "assets/images/fanuc-reach.png",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Data/Projects:internship/1A_Projet Fanuc/PROJET FANUC.docx :: word/media/image17.png",
+    "sha256": "e211aa740a620416687fae996d7b2674143234d361f2f650f7ffd5539830a47f",
+    "transform": "Unchanged source bytes / extracted DOCX image"
+  },
+  {
+    "file": "assets/images/foundry-task.png",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Data/Projects:internship/1A_Projet Fanuc/PROJET FANUC.docx :: word/media/image5.png",
+    "sha256": "c09c2ab3b784030af84d1b48f6108a27ff9470442157bce5cd3d828ef5f3ca0c",
+    "transform": "Unchanged source bytes / extracted DOCX image"
+  },
+  {
+    "file": "assets/images/foundry-furnace.png",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Data/Projects:internship/1A_Projet Fanuc/PROJET FANUC.docx :: word/media/image4.png",
+    "sha256": "faefd94711be246e94e42033027a199b0df1288541bd2cbbbbb612b5d961df98",
+    "transform": "Unchanged source bytes / extracted DOCX image"
+  },
+  {
+    "file": "assets/images/g1.jpg",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/Presentations/presentation_interview_Binabik/diaporama_v1/presentation_html/assets/unitree-g1-official.jpg",
+    "sha256": "e5f2fdac8fe1c5d07049d105a4321b84b0b1ba4c079b358d8c98cd642dcd01d8",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/g1-context.png",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/Presentations/presentation_interview_Binabik/diaporama_v1/presentation_html/assets/unitree-g1-assistive-user.png",
+    "sha256": "a23717341f829e296ca166391be8efbf561ac046549682d97fe954e5821f553a",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/binabik-context.png",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/Presentations/presentation_interview_Binabik/diaporama_v1/presentation_html/assets/binabik-humanoid-user.png",
+    "sha256": "7bf6d8e67a646200cd5b16d238e735a9676312c38c669f9fe5ef607bc844a035",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/multi-agent-poster.jpg",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/Presentations/presentation_interview_Binabik/diaporama_v1/presentation_html/assets/multi-agent-poster.jpg",
+    "sha256": "b65d1ed79cbd3b11055b9d423d9c01f80b60c80062e8ba2ad521a0cd7c5d6b0f",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/fanuc-poster.jpg",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/Presentations/presentation_interview_Binabik/diaporama_v1/presentation_html/assets/fanuc-poster.jpg",
+    "sha256": "0ff40eef5249ca4b9fe34010fc2bdec9c5dbd4dd5d82b098346b524f1199f5a0",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/videos/avoidance.mp4",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/paco-showcase/assets/video/anticollision_multi_agent_v01.mp4",
+    "sha256": "6b75ff27c23c4b2156eea3e5e2ff0edf8b9a539ae268edab605f5d369e1f0aab",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/videos/fanuc.mp4",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/Presentations/presentation_interview_Binabik/diaporama_v1/presentation_html/assets/fanuc-excerpt.mp4",
+    "sha256": "f6d520a9fd940a6171ee9ea486f541b87a2197f66c1254131534cdcb20ecc0b2",
+    "transform": "Unchanged source bytes"
+  },
+  {
+    "file": "assets/images/nominal-family.png",
+    "source": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/Paper/figures/images/f6.pdf",
+    "sha256": "1e9fbe3481c96bd8c6f89bc2a69b8b437e6ca03f6e0215bbaa19d5ad53c16286",
+    "transform": "Poppler rasterization, 2200 px, no content edit"
+  },
+  {
+    "file": "assets/images/calibration-errors.png",
+    "source": "/Users/slimaneaouanouk/Desktop/PJT_Paco/Code/trajectory-optimization-drone/Paper/figures/images/f5.pdf",
+    "sha256": "4799b5270e06d5a951b0c28014ef68d71692a21231bb49324230fd018e5f0c95",
+    "transform": "Poppler rasterization, 2200 px, no content edit"
+  },
+  {
+    "file": "assets/images/g1-portrait-user.png",
+    "source": "/Users/slimaneaouanouk/Desktop/8c0440dd-de29-41a5-8db5-d3b6d133e028.png",
+    "sha256": "20cf5bca3729a50443590d60cdfeeb92d68464fdf36a420d6b05fc4f93a2ce94",
+    "transform": "Exact user-supplied PNG; no image modification. Display framing uses CSS."
+  },
+  {
+    "file": "assets/images/fanuc-cell-user.png",
+    "source": "/Users/slimaneaouanouk/Desktop/Screenshot 2026-11-07 at 9.20.00 PM.png",
+    "sha256": "c9500a5070071c0340b649032daa75fa20b019b6041ffb93200668f55a06d97b",
+    "transform": "Exact user-supplied screenshot; no image modification. CSS display crop only."
+  },
+  {
+    "file": "assets/videos/descartes-drones.mp4",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/Presentations/presentation_interview_Binabik/interview_2/assets/videos/drones_decartes_project.mov ; original video https://youtu.be/sFYLavyD_sc",
+    "sha256": "bc8ca493784d894246cecb1dcd21dd4e69686dc947fc3d1f109a04f25ed53e3f",
+    "transform": "Entire user MOV; H.264 1470x956, AAC audio retained; no temporal trim; displayed 15 s label retained at user request"
+  },
+  {
+    "file": "assets/images/descartes-drones-poster.jpg",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/Presentations/presentation_interview_Binabik/interview_2/assets/videos/drones_decartes_project.mov ; original video https://youtu.be/sFYLavyD_sc",
+    "sha256": "d554fc1d46d6b0d5a76b86c8e622ddad225635df90552a91f28c21f54a144c42",
+    "transform": "Frame at 1 s from browser MP4; contextual program video"
+  },
+  {
+    "file": "assets/videos/simulation-lagrange-newton.mp4",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/paco-showcase/assets/video/simulation_lagrange_newton_v01.mp4",
+    "sha256": "53441ebcb331828b1db14f637d30ed0b4180223d09ee574c1de38f77f1c65204",
+    "transform": "Unchanged source bytes; full simulation clip"
+  },
+  {
+    "file": "assets/images/simulation-lagrange-newton-poster.jpg",
+    "source": "/Users/slimaneaouanouk/Desktop/Portfolio/Website/Slim portfolio-main/paco-showcase/assets/video/simulation_lagrange_newton_v01.mp4",
+    "sha256": "0c35facd75af1a9d80b734bcddfcc8916ce1442dfca364aba0c3796cecbc41aa",
+    "transform": "Frame at 1 s from source simulation video"
+  }
+]

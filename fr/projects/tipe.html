@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Shared analytics: automatic asynchronous loading. -->
+  <!-- Consent interface temporarily disabled: <link rel="stylesheet" href="../../assets/css/analytics-consent.css" /> -->
+  <script defer src="../../assets/js/analytics-consent.js?v=2"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Dynamique d’impact : banc d’essai conçu et construit en autonomie, mesures expérimentales, régressions Python, incertitudes et comparaison avec un modèle de collision." name="description"/>
+<title>Dynamique d’impact d’un ballon · Ingénierie des essais | Slimane Aouanouk</title><link href="../../en/projects/tipe.html" hreflang="en" rel="alternate"/><link href="tipe.html" hreflang="fr" rel="alternate"/><link href="../../en/projects/tipe.html" hreflang="x-default" rel="alternate"/>
+<link href="../../assets/css/style.css?v=12" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<link href="../../assets/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="../../assets/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="../../assets/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="../../assets/icons/favicon.ico" rel="icon"/>
+<link href="../../assets/icons/site.webmanifest" rel="manifest"/>
+<meta content="#0f1115" name="theme-color"/>
+</head>
+<body class="homepage turbine-page tipe-page">
+<div class="app-layout">
+<aside class="sidebar slide-up">
+<div class="profile-section">
+<a href="../index.html" style="text-decoration: none; color: inherit;">
+<span class="logo-text">SA.</span>
+</a>
+<span class="role-text">Élève ingénieur<br/>Arts et Métiers</span>
+</div>
+<nav class="nav-links">
+<a class="nav-item" href="../index.html"><i class="fas fa-home"></i> Accueil</a>
+<a class="nav-item active" href="../projects.html"><i class="fas fa-code-branch"></i> Projets</a>
+<a class="nav-item" href="../resume.html"><i class="fas fa-file-alt"></i> CV</a>
+<a class="nav-item" href="../academics.html"><i class="fas fa-graduation-cap"></i> Formation</a>
+<a class="nav-item" href="../experience.html"><i class="fas fa-briefcase"></i> Expérience</a>
+<a class="nav-item" href="../beyond.html"><i class="fas fa-compass"></i> Au-delà de l’ingénierie</a>
+</nav>
+<div class="sidebar-footer">
+<div style="display: flex; gap: 20px; align-items: center; margin-bottom: 10px;">
+<a aria-label="Consulter mon profil LinkedIn" href="https://www.linkedin.com/in/slimane-aouanouk-b69b58320/" rel="noopener noreferrer" style="color: #7a8595; font-size: 1.3rem; transition: color 0.3s;" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+<a aria-label="Envoyer un e-mail à Slimane Aouanouk" href="mailto:aouanoukslim@gmail.com" style="color: #7a8595; font-size: 1.3rem; transition: color 0.3s;">
+<i class="fas fa-envelope"></i>
+</a>
+</div>
+<p style="opacity: 0.5; font-size: 0.75rem; margin: 0;">© 2025 Slimane AOUANOUK</p>
+</div>
+</aside>
+<main class="main-content turbine-main">
+<div class="slide-up delay-1 turbine-back-link">
+<a href="../projects.html"><i class="fas fa-arrow-left"></i> RETOUR AUX PROJETS</a>
+</div>
+<header class="tipe-hero slide-up delay-1">
+<div class="tipe-hero-copy">
+<span class="turbine-eyebrow">// TIPE · INGÉNIERIE DES ESSAIS</span>
+<h1>Dynamique d’impact d’un ballon</h1>
+<div class="tipe-hero-tagline">Un banc construit en autonomie. Des mesures exploitées avec Python.</div>
+<p>Quel est l’effet de la géométrie de contact sur la vitesse de la balle ? J’ai conçu et construit seul le banc, réalisé les essais, puis utilisé Python pour extraire les vitesses et tracer les graphes.</p>
+<div class="turbine-hero-actions">
+<a class="turbine-button turbine-button-primary" download="PRESENTATION_TIPE_55556_AOUANOUK.pdf" href="../../assets/documents/projects/tipe/presentation-tipe-55556.pdf">Présentation · PDF FR</a>
+<a class="turbine-button turbine-button-secondary" href="#experimental-bench">Explorer les essais <span aria-hidden="true">↓</span></a>
+</div>
+</div>
+<button aria-label="Mon dispositif expérimental · Agrandir" class="tipe-hero-visual" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Balle et impacteur orange interchangeable sur le banc pendulaire" fetchpriority="high" src="../../assets/images/projects/tipe/cover.png"/>
+<span class="tipe-hero-badge">Mon dispositif expérimental · Agrandir <span aria-hidden="true">↗</span></span>
+</button>
+</header>
+<section aria-label="Le projet en chiffres" class="turbine-metrics tipe-metrics slide-up delay-2"><article><strong>1</strong><span>banc conçu et construit en autonomie</span></article><article><strong>4</strong><span>géométries d’impact testées</span></article><article><strong>0,27</strong><span>mm/px · étalonnage spatial</span></article><article><strong>4,0</strong><span>m/s · cas cylindre 12 mm et plaque</span></article></section>
+
+<section class="turbine-section tipe-section slide-up" id="experimental-bench" aria-labelledby="bench-title">
+<div class="turbine-section-heading"><span class="turbine-section-index">01 · CONCEVOIR ET TESTER</span><h2 id="bench-title">De la question au banc d’essai</h2></div>
+<div class="tipe-contributions"><article><span class="tipe-step-number">01</span><h3>Concevoir</h3><p>J’ai isolé la géométrie de contact avec un pendule guidé.</p></article><article><span class="tipe-step-number">02</span><h3>Fabriquer</h3><p>J’ai assemblé la structure et réalisé des têtes PLA interchangeables.</p></article><article><span class="tipe-step-number">03</span><h3>Tester</h3><p>J’ai filmé les impacts et comparé les mouvements balle–impacteur.</p></article></div>
+<div class="tipe-bench-grid">
+<figure class="tipe-rig-diagram">
+<svg viewBox="0 0 560 330" role="img" aria-labelledby="rig-title rig-description" xmlns="http://www.w3.org/2000/svg">
+<title id="rig-title">Banc d’essai, vue de profil simplifiée</title><desc id="rig-description">Un pendule tourne autour d’un pivot entre des guides verticaux. Sa tête interchangeable frappe une balle au repos. Une caméra de profil enregistre la collision. Schéma non à l’échelle.</desc>
+<path d="M70 291H422M180 291V65H270V291" fill="none" stroke="#cbd5e1" stroke-width="10" stroke-linejoin="round"/>
+<path d="M218 80L116 222" fill="none" stroke="#cbd5e1" stroke-width="14" stroke-linecap="round" stroke-dasharray="5 13"/>
+<path d="M218 80V242" fill="none" stroke="#334155" stroke-width="18" stroke-linecap="round"/>
+<circle cx="218" cy="80" r="10" fill="#fff" stroke="#334155" stroke-width="4"/>
+<rect x="204" y="228" width="28" height="35" rx="4" fill="#ea580c"/><path d="M230 246H281" stroke="#ea580c" stroke-width="12" stroke-linecap="round"/>
+<circle cx="322" cy="246" r="40" fill="#e0f2fe" stroke="#0284c7" stroke-width="3"/>
+<path d="M292 219Q328 235 348 274M286 258Q319 240 354 231" fill="none" stroke="#7dd3fc" stroke-width="2"/>
+<path d="M172 82V239M166 82H178M166 239H178" fill="none" stroke="#64748b" stroke-width="2"/>
+<g transform="translate(428 132)" fill="none" stroke="#0284c7" stroke-width="3"><rect width="54" height="38" rx="7"/><circle cx="27" cy="19" r="10"/><path d="M54 12L70 5V33L54 26M27 38V69M12 69L27 51L42 69"/></g>
+<path d="M429 172L365 207" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 6"/>
+<g class="tipe-svg-marker" transform="translate(218 57)"><circle r="16"/><text y="5">1</text></g><g class="tipe-svg-marker" transform="translate(162 173)"><circle r="16"/><text y="5">2</text></g><g class="tipe-svg-marker" transform="translate(241 281)"><circle r="16"/><text y="5">3</text></g><g class="tipe-svg-marker" transform="translate(378 274)"><circle r="16"/><text y="5">4</text></g><g class="tipe-svg-marker" transform="translate(463 101)"><circle r="16"/><text y="5">5</text></g>
+</svg>
+<figcaption><strong>Un dispositif de choc contrôlé</strong><span>Vue de profil · schéma non à l’échelle</span></figcaption>
+<ol class="tipe-rig-legend"><li><span>1</span>Pivot et structure de guidage</li><li><span>2</span>Pendule · L = 46 cm</li><li><span>3</span>Impacteur interchangeable</li><li><span>4</span>Balle initialement au repos</li><li><span>5</span>Vidéo de profil</li></ol>
+</figure>
+<figure class="turbine-figure tipe-evidence tipe-bench-photo">
+<button aria-label="Agrandir : Construit et testé par moi-même" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Deux vues du banc que j’ai construit : structure en bois, pendule et têtes orange" loading="lazy" src="../../assets/images/projects/tipe/test-bench-rig.webp"/>
+</button>
+<figcaption><strong>Construit et testé par moi-même</strong><span>Bras guidé, pendule lesté et impacteurs orange interchangeables.</span></figcaption>
+</figure>
+</div>
+<div class="tipe-protocol-grid">
+<figure class="turbine-figure tipe-evidence tipe-heads">
+<button aria-label="Agrandir : Un banc, quatre géométries de contact" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Trois têtes cylindriques en PLA et une plaque, vues de profil et de face" loading="lazy" src="../../assets/images/projects/tipe/impactor-geometries.webp"/>
+</button>
+<figcaption><strong>Un banc, quatre géométries de contact</strong><span>Têtes en PLA imprimées en 3D : Ø 6, 12, 24 mm et plaque plane.</span></figcaption>
+</figure>
+<div class="tipe-table-wrap"><table class="tipe-table"><caption>Protocole d’essai</caption><thead><tr><th scope="col">Rôle</th><th scope="col">Paramètre</th><th scope="col">Objectif</th></tr></thead><tbody><tr><th scope="row">Variable</th><td>Impacteur : Ø 6 / 12 / 24 mm ou plaque</td><td>Comparer la géométrie de contact</td></tr><tr><th scope="row">Contrôlé</th><td>Même pendule ; pression de la balle : 0,2 bar</td><td>Limiter les changements entre configurations</td></tr><tr><th scope="row">Mesuré</th><td>x₁(t), x₂(t), vitesses et intervalle de contact</td><td>Comparer la cinématique du choc</td></tr></tbody></table></div>
+</div>
+</section>
+
+<section class="turbine-section tipe-section slide-up" id="measurement-pipeline" aria-labelledby="method-title">
+<div class="turbine-section-heading"><span class="turbine-section-index">02 · MESURER ET ANALYSER</span><h2 id="method-title">Des images à la dynamique mesurée</h2></div>
+<ol class="tipe-pipeline"><li><span class="tipe-step-number">01</span><svg viewBox="0 0 64 52" aria-hidden="true" focusable="false"><rect x="6" y="13" width="40" height="29" rx="5"/><circle cx="26" cy="27" r="8"/><path d="M17 13L20 7H33L36 13M46 20L58 14V40L46 34"/></svg><h3>Filmer</h3><p>Vidéo de profil : approche, contact et départ de la balle.</p></li><li><span class="tipe-step-number">02</span><svg viewBox="0 0 64 52" aria-hidden="true" focusable="false"><path d="M9 6V47H59M16 14H27M16 25H22M16 36H27"/><circle cx="39" cy="21" r="5"/><circle cx="49" cy="34" r="5"/><path d="M39 10V13M39 29V32M28 21H31M47 21H50"/></svg><h3>Pointer et étalonner</h3><p>Coordonnées image par image ; 1 px = 0,27 mm.</p></li><li><span class="tipe-step-number">03</span><svg viewBox="0 0 64 52" aria-hidden="true" focusable="false"><rect x="6" y="7" width="53" height="39" rx="5"/><path d="M6 17H59M23 26L16 31L23 36M42 26L49 31L42 36M36 24L30 39"/></svg><h3>Traiter avec Python</h3><p>Conversion, évaluation des incertitudes et régressions.</p></li><li><span class="tipe-step-number">04</span><svg viewBox="0 0 64 52" aria-hidden="true" focusable="false"><path d="M9 5V46H59M16 36L26 29L38 24L52 11"/><circle cx="19" cy="34" r="2"/><circle cx="31" cy="29" r="2"/><circle cx="43" cy="16" r="2"/><path d="M31 23V35M27 23H35M27 35H35"/></svg><h3>Tracer et comparer</h3><p>Positions, barres d’incertitude et vitesses pour chaque cas.</p></li></ol>
+<figure class="turbine-figure tipe-evidence tipe-chronophoto">
+<button aria-label="Agrandir : L’événement physique derrière les données" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Quatre images montrant l’approche de l’impacteur, la déformation puis le départ de la balle" loading="lazy" src="../../assets/images/projects/tipe/impact-chronophotography.webp"/>
+</button>
+<figcaption><strong>L’événement physique derrière les données</strong><span>Approche, déformation et départ sur des images successives de l’impact.</span></figcaption>
+</figure>
+<figure class="turbine-figure tipe-evidence tipe-main-chart">
+<button aria-label="Agrandir : Trajectoires de la balle et vitesses extraites" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Position de la balle en fonction du temps pour le cylindre 12 mm et la plaque, avec incertitudes, régressions et zones de contact" loading="lazy" src="../../assets/images/projects/tipe/ball-regression-contact.webp"/>
+</button>
+<figcaption><strong>Trajectoires de la balle et vitesses extraites</strong><span>Cylindre de 12 mm et plaque : les deux régressions donnent 4,0 m/s dans cette comparaison. Les barres conservent l’incertitude de mesure.</span></figcaption>
+</figure>
+<div class="tipe-analysis-grid">
+<figure class="turbine-figure tipe-evidence ">
+<button aria-label="Agrandir : Mouvement de l’impacteur avant et après choc" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Position mesurée de l’impacteur en fonction du temps, avec régressions avant et après collision" loading="lazy" src="../../assets/images/projects/tipe/striker-kinematics.webp"/>
+</button>
+<figcaption><strong>Mouvement de l’impacteur avant et après choc</strong><span>Exemple de régressions : 2,2 m/s avant ; 2,0 m/s après.</span></figcaption>
+</figure>
+<div class="tipe-analysis-notes">
+<article class="tipe-equation-card">
+<span class="tipe-card-label">EXTRACTION DES VITESSES</span><h3>Une pente devient une vitesse</h3>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="x de t égale a fois t plus b"><mrow><mi>x</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><mi>a</mi><mi>t</mi><mo>+</mo><mi>b</mi></mrow></math>
+<p>Ajustement hors de l’intervalle de contact : la pente a donne la vitesse avant ou après le choc.</p>
+</article>
+<div class="tipe-python-summary"><h3>Mes traitements Python</h3><ul><li>Conversion pixels–mètres</li><li>Incertitudes expérimentales de type B</li><li>Régressions linéaires avec SciPy</li></ul></div>
+</div>
+</div>
+<details class="tipe-details"><summary>Voir l’analyse Python</summary><div class="tipe-details-content"><figure class="turbine-figure tipe-evidence tipe-code">
+<button aria-label="Agrandir : Script de dépouillement et de régression" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Code Python d’étalonnage spatial, d’évaluation des incertitudes de type B et de régression des coordonnées mesurées" loading="lazy" src="../../assets/images/projects/tipe/python-analysis-code.webp"/>
+</button>
+<figcaption><strong>Script de dépouillement et de régression</strong><span>Extrait source : échelle spatiale, calcul d’incertitude et scipy.stats.linregress. Le pointage vidéo est une étape distincte.</span></figcaption>
+</figure></div></details>
+</section>
+
+<section class="turbine-section tipe-section slide-up" id="results" aria-labelledby="results-title">
+<div class="turbine-section-heading"><span class="turbine-section-index">03 · COMPARER ET INTERPRÉTER</span><h2 id="results-title">Ce que montrent les mesures</h2></div>
+<div class="tipe-results-grid">
+<figure class="turbine-figure tipe-evidence ">
+<button aria-label="Agrandir : Comparer les géométries et les régimes de choc" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Vitesse de départ de la balle selon celle de l’impacteur, pour les frappes pointues et plates en régime élastique et en football réel" loading="lazy" src="../../assets/images/projects/tipe/speed-ratio-comparison.webp"/>
+</button>
+<figcaption><strong>Comparer les géométries et les régimes de choc</strong><span>Cas élastique et football réel sont distingués. Pointu et plat suivent des tendances comparables au sein de chaque régime.</span></figcaption>
+</figure>
+<figure class="turbine-figure tipe-evidence ">
+<button aria-label="Agrandir : Un contact différent, une déformation différente" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Comparaison de la déformation locale de la balle sous un impact cylindrique et sous une plaque" loading="lazy" src="../../assets/images/projects/tipe/ball-deformation-contact.webp"/>
+</button>
+<figcaption><strong>Un contact différent, une déformation différente</strong><span>Le cylindre concentre la déformation ; la plaque la répartit sur une zone plus large.</span></figcaption>
+</figure>
+</div>
+<div class="tipe-table-wrap"><table class="tipe-table"><caption>Résultats expérimentaux et interprétation</caption><thead><tr><th scope="col">Observation</th><th scope="col">Preuve</th><th scope="col">Interprétation</th></tr></thead><tbody><tr><th scope="row">4,0 m/s dans les deux cas</th><td>Courbes : 12 mm / plaque</td><td>Vitesse de départ comparable dans cet exemple</td></tr><tr><th scope="row">Contact plus court avec les têtes larges</th><td>Zones de contact et images d’impact</td><td>La géométrie agit sur la durée du contact</td></tr><tr><th scope="row">Points élastiques proches de v′₂ ≈ 2v₁</th><td>Graphe comparatif des vitesses</td><td>Cohérent avec un impacteur lourd et un choc quasi élastique</td></tr></tbody></table></div>
+<div class="tipe-model-grid">
+<article class="tipe-equation-card tipe-collision-card"><span class="tipe-card-label">COMPARAISON AU MODÈLE</span><h3>Un repère pour les essais</h3>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="Vitesse de départ de la balle sur vitesse d’approche de l’impacteur égale un plus le coefficient de restitution sur un plus la masse de la balle divisée par celle de l’impacteur"><mrow><mfrac><msubsup><mi>v</mi><mn>2</mn><mo>′</mo></msubsup><msub><mi>v</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mi>e</mi></mrow><mrow><mn>1</mn><mo>+</mo><mfrac><msub><mi>m</mi><mn>2</mn></msub><msub><mi>m</mi><mn>1</mn></msub></mfrac></mrow></mfrac></mrow></math>
+<p>Balle au repos ; impulsion extérieure négligée pendant le choc. m₁ : impacteur, m₂ : balle, e : restitution. Si m₁ ≫ m₂ et e ≈ 1, le rapport idéal tend vers 2.</p></article>
+<aside class="tipe-result-note"><span class="tipe-card-label">ENSEIGNEMENT DES ESSAIS</span><h3>Vitesse comparable, contact différent</h3><p>Changer la tête a permis de distinguer deux effets : des vitesses de départ comparables dans le cas 12 mm / plaque illustré, mais une déformation et une durée de contact différentes.</p></aside>
+</div>
+<details class="tipe-details"><summary>Au-delà du banc : le cas du football</summary><div class="tipe-details-content"><p>Une frappe humaine ajoute mouvements articulaires, temps d’exécution et visée. Cette discussion biomécanique, éclairée par les travaux du LadHyX / École Polytechnique, est distincte des mesures au pendule.</p><figure class="turbine-figure tipe-evidence ">
+<button aria-label="Agrandir : Du choc contrôlé au geste sportif" class="turbine-media-button" onclick="openLightbox(this.querySelector('img'))" type="button">
+<img alt="Comparaison chronophotographique de l’exécution d’un pointu et d’une frappe du plat du pied" loading="lazy" src="../../assets/images/projects/tipe/human-kick-kinematics.webp"/>
+</button>
+<figcaption><strong>Du choc contrôlé au geste sportif</strong><span>Les séquences du pointu et du plat du pied replacent les essais dans leur contexte sportif.</span></figcaption>
+</figure></div></details>
+</section>
+
+<section class="turbine-section tipe-section slide-up" id="documentation" aria-labelledby="docs-title">
+<div class="turbine-section-heading"><span class="turbine-section-index">04 · DOCUMENTATION</span><h2 id="docs-title">Approfondir le travail technique</h2></div>
+<div class="tipe-docs-grid">
+<article class="tipe-doc-card"><div><span class="tipe-card-label">SOUTENANCE · FR</span><h3>Présentation complète</h3><p>31 diapositives : banc, mesures, Python, modèle et discussion.</p></div><a class="turbine-button turbine-button-primary" download="PRESENTATION_TIPE_55556_AOUANOUK.pdf" href="../../assets/documents/projects/tipe/presentation-tipe-55556.pdf">Télécharger les diapositives <span aria-hidden="true">↓</span></a></article>
+<article class="tipe-doc-card"><div><span class="tipe-card-label">POSTER TECHNIQUE · EN</span><h3>Synthèse en une page</h3><p>Dispositif expérimental, trajectoires et principales conclusions.</p></div><a class="turbine-button turbine-button-outline" download="TIPE_BALL_IMPACT_DYNAMICS_AOUANOUK.pdf" href="../../assets/documents/projects/tipe/tipe.pdf">Télécharger le poster <span aria-hidden="true">↓</span></a></article>
+</div>
+</section>
+</main>
+</div>
+<script src="../../assets/js/script.js?v=10"></script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+Slimane Aouanouk  0:02
+Hello.
+
+Giovanni Toffetti  0:02
+Hi, Slimane.
+
+Slimane Aouanouk  0:03
+Hi.
+
+Giovanni Toffetti  0:05
+Nice to meet you. Apologies, I noticed I didn't send the link to the meeting, but you got it right at the last second.
+
+Slimane Aouanouk  0:11
+No worries.
+
+Giovanni Toffetti  0:13
+Yeah, sorry, we're quite busy, let's put it this way. Okay, so, do you want to tell me something about you, your motivation, studies, what are you doing, and afterwards, if you have any questions, then I can answer and tell you something more about us, okay?
+
+Slimane Aouanouk  0:39
+Yes, definitely. So I prepared an eight-minute presentation, so I'll try to share my screen.
+
+Giovanni Toffetti  0:45
+Excellent.
+
+Slimane Aouanouk  0:48
+Hop. I think that's supposed to work. Is it working?
+
+Giovanni Toffetti  0:53
+Yeah, it's working. I can see it, yeah.
+
+Slimane Aouanouk  0:56
+Okay, so I can start right now.
+
+Slimane Aouanouk  1:04
+Okay, so I'm Slimane, an engineering student at Arts et Métiers, and I'm specializing in robotics through a Master's degree at Sorbonne University. And what I enjoy is turning ideas to working robots, and it starts by understanding the physical task. So at Arts et Métiers, I had an industrial and mechanical part in my degree, so I made several industrial projects, from foundry to CNC and then inspection, and I was able to understand what workers do at a factory. And from this first project, I was able to make my first robotics project. So it was the automation of this task before, and because I thought that it was definitely dangerous, it was definitely time-consuming, and it was definitely expensive for the company, so I thought about automating it through this simulation of a FANUC robot using ROBOGUIDE.
+
+Slimane Aouanouk  2:10
+And so at Arts et Métiers, I of course studied mechanical engineering, so CAD, CFD and so on, but I specialized in robotics. In Singapore this summer, I worked on a robotics project. So I worked on trajectory optimization and collision avoidance for drones, so it was for drones, but for the experimentation, with my tutor, I talked to him and he told me that it was easier to make it in two dimensions with rovers. But the project was with Thales, so it is a French society in defense, and the purpose was to avoid collision for drones.
+
+Slimane Aouanouk  2:56
+So now, if we can talk about the whole robotics loop, there is an offline plan, so our solver is calculating a nominal trajectory, which is an optimized trajectory, and then there is the basic pipeline. So the camera can provide the position and heading to the online corrector, and then the online corrector can make the rover move. So to give you the big picture, there are two main stages: the nominal phase, so we have a cost function that we optimize in order to have this nominal trajectory, and then there is the online correction. So online, the robot is just knowing its surroundings, and it can calculate its next point using a force-based method.
+
+Slimane Aouanouk  3:53
+And in order to do that, I definitely have to turn pixels into metric positions, so I used OpenCV and ArUco markers in order to do that. And one of the biggest challenges was to improve the measurements. So I was able to improve the measurements by 85% by playing with the homography and the distortion. And also the loop was able to works at 20 times per second, and so basically it was the camera which was sending a picture 20 times per second. And here is a video of our physical system respond, so it is avoiding the other robot and arriving to its goal.
+
+Slimane Aouanouk  4:44
+And in order to publish a paper, we definitely have to check the repeatability. So I made the experimentation and do all this test engineer basically pipeline. So after all, we plot everything that we needed in order to check the repeatability. And as I said, there is this pipeline of test engineer, so measure, to diagnose, to change, and retest. And this pipeline, I have already used it before in mechanical projects. So it was a soccer project, but the main idea here is that I was able to design and print parts in order to make my experimentation. And now, what I'm learning is basically the robotics fields, so state estimation and sensor fusion.
+
+Giovanni Toffetti  5:40
+There's a monster here, as you can see.
+
+Slimane Aouanouk  5:43
+Sorry?
+
+Giovanni Toffetti  5:44
+Yeah, no, I have a monster on picture here. My, no, no, my... It's okay, I'm seeing you, it's fine.
+
+Slimane Aouanouk  5:55
+Oh, okay.
+
+Giovanni Toffetti  5:56
+Just a bit of interruption here. Io sto lavorando, lasciami andare, okay? Bravissimo, vai, ciao. Sorry, sorry for the interruption.
+
+Slimane Aouanouk  6:11
+No worries.
+
+Slimane Aouanouk  6:15
+Okay, so what I was saying is that I'm learning some robotics fields, so state estimation and sensor fusion. So basically that's Kalman filter and neural extended Kalman filter and so on. Then there is perception in mobile robotics, so that's SLAM basically; manipulation and control, so basically this is Jacobian, kinematics, dynamics, and control, so nonlinear control, Lyapunov and so on; and machine learning, so basically there is classes of reinforcement learning, backpropagation, and all the foundation of machine learning.
+
+Slimane Aouanouk  6:56
+And the main event of my Master's degree is my Master's project with a robot Unitree G1. And so the purpose is to make this robot take a glass or something like that, and the goal is going from demonstrations to robot behavior. And basically we can use two different approaches in this project: the teleoperation or the human motion capture, in order just to do this project. And what I'm thinking about is to use this project to prepare for the internship. So we can discuss your priorities and then try to find a direction I can explore in order to arrive during this internship better prepared, and then have a stronger start, because I definitely will be able to contribute sooner to Binabik.
+
+Slimane Aouanouk  7:56
+Thus, I think that at Binabik I can definitely have an impact because I understand the industrial task, I worked on real robots and I was able to make it work from papers, and then I'm currently doing a VLA project, so with a Unitree G1 robot. So I think that the next step is, the logical step is working at Binabik. And where I would like to contribute, I think that there are many areas where I can definitely have an impact at the team. So basically when it comes to speaking about robot learning and data, because as I said, I'm currently doing a project with a Unitree G1 and I can explore a direction which could be useful for this internship; experiments and debugging, so basically all what I said before about, you know, the test engineering pipeline and making the experimentation and so on; and perception and integration, as I did during my research internship in Singapore.
+
+Slimane Aouanouk  9:03
+So basically, I'm available for a six-month internship starting in February 2027, and I definitely want to work at Binabik in order to learn as fast as possible, working in a close team where anyone knows each other. So I think that I would definitely enjoy working there. Thank you for listening.
+
+Giovanni Toffetti  9:31
+Thank you, nice presentation, very, very interesting. And I mean, yes, you, the things you are doing fit with what we're doing, although at Binabik we are, you know, I don't know if you know the... Many of us have a double hat, right?
+
+Slimane Aouanouk  9:53
+Mhm.
+
+Giovanni Toffetti  9:54
+We... Binabik is a spin-off of the ZHAW, the Zurich University of Applied Sciences, so it's an applied science university. I'm a Dozent there, which means I teach there. Jorge is also a Dozent, he's the leader of, so our CEO is the leader of a research group there on autonomous robots. And then there's two PhD students of us that are finishing their PhD and are part of the company now.
+
+Giovanni Toffetti  10:25
+And with the university, we do work more with the G1, like you did, but with the company, we work much more with wheeled robots. So humanoids, still humanoids, but in industrial settings, the reality is legs are a hindrance rather than a help, unless...
+
+Slimane Aouanouk  10:53
+Yeah.
+
+Giovanni Toffetti  10:55
+...unless they need to do something that involves different floors, but factory floors are flat, there are no obstacles. Humanoids have batteries that die after two hours, right?
+
+Slimane Aouanouk  11:13
+Mhm.
+
+Giovanni Toffetti  11:14
+And a wheeled humanoid has batteries that can be hot-swappable, the robot doesn't fall. Yeah, so in the end, in reality at Binabik we work much more with the, I don't know if you're familiar with it, the AgiBot G2, which is a much more, much bigger, much heavier industrial robot, it's a semi-humanoid. And we use the Galaxea R1 Pro, that's another of the robots we use.
+
+Slimane Aouanouk  11:51
+Mhm.
+
+Giovanni Toffetti  11:51
+We do have at the university something very similar to what your goal of your Master's thesis is. We do use the G1 for picking boxes and pick and place of boxes from one table to a table, or from a shelf into a shelf, or mix of these things. I'm just curious how you, how far you are with your thesis, with the idea, what have you tried already with the G1? Because for us it was also, I mean, we got our first G1, I think, a bit more than one year ago, maybe in the summer of 2025. So we didn't have it for so long. By the way, we have a G1 also at Binabik, we have a G1 at Binabik, we have a G1 at ZHAW.
+
+Giovanni Toffetti  12:51
+But the thing that we noticed quite immediately was that the whole-body controller that you have on the G1 is not really working well for tasks. If you move your hands forward, the robot will tilt over, so it needs to balance itself and it needs to move.
+
+Slimane Aouanouk  13:14
+Okay.
+
+Giovanni Toffetti  13:15
+So in the end, we needed to change the whole-body controller to be able to, for the robot to be able to manipulate, do manipulation tasks while not adjusting the stance. So it's, I don't know if you've already looked into these things, if you're just starting, or how were you intending to tackle this problem?
+
+Slimane Aouanouk  13:45
+About the G1, so for my project, for the time being, I'm at the beginning, so I'm reading papers, I'm trying to understand all this world of policies, of, you know, GPUs also for the calculation and so on. But I haven't already started playing with the G1. But to be honest with you, I already know that it was difficult in an industrial state to work with legs. So, yeah, I thought about that.
+
+Giovanni Toffetti  14:15
+Yeah, so we, you should talk more to Jorge. Oh, sorry, there's a lot of noise here in the background.
+
+Slimane Aouanouk  14:23
+No worries.
+
+Giovanni Toffetti  14:24
+There's... So actually Jorge is the right person to talk to, because Jorge has two students working now on the G1, and they're taking both the approaches that you mentioned. So one of his students is using reinforcement learning to use MuJoCo to teach a robot how to pick a box from the floor. So the robot will go down, detect the box, go down, take the box, lift it, has to adjust the stance to the weight of the box to be able to carry it, and then carry it and drop it somewhere else. And this is done mostly with reinforcement learning in simulation. MuJoCo is quite good with the physics and so on.
+
+Giovanni Toffetti  15:18
+And then we have, Jorge has another student that is taking a more classical approach, just like trying with using AprilTags or ArUco markers to detect boxes, and then is using that to drive the robot to a stance that is close enough to the object you're trying to pick, and then move the end effectors to a position that should be more or less where the object is, and then squeeze to collect the object and then move around. So these are the kind of approaches that they're trying to do on the G1 in general.
+
+Slimane Aouanouk  16:04
+Okay, so you're working at Binabik with ArUco markers and more traditional robotics approaches?
+
+Giovanni Toffetti  16:11
+We use AprilTags mostly right now. So now we have a couple of projects in which, well, not a couple of projects, we do it always like this. So we typically do a, when we have a client, we typically do a feasibility study, which means we try to see if the robot is actually able to do the task at hand, the industrial task. So checking whether the grippers are strong enough for doing things, whether the arms are strong enough, the payload of the waist, the payload of the arms, this sort of things. So the first part is really a feasibility study in which we understand whether a robot, one model of the robots we have, or a different robot if it's needed, is able to physically do the task. Maybe you have to create a custom gripper, maybe you have to try different end effectors to try to see if it works.
+
+Giovanni Toffetti  17:10
+And then after that phase is closed, we call this the feasibility study, then we typically do the, write the software for doing the entire automation. So for instance, I don't know, a box palletizing task, which is the last thing I was working on. So the robot, the semi-humanoid has to go and find several boxes in different places, has to be able to lift them, probably with a dual-arm grasp like this, and then has to identify the position of a pallet and place the boxes on the pallet so that you can palletize. And the way we do it as an intermediate step is typically having ArUco markers to help the robot localize, localize the objects, identify the position of things.
+
+Giovanni Toffetti  18:01
+But then the final product cannot, most of the time, cannot use markers. So you cannot use a, sorry, we use AprilTags, which are better than ArUco markers. So, but in the end, the AprilTags will be removed, but while we have the AprilTags, then we can train models or train position estimation algorithms, pose estimation algorithms, grasp generation algorithms while we have the AprilTags there, so we can check how good the AI-driven solution, the pose estimation, this sort of things are with respect to the ground truth of the AprilTag. And once we have developed that part, we can get rid of the AprilTag and we have the final product. So this is how we typically do.
+
+Slimane Aouanouk  18:52
+Okay. And sorry, I have just a question. Are you working on the localization part also, so sensor fusion and...
+
+Giovanni Toffetti  19:00
+For sensor fusion, we rely, most of the time we use the standard localization algorithms that are already there, I don't know. Typically, most of these humanoids, not the G1, but they have a 3D LiDAR, so you can use LIO, FAST-LIO, so you can use LiDAR-based localization. And that's quite precise, actually. It's much more precise than, well, it's precise when it converges. Sometimes some implementations don't converge, but yeah, many of the humanoids that you have on the market already have LIO, FAST-LIO, they have this LiDAR-based odometry and LiDAR-based localization that works quite well out of the box.
+
+Slimane Aouanouk  19:57
+Okay. So at Binabik you're not coding the Kalman filter and all the rest, okay.
+
+Giovanni Toffetti  20:03
+No, we don't, we don't need to do it ourselves. There's so many libraries that are doing the job quite well.
+
+Slimane Aouanouk  20:09
+Yeah.
+
+Giovanni Toffetti  20:10
+We are much more focusing on actually resolving the use cases. So we have clients that require either precise pick and place, precise manipulation. Sometimes you have to carry very heavy rigid objects, so one of our new guys in the team is very good with impedance control for manipulating rigid objects with force control, with arms that are, you know, that you're remodeling a spring, basically, the arms are not rigid. If you try to grasp a rigid object in position control with a robot, you typically end up going beyond the limits of the actuators of the robot, of the motors. So you use impedance control for doing this, and this is also what we do in many cases.
+
+Giovanni Toffetti  21:14
+If instead you're manipulating softer objects, then position control is enough. But for instance, if you have to open a door or follow the motion of the hinges of a door or this sort of things, it's extremely hard to really do it in position control. I mean, unless you have compliance in your actuator, you typically either break the gripper or break the handle. So these things are... So we are focusing more, a lot more on manipulation than on localization.
+
+Slimane Aouanouk  21:49
+Okay.
+
+Giovanni Toffetti  21:50
+So manipulation is a thing that is much more of interest to us because the clients that we have are typically clients that are industrial clients and are doing machine tending, so you're feeding machines, you're getting outputs of machines, you're interacting with the machines, so the robot needs to be very delicate, but also strong. And this is the kind of things that are hard about what we do.
+
+Giovanni Toffetti  22:25
+In your course, I saw, I was seeing what you were mentioning, you did, it's very good, I wasn't aware of... What is it called, your Master's? Is it really a Master's in Robotics, or what is it called, this course of studies that you're doing? Is it...
+
+Slimane Aouanouk  22:45
+In French, the name of the degree? Okay, because in France the system is a bit different from the other countries. It's a research Master's, so it's basically almost like a Master of Science, if you want to have a broad overview of that. And basically I have a Master's project, and I chose to work with the G1, but I think that even if it's not exactly the same robot that you have in industry...
+
+Giovanni Toffetti  23:18
+No, no, but that's fine. It's very, the G1 is a good platform, it's also very robust, it's also... It has this additional complexity that you need to think about whole-body control, but I mean, if you're able to do a thing with the G1, then doing it with a wheeled humanoid is easier.
+
+Slimane Aouanouk  23:41
+Okay, perfect.
+
+Giovanni Toffetti  23:43
+But I was more referring to the courses that you were attending, because those are, it seems like a good approach to me. So you're doing the state estimation, or the Kalman filter, and then you're doing SLAM, so it looked like you're covering all the basics.
+
+Slimane Aouanouk  24:03
+Oh, yeah.
+
+Giovanni Toffetti  24:04
+You're doing robot learning, you're doing manipulation. I have a, at ZHAW I teach a course, one single course of robotics for IT students, we teach them to...
+
+Slimane Aouanouk  24:17
+Really?
+
+Giovanni Toffetti  24:18
+Yeah, yeah, we teach them to basically, they are IT students, they're not roboticists, they're not mechatronics.
+
+Slimane Aouanouk  24:22
+Okay, that's nice.
+
+Giovanni Toffetti  24:24
+So I teach them in just one semester ROS, and in ROS they have one lecture for each one of the courses you're taking. So there's one lecture about SLAM, there's one lecture about manipulation, so it's very condensed, because my students are not roboticists, they are IT students, so it's a bit different. But it's very good what you're studying and the way the courses look like.
+
+Slimane Aouanouk  24:53
+Thank you.
+
+Giovanni Toffetti  24:54
+It seems they will give you a right basis for going on in robotics. Okay, one of the things, I mean, this call was mostly to know each other, and I think you're motivated, you are studying the right things, so I think you would be a good match. But then, to get to know you a bit better, we would actually need to do a more technical meeting. So you presented now some of the things you have done, but what I suggest is that, next week I'm away, I'm in Spain the whole week, but I'll give you more or less one week of time, so we'll schedule another meeting in one week, ten days from now. And I would like you to give a bit of a longer presentation, so let's say 20 minutes, a 20-minute presentation, and then I would like you to go a bit deeper into all the things you have done.
+
+Giovanni Toffetti  26:01
+And for instance, I can already tell you, the part about optimizing the pose estimation from the ArUco markers is a bit less interesting for us, because we use AprilTags, for instance, which are somehow more precise than ArUco markers in general, so we have that part, we know how to do. I'm a bit more interested in, for instance, what you are planning to do with the VLAs, or also more interested in understanding also your work in Singapore. I understood you had the equivalent of a global plan of the motion for a robot, and then you implemented what in Nav2 would be called a local planner, or a controller, so something that adjusts the trajectory of the robot based on the plan that you have, but also based on the conditions that are coming from the sensors. So I would like you to tell me exactly what you did there, what was the logic, what were the conditions, what were the problems, and how you solved them.
+
+Giovanni Toffetti  27:14
+So this you can do for, you choose one, two, three of the works that you have done already in the past. You don't need to focus on what you will do in the future, because you probably do not have a clear idea yet. I would rather see what you have done in the past.
+
+Slimane Aouanouk  27:33
+Okay.
+
+Giovanni Toffetti  27:34
+And I would rather have you tell me what was hard, what were the problems, and how you solved them. So these are the things that I would like you to tell me, okay? And Jorge and the CEO and the CTO of Binabik are ultra busy, but I will try to have at least one of them also in the next call, and then we can take it from there, okay?
+
+Slimane Aouanouk  28:03
+Okay, definitely, that sounds good.
+
+Giovanni Toffetti  28:06
+Perfect. Do you have any other questions for me?
+
+Slimane Aouanouk  28:09
+Yes, of course, thank you. So basically, what would you say is the biggest technical challenge your team is currently facing at Binabik?
+
+Giovanni Toffetti  28:22
+It's what I was telling you before. The biggest challenge now is to have compliant manipulation. So compliant manipulation that works very well on every robot is not so easy, not very easy to achieve. So this is one of the challenges, and then the other challenge is achieving high success rates consistently.
+
+Slimane Aouanouk  28:58
+Yeah.
+
+Giovanni Toffetti  28:59
+The tail of the errors, it's a long, there's a long tail of errors that you can have, the distribution of reality is much more long-tailed toward having exceptions than what you always think in simulation or what you have in the lab. So once you go to a factory floor, conditions are changing and it's hard to have repeatability of the things that we do. So those are the two biggest challenges at the moment.
+
+Slimane Aouanouk  29:34
+Okay, okay, okay. And based on my background and the projects I presented, where do you think I could contribute the most to your team?
+
+Giovanni Toffetti  29:45
+Well, this I'm still not able to answer right now. The localization and the collision avoidance and trajectory optimization are not so relevant for us, they're not so... And the other ones, I mean, the G1 work would be nice, but you're still at the beginning of it, so... And I don't remember the other things. I liked the fact that, well, I remember the other one where you were producing 3D-printed parts. We do produce 3D-printed parts a lot, that's also not... Yeah, a lot of the grippers that we build are custom grippers for specific tasks.
+
+Slimane Aouanouk  30:35
+Oh, really? Because I thought that you were just building software, so the brain of the robots.
+
+Giovanni Toffetti  30:40
+No, no, we're doing everything. So we really work full stack, so we really work with, we design our own grippers if they make a task easier. I don't know how familiar you are with the end effectors of humanoids, but many of the hands are very hard to use, they need a lot of data, they break very easily, and they're super expensive. So the reality is you try to use simpler grippers if you can, they're also more resilient and they last more. Yeah, so we do 3D print a lot of things, but we have a bunch of people that are very good at 3D printing, I'm not one of them. Designing parts, it's not me.
+
+Giovanni Toffetti  31:31
+And then I don't remember, you had the very first slide where you had the fact that you worked in the factory, you were on the factory floor. That's more interesting for us because it's an experience most of us lack. So we mostly come from academia, and apart from a couple of us, we have not worked in factories, so we don't know much of that.
+
+Slimane Aouanouk  31:57
+Okay, okay, okay, perfect. And just one last question about the presentation for next week's interview: should I talk about my mechanical projects, so for example my industrial project, about all the CAD, CFD, and all this mechanical point of view, or should I only focus on the robotics ones?
+
+Giovanni Toffetti  32:18
+You should focus on the robotics. The mechanical parts are a bit less interesting for us. We do produce our own grippers, but we typically don't do mechanical design, so we don't do arms, we don't do...
+
+Slimane Aouanouk  32:33
+Okay.
+
+Giovanni Toffetti  32:35
+We mostly buy humanoids from China, maybe we expand them with our sensors, with our grippers. Sometimes we put, on the last robot we put vacuum pumps that were not supposed to be on the robot, sometimes... So we customize our robots, but we typically don't design them ourselves.
+
+Slimane Aouanouk  32:55
+Okay, so I think I will principally talk about Singapore, because for the G1, as you said, I'm still at the beginning about understanding VLA, policies and so on, so I think I will definitely focus on Singapore.
+
+Giovanni Toffetti  33:10
+It's also important, I think I also liked the one you presented with the industrial arm in the factory. I don't know what you did for that, it was a bit, there was not enough information there, but if you can give me more information about that one, that's also interesting.
+
+Slimane Aouanouk  33:28
+Okay, perfect. Okay, okay, so I thank you, it was a very good experience. So...
+
+Giovanni Toffetti  33:35
+Thank you, sorry about the noise in the background.
+
+Slimane Aouanouk  33:39
+No worries.
+
+Giovanni Toffetti  33:40
+And I will, so next week I'm away, but please, let's do it like this: please write me not the coming Monday, the Monday after, and I'll try to schedule a meeting for us, okay?
+
+Slimane Aouanouk  33:55
+Okay, thank you very much.
+
+Giovanni Toffetti  33:58
+Thank you, have a good afternoon.
+
+Slimane Aouanouk  34:00
+Thank you, you too. Bye-bye, see you.

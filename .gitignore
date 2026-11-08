@@ -1,0 +1,13 @@
+# macOS metadata
+.DS_Store
+**/.DS_Store
+.mplcache/
+__pycache__/
+plot_p1_650c_t5.py
+
+# Local validation and operating-system artifacts
+archive/legacy/system-metadata/
+V1.4_PORTFOLIO_CONTEXT.md
+
+# Original source video retained locally; the web MP4 is published.
+/Presentations/presentation_interview_Binabik/interview_2/assets/videos/drones_decartes_project.mov

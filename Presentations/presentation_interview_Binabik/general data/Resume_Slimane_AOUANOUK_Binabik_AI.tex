@@ -1,0 +1,125 @@
+% Binabik AI speculative application, derived from reference CV V8.5
+
+\documentclass[10pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{anyfontsize}
+\usepackage[top=0.22in, bottom=0.3in, left=0.5in, right=0.5in]{geometry} % Adjusted margins
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{comment}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\definecolor{linkblue}{HTML}{175A8A}
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue, citecolor=linkblue}
+\newcommand{\linkicon}{\,{\textcolor{linkblue}{\scriptsize\faExternalLink*}}}
+
+% Formatting sections with a line directly below, reduced title size
+\titleformat{\section}{\normalfont\bfseries\small}{}{0pt}{}[\vspace{-4pt}\rule{\linewidth}{0.4pt}]
+\titleformat{\subsection}{\normalfont\bfseries\footnotesize}{}{0pt}{}
+
+% Reduce the spacing between sections and the following text
+\titlespacing*{\section}{0pt}{1pt}{1pt}
+\titlespacing*{\subsection}{0pt}{1pt}{1pt}
+
+% Reduce the space between paragraphs
+\setlength{\parskip}{0.5pt} % Adjusted space between paragraphs
+\setlength{\itemsep}{0.5pt} % Adjusted space between list items
+\setlength{\medskipamount}{2pt plus 1pt minus 1pt}
+\linespread{0.92}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+    {\LARGE \textbf{AOUANOUK Slimane}}\\
+    \faPhone*~+33 7 83 54 30 26 \quad --- \quad
+    {\hypersetup{urlcolor=black}\href{mailto:aouanoukslim@gmail.com}{\faEnvelope~aouanoukslim@gmail.com}} \quad --- \quad
+    {\hypersetup{urlcolor=black}\href{https://www.linkedin.com/in/slimane-aouanouk/}{\faLinkedin~LinkedIn}} \quad --- \quad
+    \href{https://slimaneaouanouk.com/}{\faGlobe~slimaneaouanouk.com}
+\end{center}
+
+\vspace{-1pt}
+\begin{center}
+    \textit{Available for a 6-month internship starting February 2027 in robotics or autonomous systems.}
+    \end{center}
+\medskip
+
+%\section*{SUMMARY}
+
+\textbf{Graduate Engineering student at Arts et Métiers} pursuing a \textbf{Research Master's (M2) in Advanced Systems and Robotics at Sorbonne Université}. Research experience in \textbf{visual localization, motion planning, and real-time mobile robotics}. Currently developing a \textbf{Vision-Language-Action pipeline for Unitree G1 assistive manipulation}.
+
+\medskip
+
+\vspace{0em}
+
+\section*{EDUCATION \; | \; \textbf{ Combined CPGE--ENSAM GPA: 3.92 / 4.00}}
+
+\textbf{Sorbonne Université} --- Paris, France \hfill \textbf{Sept 2026 -- Aug 2027}\\
+\textit{\textbf{Research Master's (M2) in Advanced Systems \& Robotics (SAR)}}\\
+\textbf{Current coursework:} Mobile Robotics (ROS 2, SLAM), Robot Perception, State Estimation \& System Identification (Bayesian estimation, EKF, UKF, particle filters), Machine Learning (deep learning, reinforcement learning, PyTorch), Nonlinear Control, and Robot Manipulators.
+
+\smallskip
+
+\textbf{Arts et Métiers Institute of Technology (ENSAM)} --- Paris, France \hfill \textbf{Sept 2024 -- Jul 2027}\\
+\textit{\textbf{Combined BS × MS Engineering Degree} — Member of \textbf{ParisTech}.}
+
+
+\begin{itemize}[leftmargin=*, topsep=0pt, parsep=0pt, itemsep=0.5pt]
+    \item \textbf{Ranked top 12\% of cohort} (\textbf{142 / 1223} students)
+\item \textbf{Relevant Coursework:} Robotics and Mechatronics, Numerical Optimization, Mechanical Design, Manufacturing, and Experimental Mechanics
+
+\end{itemize}
+
+\medskip
+
+\section*{WORK EXPERIENCE}
+
+\textbf{\href{https://slimaneaouanouk.com/paco-showcase/index.html}{Trajectory Optimization and Collision Avoidance for Autonomous Systems\linkicon}} \hfill \textbf{Jan--Aug 2026}\\
+\textit{Robotics Research Project \& Internship — PIMM Lab / CNRS@CREATE; Paris (Jan--May) $\rightarrow$ Singapore (Jun--Aug) \; | \; Supervisor: Prof. Francisco Chinesta}\\
+• \textbf{Co-developed a Python/OpenCV visual-localization pipeline} using a Basler overhead camera and ArUco markers to estimate rover position and heading for closed-loop mobile-robot navigation.\\
+• \textbf{Calibrated camera intrinsics using 20 ChArUco views}, achieving \textbf{0.191 px reprojection RMS}; combined lens-distortion correction with metric homography to reduce mean localization error \textbf{84\%, from 36.3 to 5.8 mm}, on an independent nine-point ground grid.\\
+• \textbf{Diagnosed and corrected height-induced parallax}, reducing mean rover-marker localization error from \textbf{60.8 to 11.6 mm} across five physical validation positions.\\
+• \textbf{Profiled and optimized vision processing through image downsampling and point-wise distortion correction}, integrating localization, trajectory correction, serial rover control, and experiment logging at a median \textbf{19.84--19.86 Hz}.\\
+• \textbf{Validated the integrated navigation stack through two frozen 20-run physical campaigns}, achieving \textbf{40/40 goal arrivals with zero collisions} and collecting synchronized control and trajectory logs.\\
+• \textbf{Evaluated trajectory-planning and control configurations through a 100,800-case simulation campaign} and quantified simulation-to-real discrepancies across \textbf{39 paired physical and digital-twin runs}.\\
+• \textbf{Co-developed pytest unit and regression tests} covering calibration, homography, controller behavior, and analytical gradients, including finite-difference checks for numerical consistency.\\
+• \textbf{First author of a robotics manuscript currently under journal review}, presenting the trajectory-planning framework, experimental validation, and simulation-to-real evaluation.
+
+\medskip
+
+\section*{SELECTED PROJECTS}
+
+
+\textbf{Humanoid Robot Learning for Assistive Manipulation --- VLA} \hfill \textbf{2026--27}\\
+\textit{Sorbonne Université · Supervised by Prof. Olivier Bruneau, LURPA / ENS Paris-Saclay}\\
+• \textbf{Developing an end-to-end Vision-Language-Action (VLA) pipeline} for autonomous manipulation on a Unitree G1 humanoid, from teleoperated demonstrations to real-world deployment.\\
+• \textbf{Targeting OpenPI ($\pi_0/\pi_{0.5}$) policy fine-tuning} using imitation learning and multimodal datasets combining natural-language instructions, RGB/RGB-D observations, and robot actions.\\
+• \textbf{Exploring language-conditioned manipulation policies} for household assistance tasks, targeting robust execution, generalization to unseen configurations, and quantitative real-world evaluation.\\
+• \textbf{Exploring AI-based motion optimization in MuJoCo or NVIDIA Isaac Lab (Isaac Sim)}, with motion capture and human-to-robot retargeting envisaged to adapt human movements to the robot.
+
+\medskip
+
+\textbf{\href{https://slimaneaouanouk.com/en/projects/tipe.html}{TIPE --- Experimental Impact Testing \& Python Video Analysis\linkicon}} \hfill \textbf{2022--24}\\
+• Individually built a \textbf{46 cm pendulum-style impact rig with four contact geometries} for repeatable tests.\\
+• \textbf{Analyzed impact videos in Python (NumPy, SciPy, Matplotlib)} using pre/post-impact regressions and position-uncertainty plots; measured \textbf{4.0 m/s ball exit speed from a 2.2 m/s impactor} (12 mm cylinder, 3 psi).
+
+\medskip
+
+\textbf{\href{https://slimaneaouanouk.com/en/projects/fab.html}{Foundry, Machining and Metrology\linkicon} -- Arts et Métiers} \hfill \textbf{2025}\\
+• Co-manufactured an AlSi7 bearing-support part through casting, turning, and CNC machining; \textbf{inspected four geometric tolerances on a CMM}, documenting two nonconformities and tracing setup and datum errors for redesign.
+
+\medskip
+
+\section*{SKILLS AND INTERESTS}
+
+\textbf{Programming \& Numerics:} Python, NumPy, SciPy, MATLAB, pytest (unit/regression tests), Git, LaTeX\\
+\textbf{Robotics \& Vision:} OpenCV, ArUco localization, camera calibration, motion planning, real-time robot integration\\
+\textbf{Current Coursework:} ROS 2, SLAM, Bayesian state estimation, PyTorch, Linux\\
+\textbf{Engineering Tools:} CAD (Fusion 360, 3DEXPERIENCE), Simulink, CMM metrology, digital twins\\
+\textbf{Languages:} French (native), English (TOEFL iBT: 5/6), Italian (basic), Spanish (basic)\\
+\textbf{Interests:} Autonomous navigation, robot learning, physical AI, basketball, strength training
+
+\end{document}
